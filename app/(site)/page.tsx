@@ -6,16 +6,10 @@ import Button from "@/components/Button";
 import QuickFacts from "@/components/QuickFacts";
 import InfoBanner from "@/components/InfoBanner";
 
-/* ─── Lazy-load the hero scene (client component, non-critical) ─── */
-const CharlestonHeroScene = dynamic(
-  () => import("@/components/CharlestonHeroScene"),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="h-full w-full rounded-2xl bg-gradient-to-br from-coastal-700/20 via-teal-600/10 to-coastal-500/20" />
-    ),
-  }
-);
+/* ─── Lazy-load the hero video (client component, non-blocking) ─── */
+const HeroVideo = dynamic(() => import("@/components/HeroVideo"), {
+  ssr: false,
+});
 
 export const metadata: Metadata = {
   title: "Charleston SC Explorer | Discover the Lowcountry",
@@ -132,48 +126,57 @@ const facts = [
 export default function HomePage() {
   return (
     <>
-      {/* ─── Hero ─── */}
-      <div className="wave-divider relative overflow-hidden bg-gradient-to-br from-coastal-900 via-coastal-700 to-coastal-500 px-4 pb-28 pt-16 sm:pb-32 sm:pt-20 lg:pb-40 lg:pt-24">
-        {/* Subtle texture */}
-        <div className="pointer-events-none absolute inset-0 opacity-[0.04]">
-          <svg width="100%" height="100%">
-            <defs>
-              <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
-        </div>
+      {/* ─── Hero with Video Background ─── */}
+      <div className="wave-divider relative h-[60vh] min-h-[420px] max-h-[720px] overflow-hidden sm:h-[65vh] lg:h-[70vh]">
+        {/* ── Video / Fallback layer ── */}
+        <HeroVideo
+          src="/media/lowcountryparks-hero.mp4"
+          poster="/media/lowcountryparks-hero-poster.jpg"
+        />
 
-        <div className="relative mx-auto max-w-7xl">
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-            {/* ── Text column (left on desktop, top on mobile) ── */}
-            <div className="order-2 lg:order-1">
-              <p className="text-sm font-medium uppercase tracking-widest text-coastal-300">
+        {/* ── Gradient fallback (behind video, always visible as base) ── */}
+        <div
+          className="absolute inset-0 -z-10 bg-gradient-to-br from-coastal-900 via-coastal-700 to-coastal-500"
+          aria-hidden="true"
+        />
+
+        {/* ── Dark overlay for text readability ── */}
+        <div
+          className="absolute inset-0 z-[1] bg-gradient-to-t from-black/60 via-black/35 to-black/20"
+          aria-hidden="true"
+        />
+
+        {/* ── Text content ── */}
+        <div className="relative z-[2] flex h-full items-center px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto w-full max-w-7xl">
+            <div className="max-w-2xl">
+              <p className="text-sm font-medium uppercase tracking-widest text-white/70">
                 Your Lowcountry Guide
               </p>
-              <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="mt-3 text-4xl font-bold tracking-tight text-white drop-shadow-lg sm:text-5xl lg:text-6xl">
                 Discover Charleston
               </h1>
-              <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70 sm:text-lg sm:leading-relaxed">
+              <p className="mt-5 max-w-lg text-base leading-relaxed text-white/80 drop-shadow sm:text-lg sm:leading-relaxed">
                 The Holy City&apos;s best neighborhoods, parks, historical sites,
                 and iconic landmarks — all in one place.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Button href="/neighborhoods" variant="primary" size="lg" className="!bg-white !text-coastal-800 hover:!bg-slate-100">
+                <Button
+                  href="/neighborhoods"
+                  variant="primary"
+                  size="lg"
+                  className="!bg-white !text-coastal-800 shadow-lg hover:!bg-slate-100"
+                >
                   Explore Neighborhoods
                 </Button>
-                <Button href="/maps" variant="outline" size="lg" className="!border-white/40 !text-white hover:!bg-white/10">
+                <Button
+                  href="/maps"
+                  variant="outline"
+                  size="lg"
+                  className="!border-white/50 !text-white shadow-lg backdrop-blur-sm hover:!bg-white/15"
+                >
                   View Map
                 </Button>
-              </div>
-            </div>
-
-            {/* ── Illustration column (right on desktop, top on mobile) ── */}
-            <div className="order-1 flex justify-center lg:order-2">
-              <div className="relative h-60 w-full max-w-md sm:h-72 lg:h-[22rem] lg:max-w-none">
-                <CharlestonHeroScene />
               </div>
             </div>
           </div>
