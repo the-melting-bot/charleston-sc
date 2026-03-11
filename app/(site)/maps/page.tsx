@@ -1,29 +1,35 @@
-import type { Metadata } from "next";
-import dynamic from "next/dynamic";
-import Section from "@/components/Section";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Interactive Map | Charleston SC Explorer",
-  description:
-    "Explore an interactive map of Charleston with markers for parks, landmarks, and historical sites.",
-};
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
-const Map = dynamic(() => import("@/components/Map"), {
-  ssr: false,
-  loading: () => (
-    <div className="flex h-[500px] w-full items-center justify-center rounded-xl bg-slate-100 lg:h-[600px]">
-      <p className="text-slate-500">Loading map...</p>
-    </div>
-  ),
-});
+const charlestonPosition: [number, number] = [32.7765, -79.9311];
 
 export default function MapsPage() {
   return (
-    <Section
-      title="Interactive Map"
-      subtitle="Explore Charleston's top destinations — toggle categories to filter markers"
-    >
-      <Map />
-    </Section>
+    <main className="min-h-screen p-4 md:p-8">
+      <h1 className="text-2xl md:text-3xl font-semibold mb-4">
+        Charleston Maps
+      </h1>
+      <p className="mb-4 text-sm md:text-base">
+        A simple map centered on Charleston, SC with a sample marker.
+      </p>
+      <div className="h-[60vh] w-full rounded-lg overflow-hidden border border-gray-200">
+        <MapContainer
+          center={charlestonPosition}
+          zoom={13}
+          scrollWheelZoom={true}
+          style={{ height: "100%", width: "100%" }}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <Marker position={charlestonPosition}>
+            <Popup>Charleston, SC</Popup>
+          </Marker>
+        </MapContainer>
+      </div>
+    </main>
   );
 }
