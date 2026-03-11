@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
 import QuickFacts from "@/components/QuickFacts";
 import InfoBanner from "@/components/InfoBanner";
+
+/* ─── Lazy-load the hero scene (client component, non-critical) ─── */
+const CharlestonHeroScene = dynamic(
+  () => import("@/components/CharlestonHeroScene"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="h-full w-full rounded-2xl bg-gradient-to-br from-coastal-700/20 via-teal-600/10 to-coastal-500/20" />
+    ),
+  }
+);
 
 export const metadata: Metadata = {
   title: "Charleston SC Explorer | Discover the Lowcountry",
@@ -111,7 +123,7 @@ const highlights = [
 ];
 
 const facts = [
-  { label: "Founded", value: "1670" },
+  { label: "Year Founded", value: "1670" },
   { label: "Neighborhoods", value: "25+" },
   { label: "Historic Sites", value: "1,400+" },
   { label: "Miles of Coast", value: "90+" },
@@ -121,7 +133,7 @@ export default function HomePage() {
   return (
     <>
       {/* ─── Hero ─── */}
-      <div className="wave-divider relative overflow-hidden bg-gradient-to-br from-coastal-900 via-coastal-700 to-coastal-500 px-4 pb-28 pt-20 sm:pb-32 sm:pt-28 lg:pb-40 lg:pt-36">
+      <div className="wave-divider relative overflow-hidden bg-gradient-to-br from-coastal-900 via-coastal-700 to-coastal-500 px-4 pb-28 pt-16 sm:pb-32 sm:pt-20 lg:pb-40 lg:pt-24">
         {/* Subtle texture */}
         <div className="pointer-events-none absolute inset-0 opacity-[0.04]">
           <svg width="100%" height="100%">
@@ -135,24 +147,34 @@ export default function HomePage() {
         </div>
 
         <div className="relative mx-auto max-w-7xl">
-          <div className="max-w-2xl">
-            <p className="text-sm font-medium uppercase tracking-widest text-coastal-300">
-              Your Lowcountry Guide
-            </p>
-            <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Discover Charleston
-            </h1>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70 sm:text-lg sm:leading-relaxed">
-              The Holy City&apos;s best neighborhoods, parks, historical sites,
-              and iconic landmarks — all in one place.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="/neighborhoods" variant="primary" size="lg" className="!bg-white !text-coastal-800 hover:!bg-slate-100">
-                Explore Neighborhoods
-              </Button>
-              <Button href="/maps" variant="outline" size="lg" className="!border-white/40 !text-white hover:!bg-white/10">
-                View Map
-              </Button>
+          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+            {/* ── Text column (left on desktop, top on mobile) ── */}
+            <div className="order-2 lg:order-1">
+              <p className="text-sm font-medium uppercase tracking-widest text-coastal-300">
+                Your Lowcountry Guide
+              </p>
+              <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Discover Charleston
+              </h1>
+              <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70 sm:text-lg sm:leading-relaxed">
+                The Holy City&apos;s best neighborhoods, parks, historical sites,
+                and iconic landmarks — all in one place.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Button href="/neighborhoods" variant="primary" size="lg" className="!bg-white !text-coastal-800 hover:!bg-slate-100">
+                  Explore Neighborhoods
+                </Button>
+                <Button href="/maps" variant="outline" size="lg" className="!border-white/40 !text-white hover:!bg-white/10">
+                  View Map
+                </Button>
+              </div>
+            </div>
+
+            {/* ── Illustration column (right on desktop, top on mobile) ── */}
+            <div className="order-1 flex justify-center lg:order-2">
+              <div className="relative h-60 w-full max-w-md sm:h-72 lg:h-[22rem] lg:max-w-none">
+                <CharlestonHeroScene />
+              </div>
             </div>
           </div>
         </div>
