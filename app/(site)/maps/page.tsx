@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
+import parksData from "@/public/data/parks.json";
 
 export const metadata: Metadata = {
   title: "Interactive Map | Charleston SC Explorer",
   description:
-    "Explore Charleston with an interactive map — landmarks, parks, and historical sites all in one view.",
+    "Explore Charleston with an interactive map — 120+ parks and recreation facilities from the City of Charleston Open Data portal.",
 };
 
 // Dynamic import to avoid SSR issues with Leaflet (needs `window`)
@@ -20,6 +21,14 @@ const MapClient = dynamic(() => import("@/components/MapClient"), {
   ),
 });
 
+// Derive stats from the data file at build time
+const totalParks = parksData.parks.length;
+const neighborhoods = Array.from(
+  new Set(parksData.parks.map((p: { neighborhood: string | null }) => p.neighborhood).filter(Boolean))
+);
+const parkTypes = parksData.parks.filter((p: { type: string }) => p.type === "park").length;
+const recFacilities = parksData.parks.filter((p: { type: string }) => p.type === "recreation").length;
+
 export default function MapsPage() {
   return (
     <>
@@ -31,9 +40,8 @@ export default function MapsPage() {
               Interactive Map
             </h1>
             <p className="mt-3 text-sm leading-relaxed text-white/70 sm:text-base">
-              Explore Charleston with our interactive map. Toggle categories,
-              click markers for details, and plan your route through the
-              Lowcountry.
+              Explore {totalParks} parks and recreation facilities across {neighborhoods.length} Charleston
+              neighborhoods. Data sourced from the City of Charleston Open Data portal.
             </p>
           </div>
         </div>
@@ -47,49 +55,60 @@ export default function MapsPage() {
           </div>
         </div>
 
-        {/* Map legend */}
-        <div className="mt-6 grid gap-4 sm:grid-cols-3">
-          <div className="rounded-xl border border-slate-200 bg-white p-4">
-            <div className="flex items-center gap-2">
-              <div className="h-3 w-3 rounded-full bg-coastal-700" />
-              <span className="text-sm font-medium text-slate-700">
-                Landmarks
-              </span>
-            </div>
-            <p className="mt-1 text-xs text-slate-400">
-              Historic sites and points of interest
+        {/* Stats bar */}
+        <div className="mt-6 grid grid-cols-3 gap-4">
+          <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
+            <p className="text-2xl font-bold text-coastal-700">{parkTypes}</p>
+            <p className="mt-0.5 text-xs font-medium uppercase tracking-wider text-slate-400">
+              Parks
             </p>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-white p-4">
-            <div className="flex items-center gap-2">
-              <div className="h-3 w-3 rounded-full bg-coastal-seafoam" />
-              <span className="text-sm font-medium text-slate-700">Parks</span>
-            </div>
-            <p className="mt-1 text-xs text-slate-400">
-              Green spaces and outdoor recreation
+          <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
+            <p className="text-2xl font-bold text-coastal-700">{recFacilities}</p>
+            <p className="mt-0.5 text-xs font-medium uppercase tracking-wider text-slate-400">
+              Rec Facilities
             </p>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-white p-4">
-            <div className="flex items-center gap-2">
-              <div className="h-3 w-3 rounded-full bg-coastal-sand" />
-              <span className="text-sm font-medium text-slate-700">
-                Historical
-              </span>
-            </div>
-            <p className="mt-1 text-xs text-slate-400">
-              Museums and cultural heritage sites
+          <div className="rounded-xl border border-slate-200 bg-white p-4 text-center">
+            <p className="text-2xl font-bold text-coastal-700">{neighborhoods.length}</p>
+            <p className="mt-0.5 text-xs font-medium uppercase tracking-wider text-slate-400">
+              Neighborhoods
             </p>
           </div>
         </div>
 
+        {/* Data source attribution */}
+        <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
+          <div className="flex items-start gap-3">
+            <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+            </svg>
+            <div>
+              <p className="text-xs leading-relaxed text-slate-500">
+                Park data sourced from the{" "}
+                <a
+                  href="https://data-charleston-sc.opendata.arcgis.com/items/109c6c5688f040908a11a7dee3a04b29"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-coastal-700 hover:underline"
+                >
+                  City of Charleston Open Data &ndash; Parks
+                </a>{" "}
+                dataset, published under the City of Charleston Open Data Policy for
+                public use. Marker positions are computed from polygon centroids.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Future features placeholder */}
-        <div className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center sm:p-8">
+        <div className="mt-6 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center sm:p-8">
           <p className="text-sm font-medium text-slate-500">
             More map features coming soon
           </p>
           <p className="mt-1 text-xs text-slate-400">
-            Category filters, search, directions, and custom layers are planned
-            for future updates.
+            Neighborhood filters, search, directions, and custom map layers are
+            planned for future updates.
           </p>
         </div>
       </div>

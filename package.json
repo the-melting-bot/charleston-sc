@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fetch-data": "node scripts/fetch-parks.mjs"
   },
   "dependencies": {
     "@react-leaflet/core": "^2.1.0",
