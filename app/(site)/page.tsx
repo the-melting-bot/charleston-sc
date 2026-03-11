@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
 import QuickFacts from "@/components/QuickFacts";
 import InfoBanner from "@/components/InfoBanner";
-
-/* ─── Lazy-load the hero video (client component, non-blocking) ─── */
-const HeroVideo = dynamic(() => import("@/components/HeroVideo"), {
-  ssr: false,
-});
+import HeroVideo from "@/components/HeroVideo";
 
 export const metadata: Metadata = {
   title: "Charleston SC Explorer | Discover the Lowcountry",
@@ -128,26 +123,26 @@ export default function HomePage() {
     <>
       {/* ─── Hero with Video Background ─── */}
       <div className="wave-divider relative h-[60vh] min-h-[420px] max-h-[720px] overflow-hidden sm:h-[65vh] lg:h-[70vh]">
-        {/* ── Video / Fallback layer ── */}
+        {/* Layer 0 — Gradient fallback (always visible as base color) */}
+        <div
+          className="absolute inset-0 bg-gradient-to-br from-coastal-900 via-coastal-700 to-coastal-500"
+          aria-hidden="true"
+        />
+
+        {/* Layer 1 — Video + poster fallback */}
         <HeroVideo
           src="/media/lowcountryparks-hero.mp4"
           poster="/media/lowcountryparks-hero-poster.jpg"
         />
 
-        {/* ── Gradient fallback (behind video, always visible as base) ── */}
+        {/* Layer 2 — Dark overlay for text readability */}
         <div
-          className="absolute inset-0 -z-10 bg-gradient-to-br from-coastal-900 via-coastal-700 to-coastal-500"
+          className="absolute inset-0 z-[2] bg-gradient-to-t from-black/60 via-black/35 to-black/20"
           aria-hidden="true"
         />
 
-        {/* ── Dark overlay for text readability ── */}
-        <div
-          className="absolute inset-0 z-[1] bg-gradient-to-t from-black/60 via-black/35 to-black/20"
-          aria-hidden="true"
-        />
-
-        {/* ── Text content ── */}
-        <div className="relative z-[2] flex h-full items-center px-4 sm:px-6 lg:px-8">
+        {/* Layer 3 — Text content */}
+        <div className="relative z-[3] flex h-full items-center px-4 sm:px-6 lg:px-8">
           <div className="mx-auto w-full max-w-7xl">
             <div className="max-w-2xl">
               <p className="text-sm font-medium uppercase tracking-widest text-white/70">
