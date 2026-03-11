@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
+import QuickFacts from "@/components/QuickFacts";
+import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
   title: "Charleston SC Explorer | Discover the Lowcountry",
@@ -10,105 +11,206 @@ export const metadata: Metadata = {
     "Explore Charleston, South Carolina — discover neighborhoods, parks, historical sites, landmarks, and more in the Lowcountry.",
 };
 
+/* ─── Icons (inline SVG for zero dependencies) ─── */
+const IconNeighborhoods = () => (
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+  </svg>
+);
+
+const IconParks = () => (
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-1.2 0-3.6 3-3.6 6 0 1.2.6 2.4 1.2 3H6l3 4.5H7.5L12 21l4.5-4.5H15L18 12h-3.6c.6-.6 1.2-1.8 1.2-3 0-3-2.4-6-3.6-6z" />
+  </svg>
+);
+
+const IconHistorical = () => (
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+  </svg>
+);
+
+const IconLandmarks = () => (
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+  </svg>
+);
+
+const IconMap = () => (
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
+  </svg>
+);
+
 const featured = [
   {
     title: "Neighborhoods & Areas",
     description:
-      "From the cobblestone streets of Downtown to the laid-back vibes of Folly Beach — explore Charleston's diverse neighborhoods.",
+      "From Downtown's cobblestone streets to the laid-back vibes of Folly Beach — explore Charleston's diverse neighborhoods.",
     href: "/neighborhoods",
-    color: "bg-coastal-blue-light",
+    accentColor: "bg-coastal-200",
+    icon: <IconNeighborhoods />,
   },
   {
     title: "Parks & Outdoor",
     description:
       "Discover lush parks, waterfront trails, and outdoor recreation across the Lowcountry.",
     href: "/parks-outdoor",
-    color: "bg-coastal-seafoam-light",
+    accentColor: "bg-coastal-seafoam-200",
+    icon: <IconParks />,
   },
   {
-    title: "Historical & Cultural Sites",
+    title: "Historical & Cultural",
     description:
       "Step back in time at Charleston's world-renowned historical landmarks and cultural institutions.",
     href: "/historical-cultural",
-    color: "bg-coastal-sand-light",
+    accentColor: "bg-coastal-sand-light",
+    icon: <IconHistorical />,
   },
   {
     title: "Landmarks",
     description:
       "Iconic landmarks from Rainbow Row to the Angel Oak Tree that define Charleston's timeless charm.",
     href: "/landmarks",
-    color: "bg-coastal-blue-light",
+    accentColor: "bg-coastal-200",
+    icon: <IconLandmarks />,
   },
   {
     title: "Interactive Map",
     description:
       "Explore an interactive map of Charleston with markers for parks, landmarks, and historical sites.",
     href: "/maps",
-    color: "bg-coastal-seafoam-light",
+    accentColor: "bg-coastal-seafoam-200",
+    icon: <IconMap />,
   },
+];
+
+const highlights = [
+  {
+    title: "Sweetgrass Basket Making",
+    description:
+      "A Gullah tradition passed down through generations, sweetgrass baskets are a living art form you can watch being woven at the City Market.",
+    accentColor: "bg-coastal-sand-light",
+    tag: "Culture",
+  },
+  {
+    title: "Lowcountry Cuisine",
+    description:
+      "From shrimp and grits to she-crab soup, Charleston's culinary scene blends African, Caribbean, and Southern flavors into something unforgettable.",
+    accentColor: "bg-coastal-seafoam-200",
+    tag: "Food",
+  },
+  {
+    title: "Horse-Drawn Carriage Tours",
+    description:
+      "One of the best ways to experience Charleston's historic district is from the seat of a horse-drawn carriage rolling along centuries-old streets.",
+    accentColor: "bg-coastal-200",
+    tag: "Experience",
+  },
+];
+
+const facts = [
+  { label: "Founded", value: "1670" },
+  { label: "Neighborhoods", value: "25+" },
+  { label: "Historic Sites", value: "1,400+" },
+  { label: "Miles of Coast", value: "90+" },
 ];
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero */}
-      <div className="relative bg-gradient-to-br from-coastal-blue to-sky-700 px-4 py-24 text-center text-white sm:py-32 lg:py-40">
-        <div className="mx-auto max-w-3xl">
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-            Discover Charleston &amp; the Lowcountry
-          </h1>
-          <p className="mt-6 text-lg leading-relaxed text-sky-100 sm:text-xl">
-            Your comprehensive guide to the Holy City&apos;s best
-            neighborhoods, parks, historical sites, and iconic landmarks.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link href="/neighborhoods">
-              <Button variant="secondary" size="lg">
+      {/* ─── Hero ─── */}
+      <div className="wave-divider relative overflow-hidden bg-gradient-to-br from-coastal-900 via-coastal-700 to-coastal-500 px-4 pb-28 pt-20 sm:pb-32 sm:pt-28 lg:pb-40 lg:pt-36">
+        {/* Subtle texture */}
+        <div className="pointer-events-none absolute inset-0 opacity-[0.04]">
+          <svg width="100%" height="100%">
+            <defs>
+              <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+          </svg>
+        </div>
+
+        <div className="relative mx-auto max-w-7xl">
+          <div className="max-w-2xl">
+            <p className="text-sm font-medium uppercase tracking-widest text-coastal-300">
+              Your Lowcountry Guide
+            </p>
+            <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Discover Charleston
+            </h1>
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/70 sm:text-lg sm:leading-relaxed">
+              The Holy City&apos;s best neighborhoods, parks, historical sites,
+              and iconic landmarks — all in one place.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button href="/neighborhoods" variant="primary" size="lg" className="!bg-white !text-coastal-800 hover:!bg-slate-100">
                 Explore Neighborhoods
               </Button>
-            </Link>
-            <Link href="/maps">
-              <Button variant="outline" size="lg" className="!border-white !text-white hover:!bg-white/10">
+              <Button href="/maps" variant="outline" size="lg" className="!border-white/40 !text-white hover:!bg-white/10">
                 View Map
               </Button>
-            </Link>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Featured sections */}
+      {/* ─── Quick facts (overlapping the hero) ─── */}
+      <div className="-mt-10 relative z-10 mb-8">
+        <QuickFacts facts={facts} />
+      </div>
+
+      {/* ─── Featured sections ─── */}
       <Section
         title="Explore Charleston"
         subtitle="Everything you need to discover the charm of the Lowcountry"
       >
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {featured.map((item) => (
             <Card
               key={item.title}
               title={item.title}
               description={item.description}
               href={item.href}
-              color={item.color}
+              accentColor={item.accentColor}
+              icon={item.icon}
             />
           ))}
         </div>
       </Section>
 
-      {/* CTA */}
-      <div className="bg-coastal-seafoam-light px-4 py-16 text-center">
-        <div className="mx-auto max-w-2xl">
-          <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
-            Ready to Explore?
-          </h2>
-          <p className="mt-3 text-slate-600">
-            Start with our interactive map to get an overview of everything
-            Charleston has to offer.
-          </p>
-          <div className="mt-6">
-            <Link href="/maps">
-              <Button size="lg">Open Interactive Map</Button>
-            </Link>
-          </div>
+      {/* ─── Highlights ─── */}
+      <Section
+        title="Charleston Highlights"
+        subtitle="A taste of what makes the Lowcountry special"
+        className="bg-slate-50"
+      >
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {highlights.map((item) => (
+            <Card
+              key={item.title}
+              title={item.title}
+              description={item.description}
+              accentColor={item.accentColor}
+              tag={item.tag}
+            />
+          ))}
+        </div>
+      </Section>
+
+      {/* ─── CTA Banner ─── */}
+      <div className="px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <InfoBanner
+            title="Ready to Explore?"
+            description="Start with our interactive map to get an overview of everything Charleston has to offer — parks, landmarks, and historical sites all in one view."
+            buttonLabel="Open Interactive Map"
+            buttonHref="/maps"
+            variant="seafoam"
+          />
         </div>
       </div>
     </>
