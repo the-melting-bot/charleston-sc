@@ -123,17 +123,19 @@ export default function HomePage() {
     <>
       {/* ─── Hero with Video Background ─── */}
       <div className="wave-divider relative h-[60vh] min-h-[420px] max-h-[720px] overflow-hidden sm:h-[65vh] lg:h-[70vh]">
-        {/* Layer 0 — Gradient fallback (always visible as base color) */}
+        {/* Layer 0 — Gradient fallback (always visible as base) */}
         <div
           className="absolute inset-0 bg-gradient-to-br from-coastal-900 via-coastal-700 to-coastal-500"
           aria-hidden="true"
         />
 
-        {/* Layer 1 — Video + poster fallback */}
-        <HeroVideo
-          src="/media/lowcountryparks-hero.mp4"
-          poster="/media/lowcountryparks-hero-poster.jpg"
-        />
+        {/* Layer 1 — Video (renders on top of gradient; hidden on error) */}
+        <div className="absolute inset-0 z-[1]">
+          <HeroVideo
+            src="/media/lowcountryparks-hero.mp4"
+            poster="/media/lowcountryparks-hero-poster.jpg"
+          />
+        </div>
 
         {/* Layer 2 — Dark overlay for text readability */}
         <div
