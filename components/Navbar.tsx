@@ -31,6 +31,7 @@ export default function Navbar() {
 
   return (
     <nav
+      aria-label="Main navigation"
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
           ? "border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur-lg"
@@ -39,7 +40,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="group flex items-center gap-2.5">
+        <Link href="/" className="group flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2">
           {/* Palmetto-inspired mark */}
           <svg
             viewBox="0 0 32 32"
@@ -79,11 +80,12 @@ export default function Navbar() {
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                  className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2 ${
                     active
                       ? "bg-coastal-50 text-coastal-700"
                       : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                   }`}
+                  aria-current={active ? "page" : undefined}
                 >
                   {l.label}
                 </Link>
@@ -95,9 +97,10 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setOpen(!open)}
-          className="inline-flex items-center justify-center rounded-lg p-2 text-slate-600 transition-colors hover:bg-slate-100 md:hidden"
-          aria-label="Toggle menu"
+          className="inline-flex items-center justify-center rounded-lg p-2 text-slate-600 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2 md:hidden"
+          aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
+          aria-controls="mobile-menu"
         >
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
             {open ? (
@@ -111,6 +114,9 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
+        id="mobile-menu"
+        role="region"
+        aria-label="Mobile navigation"
         className={`overflow-hidden transition-all duration-300 md:hidden ${
           open ? "max-h-96 border-t border-slate-100" : "max-h-0"
         }`}
@@ -125,11 +131,12 @@ export default function Navbar() {
                 <Link
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className={`block rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
+                  className={`block rounded-lg px-3 py-2.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2 ${
                     active
                       ? "bg-coastal-50 text-coastal-700"
                       : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                   }`}
+                  aria-current={active ? "page" : undefined}
                 >
                   {l.label}
                 </Link>

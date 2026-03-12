@@ -3,9 +3,9 @@ import dynamic from "next/dynamic";
 import parksData from "@/public/data/parks.json";
 
 export const metadata: Metadata = {
-  title: "Interactive Map | Lowcountry Parks",
+  title: "Interactive Park Map",
   description:
-    "View 120+ parks and recreation facilities on an interactive map of the Charleston, SC area. Tap a marker for address, amenities, and hours.",
+    "View 124+ parks and recreation facilities on an interactive map of the Charleston, SC area. Tap a marker for address, amenities, and hours.",
 };
 
 // Dynamic import to avoid SSR issues with Leaflet (needs `window`)
@@ -80,7 +80,7 @@ export default function MapsPage() {
         {/* Data source attribution */}
         <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
           <div className="flex items-start gap-3">
-            <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+            <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-slate-400" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
             </svg>
             <div>
@@ -90,7 +90,8 @@ export default function MapsPage() {
                   href="https://data-charleston-sc.opendata.arcgis.com/items/109c6c5688f040908a11a7dee3a04b29"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-coastal-700 hover:underline"
+                  className="font-medium text-coastal-700 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:rounded"
+                  aria-label="City of Charleston Open Data Parks dataset (opens in new tab)"
                 >
                   City of Charleston Open Data &ndash; Parks
                 </a>{" "}

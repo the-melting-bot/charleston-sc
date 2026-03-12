@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
-  title: "Landmarks | Lowcountry Parks",
+  title: "Landmarks",
   description:
     "Explore Charleston's most iconic landmarks — from Rainbow Row and the Angel Oak Tree to Waterfront Park and the Ravenel Bridge.",
 };

@@ -7,26 +7,29 @@ import InfoBanner from "@/components/InfoBanner";
 import HeroVideo from "@/components/HeroVideo";
 
 export const metadata: Metadata = {
-  title: "Lowcountry Parks | Charleston's Parks & Green Spaces",
+  title: {
+    absolute: "Lowcountry Parks | Charleston's Parks & Green Spaces",
+  },
   description:
-    "Find parks, trails, and green spaces across the Charleston, SC area. Browse 120+ parks by neighborhood, explore an interactive map, and plan your next outdoor day in the Lowcountry.",
+    "Find parks, trails, and green spaces across the Charleston, SC area. Browse 124+ parks by neighborhood, explore an interactive map, and plan your next outdoor day in the Lowcountry.",
+  alternates: { canonical: "/" },
 };
 
 /* ─── Icons (inline SVG for zero dependencies) ─── */
 const IconSearch = () => (
-  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
     <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
   </svg>
 );
 
 const IconMap = () => (
-  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
     <path strokeLinecap="round" strokeLinejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
   </svg>
 );
 
 const IconParks = () => (
-  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
     <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-1.2 0-3.6 3-3.6 6 0 1.2.6 2.4 1.2 3H6l3 4.5H7.5L12 21l4.5-4.5H15L18 12h-3.6c.6-.6 1.2-1.8 1.2-3 0-3-2.4-6-3.6-6z" />
   </svg>
 );
@@ -91,9 +94,28 @@ const valueProps = [
   },
 ];
 
+/* ─── Structured data (JSON-LD) ─── */
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Lowcountry Parks",
+  url: "https://lowcountryparks.com",
+  description:
+    "Find parks, trails, and green spaces across the Charleston, SC area.",
+  publisher: {
+    "@type": "Organization",
+    name: "Lowcountry Parks",
+    url: "https://lowcountryparks.com",
+  },
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ─── Hero: What Lowcountry Parks is ─── */}
       <div className="wave-divider relative h-[60vh] min-h-[420px] max-h-[720px] overflow-hidden sm:h-[65vh] lg:h-[70vh]">
         {/* Layer 0 — Gradient fallback */}

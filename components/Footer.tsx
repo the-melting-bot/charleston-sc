@@ -16,7 +16,7 @@ const about = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-50">
+    <footer className="border-t border-slate-200 bg-slate-50" role="contentinfo">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -26,6 +26,7 @@ export default function Footer() {
                 viewBox="0 0 32 32"
                 className="h-7 w-7 text-coastal-700"
                 fill="none"
+                aria-hidden="true"
               >
                 <circle cx="16" cy="16" r="15" stroke="currentColor" strokeWidth="1.5" />
                 <path
@@ -59,7 +60,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-sm text-slate-600 transition-colors hover:text-coastal-700"
+                    className="text-sm text-slate-600 transition-colors hover:text-coastal-700 focus-visible:outline-none focus-visible:text-coastal-700 focus-visible:underline"
                   >
                     {l.label}
                   </Link>
@@ -80,10 +81,11 @@ export default function Footer() {
                     href={l.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-slate-600 transition-colors hover:text-coastal-700"
+                    className="text-sm text-slate-600 transition-colors hover:text-coastal-700 focus-visible:outline-none focus-visible:text-coastal-700 focus-visible:underline"
+                    aria-label={`${l.label} (opens in new tab)`}
                   >
                     {l.label}
-                    <span className="ml-1 text-slate-300">{"\u2197"}</span>
+                    <span className="ml-1 text-slate-300" aria-hidden="true">{"\u2197"}</span>
                   </a>
                 </li>
               ))}
@@ -114,7 +116,8 @@ export default function Footer() {
               href="https://data-charleston-sc.opendata.arcgis.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-coastal-600 hover:underline"
+              className="text-coastal-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2 focus-visible:rounded"
+              aria-label="City of Charleston Open Data (opens in new tab)"
             >
               City of Charleston Open Data
             </a>

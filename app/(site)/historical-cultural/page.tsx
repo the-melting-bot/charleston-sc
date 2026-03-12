@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
-  title: "History & Culture | Lowcountry Parks",
+  title: "History & Culture",
   description:
     "Discover Charleston's historical parks, cultural landmarks, and heritage sites — from Fort Sumter to the International African American Museum.",
 };

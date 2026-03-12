@@ -26,7 +26,7 @@ export default function PageHero({
       className={`relative overflow-hidden bg-gradient-to-br ${accents[accent]} px-4 py-16 sm:py-20 lg:py-24`}
     >
       {/* Decorative dots */}
-      <div className={`pointer-events-none absolute inset-0 ${dots[accent]}`}>
+      <div className={`pointer-events-none absolute inset-0 ${dots[accent]}`} aria-hidden="true">
         <svg className="absolute -right-24 -top-24 h-96 w-96 opacity-30" viewBox="0 0 200 200" fill="currentColor">
           <defs>
             <pattern id="hero-dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">

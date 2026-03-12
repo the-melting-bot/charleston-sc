@@ -8,7 +8,7 @@ import QuickFacts from "@/components/QuickFacts";
 import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
-  title: "Parks & Green Spaces | Lowcountry Parks",
+  title: "Parks & Green Spaces",
   description:
     "Browse 124 parks and recreation facilities across the Charleston, SC area. Find playgrounds, trails, sports fields, and waterfront green spaces by neighborhood.",
 };

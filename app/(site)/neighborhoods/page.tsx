@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
-  title: "Parks by Area | Lowcountry Parks",
+  title: "Parks by Area",
   description:
     "Find parks and green spaces in every Charleston neighborhood — from Downtown to Folly Beach, West Ashley to Daniel Island.",
 };

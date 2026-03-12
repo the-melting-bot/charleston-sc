@@ -115,10 +115,10 @@ export default function ParkDetailPage({
       {/* ─── Breadcrumb ─── */}
       <div className="border-b border-slate-200 bg-white px-4 py-3 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <nav className="flex items-center gap-2 text-sm text-slate-500">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-slate-500">
             <Link
               href="/parks-outdoor"
-              className="transition-colors hover:text-coastal-700"
+              className="transition-colors hover:text-coastal-700 focus-visible:outline-none focus-visible:text-coastal-700 focus-visible:underline"
             >
               Parks &amp; Outdoor
             </Link>
@@ -128,6 +128,7 @@ export default function ParkDetailPage({
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -135,7 +136,7 @@ export default function ParkDetailPage({
                 d="M8.25 4.5l7.5 7.5-7.5 7.5"
               />
             </svg>
-            <span className="font-medium text-slate-900">{park.name}</span>
+            <span className="font-medium text-slate-900" aria-current="page">{park.name}</span>
           </nav>
         </div>
       </div>
@@ -237,6 +238,7 @@ export default function ParkDetailPage({
                           viewBox="0 0 24 24"
                           strokeWidth={2.5}
                           stroke="currentColor"
+                          aria-hidden="true"
                         >
                           <path
                             strokeLinecap="round"
@@ -275,7 +277,8 @@ export default function ParkDetailPage({
                   href={`https://www.google.com/maps/search/?api=1&query=${park.latitude},${park.longitude}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-coastal-700 transition-colors hover:text-coastal-500"
+                  className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-coastal-700 transition-colors hover:text-coastal-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2 focus-visible:rounded"
+                  aria-label={`Get directions to ${park.name} (opens in new tab)`}
                 >
                   Get Directions
                   <svg
@@ -284,6 +287,7 @@ export default function ParkDetailPage({
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -408,7 +412,8 @@ export default function ParkDetailPage({
                     href={park.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-coastal-700 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-coastal-800"
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-coastal-700 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-colors hover:bg-coastal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2"
+                    aria-label={`${park.name} official website (opens in new tab)`}
                   >
                     Official Website
                     <svg
@@ -417,6 +422,7 @@ export default function ParkDetailPage({
                       viewBox="0 0 24 24"
                       strokeWidth={2}
                       stroke="currentColor"
+                      aria-hidden="true"
                     >
                       <path
                         strokeLinecap="round"
@@ -429,7 +435,7 @@ export default function ParkDetailPage({
 
                 <Link
                   href="/maps"
-                  className="flex w-full items-center justify-center gap-2 rounded-xl border border-coastal-700 px-5 py-2.5 text-sm font-medium text-coastal-700 transition-colors hover:bg-coastal-50"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl border border-coastal-700 px-5 py-2.5 text-sm font-medium text-coastal-700 transition-colors hover:bg-coastal-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2"
                 >
                   View on Full Map
                   <svg
@@ -438,6 +444,7 @@ export default function ParkDetailPage({
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
@@ -449,7 +456,7 @@ export default function ParkDetailPage({
 
                 <Link
                   href="/parks-outdoor"
-                  className="flex w-full items-center justify-center gap-2 rounded-xl text-sm font-medium text-slate-500 transition-colors hover:text-coastal-700"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl text-sm font-medium text-slate-500 transition-colors hover:text-coastal-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2"
                 >
                   <svg
                     className="h-4 w-4"
@@ -457,6 +464,7 @@ export default function ParkDetailPage({
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"
