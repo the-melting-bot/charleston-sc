@@ -1,149 +1,281 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useEffect, useRef, useState, useCallback } from "react";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  useMap,
+} from "react-leaflet";
 import L from "leaflet";
+import MarkerClusterGroup from "@changey/react-leaflet-markercluster";
+import type { Park } from "@/data/parks";
+
 import "leaflet/dist/leaflet.css";
-
-/* ─── Marker icon fix for Next.js bundler ─── */
-const defaultIcon = L.icon({
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  iconRetinaUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
-
-/* ─── Types ─── */
-interface Park {
-  id: number;
-  name: string;
-  slug: string;
-  type: string;
-  status: string | null;
-  address: string | null;
-  neighborhood: string | null;
-  hours: string | null;
-  url: string | null;
-  latitude: number;
-  longitude: number;
-  amenities: string[];
-}
-
-interface ParksData {
-  _meta: {
-    source: string;
-    totalFeatures: number;
-  };
-  parks: Park[];
-}
+import "leaflet.markercluster/dist/MarkerCluster.css";
+import "leaflet.markercluster/dist/MarkerCluster.Default.css";
+import "./map-overrides.css";
 
 /* ─── Constants ─── */
 const CHARLESTON_CENTER: [number, number] = [32.7765, -79.9311];
 
-export default function MapClient() {
-  const [parks, setParks] = useState<Park[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+const TILE_LAYERS = {
+  street: {
+    url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    label: "Street",
+  },
+  satellite: {
+    url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    attribution:
+      "Tiles &copy; Esri",
+    label: "Satellite",
+  },
+};
+
+/* ─── Custom teal marker icon ─── */
+const parkIcon = L.divIcon({
+  className: "",
+  html: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
+    <path d="M16 0C7.164 0 0 7.164 0 16c0 12 16 24 16 24s16-12 16-24C32 7.164 24.836 0 16 0z" fill="#0369a1"/>
+    <circle cx="16" cy="14" r="7" fill="white" opacity="0.9"/>
+    <path d="M16 9.5c-1.5 0-2.7.8-3.3 2l-.7 1.3h1.5l.3-.6c.4-.7 1.2-1.2 2.2-1.2s1.8.5 2.2 1.2l.3.6h1.5l-.7-1.3c-.6-1.2-1.8-2-3.3-2zm-3 4.5l2 4h2l2-4h-6z" fill="#0369a1"/>
+  </svg>`,
+  iconSize: [32, 40],
+  iconAnchor: [16, 40],
+  popupAnchor: [0, -40],
+});
+
+/* ─── FlyTo helper component ─── */
+function FlyToHandler({
+  selectedPark,
+  markersRef,
+}: {
+  selectedPark: Park | null;
+  markersRef: React.RefObject<Map<string, L.Marker>>;
+}) {
+  const map = useMap();
 
   useEffect(() => {
-    fetch("/data/parks.json")
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json() as Promise<ParksData>;
-      })
-      .then((data) => {
-        setParks(data.parks);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Failed to load parks data:", err);
-        setError(err.message);
-        setLoading(false);
-      });
-  }, []);
+    if (!selectedPark) return;
+    map.flyTo([selectedPark.latitude, selectedPark.longitude], 16, {
+      duration: 1.2,
+    });
+    // Open the popup for this park after fly-to completes
+    const timer = setTimeout(() => {
+      const marker = markersRef.current?.get(selectedPark.slug);
+      if (marker) {
+        marker.openPopup();
+      }
+    }, 1300);
+    return () => clearTimeout(timer);
+  }, [selectedPark, map, markersRef]);
+
+  return null;
+}
+
+/* ─── Layer Control Component ─── */
+function LayerControl({
+  activeLayer,
+  onLayerChange,
+}: {
+  activeLayer: "street" | "satellite";
+  onLayerChange: (layer: "street" | "satellite") => void;
+}) {
+  const [open, setOpen] = useState(false);
 
   return (
-    <MapContainer
-      center={CHARLESTON_CENTER}
-      zoom={12}
-      scrollWheelZoom={true}
-      style={{ height: "100%", width: "100%" }}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-
-      {/* Status overlay */}
-      {loading && (
-        <div className="absolute left-3 top-3 z-[1000] rounded-lg bg-white/90 px-3 py-2 text-xs text-slate-500 shadow-sm backdrop-blur">
-          Loading parks...
-        </div>
-      )}
-
-      {error && (
-        <div className="absolute left-3 top-3 z-[1000] rounded-lg bg-red-50 px-3 py-2 text-xs text-red-600 shadow-sm">
-          Error loading data: {error}
-        </div>
-      )}
-
-      {/* Park markers from data/parks.json */}
-      {parks.map((park) => (
-        <Marker
-          key={park.id}
-          position={[park.latitude, park.longitude]}
-          icon={defaultIcon}
+    <div className="absolute right-3 top-3 z-[1000]">
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-1.5 rounded-lg border-2 border-white/80 bg-white px-3 py-2 text-xs font-semibold text-slate-700 shadow-lg transition-all hover:bg-slate-50"
+        title="Toggle map layer"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
-          <Popup maxWidth={260} minWidth={200}>
-            <div className="space-y-1.5">
-              <h3 className="text-sm font-bold leading-tight text-slate-900">
-                {park.name}
-              </h3>
+          <polygon points="12 2 2 7 12 12 22 7 12 2" />
+          <polyline points="2 17 12 22 22 17" />
+          <polyline points="2 12 12 17 22 12" />
+        </svg>
+        Layers
+      </button>
+      {open && (
+        <div className="mt-1.5 overflow-hidden rounded-lg border border-slate-200 bg-white shadow-xl">
+          <button
+            onClick={() => {
+              onLayerChange("street");
+              setOpen(false);
+            }}
+            className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs font-medium transition-colors ${
+              activeLayer === "street"
+                ? "bg-coastal-50 text-coastal-700"
+                : "text-slate-600 hover:bg-slate-50"
+            }`}
+          >
+            <span
+              className={`h-3 w-3 rounded-full border-2 ${
+                activeLayer === "street"
+                  ? "border-coastal-700 bg-coastal-700"
+                  : "border-slate-300"
+              }`}
+            />
+            Street Map
+          </button>
+          <button
+            onClick={() => {
+              onLayerChange("satellite");
+              setOpen(false);
+            }}
+            className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs font-medium transition-colors ${
+              activeLayer === "satellite"
+                ? "bg-coastal-50 text-coastal-700"
+                : "text-slate-600 hover:bg-slate-50"
+            }`}
+          >
+            <span
+              className={`h-3 w-3 rounded-full border-2 ${
+                activeLayer === "satellite"
+                  ? "border-coastal-700 bg-coastal-700"
+                  : "border-slate-300"
+              }`}
+            />
+            Satellite
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
 
-              {park.neighborhood && (
-                <p className="text-xs text-slate-500">
-                  <span className="font-medium">{park.neighborhood}</span>
-                  {park.address && <span> &middot; {park.address}</span>}
-                </p>
-              )}
+/* ─── Main MapClient ─── */
+export default function MapClient({
+  parks,
+  selectedPark,
+  onParkSelect,
+}: {
+  parks: Park[];
+  selectedPark: Park | null;
+  onParkSelect?: (park: Park) => void;
+}) {
+  const [activeLayer, setActiveLayer] = useState<"street" | "satellite">(
+    "street"
+  );
+  const markersRef = useRef<Map<string, L.Marker>>(new Map());
 
-              {park.hours && (
-                <p className="text-xs text-slate-400">
-                  {park.hours}
-                </p>
-              )}
+  const setMarkerRef = useCallback(
+    (slug: string) => (ref: L.Marker | null) => {
+      if (ref) {
+        markersRef.current.set(slug, ref);
+      }
+    },
+    []
+  );
 
-              {park.amenities.length > 0 && (
-                <div className="flex flex-wrap gap-1 pt-0.5">
-                  {park.amenities.map((a) => (
-                    <span
-                      key={a}
-                      className="inline-block rounded bg-teal-50 px-1.5 py-0.5 text-[10px] font-medium text-teal-700"
-                    >
-                      {a}
+  const tileConfig = TILE_LAYERS[activeLayer];
+
+  return (
+    <div className="relative h-full w-full">
+      <MapContainer
+        center={CHARLESTON_CENTER}
+        zoom={12}
+        scrollWheelZoom={true}
+        style={{ height: "100%", width: "100%" }}
+        zoomControl={true}
+      >
+        <TileLayer
+          key={activeLayer}
+          attribution={tileConfig.attribution}
+          url={tileConfig.url}
+        />
+
+        <MarkerClusterGroup
+          chunkedLoading
+          maxClusterRadius={50}
+        >
+          {parks.map((park) => (
+            <Marker
+              key={park.slug}
+              position={[park.latitude, park.longitude]}
+              icon={parkIcon}
+              ref={setMarkerRef(park.slug)}
+              eventHandlers={{
+                click: () => onParkSelect?.(park),
+              }}
+            >
+              <Popup maxWidth={280} minWidth={240}>
+                <div className="w-[260px]">
+                  {/* Park image */}
+                  <div className="relative h-36 w-full overflow-hidden">
+                    <img
+                      src={`/images/parks/${park.slug}/1.jpg`}
+                      alt={park.name}
+                      className="h-full w-full object-cover"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src =
+                          "/images/parks/placeholder.jpg";
+                      }}
+                    />
+                    <span className="absolute left-2 top-2 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-semibold text-coastal-700 backdrop-blur-sm">
+                      {park.area}
                     </span>
-                  ))}
+                  </div>
+                  {/* Content */}
+                  <div className="space-y-2 p-3">
+                    <h3 className="text-sm font-bold leading-tight text-slate-900">
+                      {park.name}
+                    </h3>
+                    {/* Amenity tags */}
+                    <div className="flex flex-wrap gap-1">
+                      {park.amenities.slice(0, 3).map((a) => (
+                        <span
+                          key={a}
+                          className="inline-block rounded-full bg-coastal-50 px-2 py-0.5 text-[10px] font-medium text-coastal-700"
+                        >
+                          {a}
+                        </span>
+                      ))}
+                    </div>
+                    {/* Detail link */}
+                    <a
+                      href={`/parks/${park.slug}`}
+                      className="inline-flex items-center gap-1 text-xs font-semibold text-coastal-700 hover:text-coastal-800 hover:underline"
+                    >
+                      View Details
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-              )}
+              </Popup>
+            </Marker>
+          ))}
+        </MarkerClusterGroup>
 
-              {park.url && (
-                <a
-                  href={park.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block pt-0.5 text-xs font-medium text-blue-600 hover:underline"
-                >
-                  More info &rarr;
-                </a>
-              )}
-            </div>
-          </Popup>
-        </Marker>
-      ))}
-    </MapContainer>
+        <FlyToHandler selectedPark={selectedPark} markersRef={markersRef as React.RefObject<Map<string, L.Marker>>} />
+      </MapContainer>
+
+      {/* Layer control overlay */}
+      <LayerControl activeLayer={activeLayer} onLayerChange={setActiveLayer} />
+    </div>
   );
 }

@@ -10,6 +10,7 @@
     "fetch-data": "node scripts/fetch-parks.mjs"
   },
   "dependencies": {
+    "@changey/react-leaflet-markercluster": "^4.0.0-rc1",
     "@react-leaflet/core": "^2.1.0",
     "@types/leaflet": "^1.9.21",
     "@types/node": "^20.19.37",
