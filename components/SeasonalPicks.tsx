@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "./FadeIn";
+import { parks } from "@/data/parks";
 
 /* ─── Leaf icon for seasonal accent ─── */
 const IconLeaf = () => (
@@ -37,26 +38,17 @@ const IconLeaf = () => (
   </svg>
 );
 
-const seasonalParks = [
-  {
-    name: "Hampton Park",
-    slug: "hampton-park",
-    tagline: "Blooming gardens and shaded trails",
-    image: "/images/parks/hampton-park.jpg",
-  },
-  {
-    name: "Waterfront Park",
-    slug: "joe-riley-waterfront-park",
-    tagline: "Breezy waterfront strolls and fountain views",
-    image: "/images/parks/joe-riley-waterfront-park.jpg",
-  },
-  {
-    name: "White Point Garden",
-    slug: "white-point-garden",
-    tagline: "Canopy shade and harbor panoramas",
-    image: "/images/parks/white-point-garden.jpg",
-  },
-];
+/* Pick 3 seasonal parks */
+const seasonalSlugs = ["hampton-park", "waterfront-park", "white-point-garden"];
+const taglines: Record<string, string> = {
+  "hampton-park": "Blooming gardens and shaded trails",
+  "waterfront-park": "Breezy waterfront strolls and fountain views",
+  "white-point-garden": "Canopy shade and harbor panoramas",
+};
+
+const seasonalParks = seasonalSlugs
+  .map((slug) => parks.find((p) => p.slug === slug)!)
+  .filter(Boolean);
 
 export default function SeasonalPicks() {
   return (
@@ -81,13 +73,12 @@ export default function SeasonalPicks() {
                   {/* Image */}
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Image
-                      src={park.image}
+                      src={`/images/parks/${park.slug}/1.jpg`}
                       alt={`${park.name} in spring, Charleston SC`}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
-                    {/* Gradient overlay at bottom for text readability */}
                     <div
                       className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/30 to-transparent"
                       aria-hidden="true"
@@ -99,7 +90,7 @@ export default function SeasonalPicks() {
                       {park.name}
                     </h3>
                     <p className="mt-1.5 flex-1 text-sm leading-relaxed text-slate-500">
-                      {park.tagline}
+                      {taglines[park.slug] ?? park.description.slice(0, 80)}
                     </p>
                     <div className="mt-4 flex items-center gap-1 text-sm font-medium text-coastal-700 transition-colors group-hover:text-coastal-500">
                       Visit
