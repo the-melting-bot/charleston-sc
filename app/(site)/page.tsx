@@ -1,13 +1,29 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import Section from "@/components/Section";
 import ImageCard from "@/components/ImageCard";
-import Card from "@/components/Card";
 import Button from "@/components/Button";
 import QuickFacts from "@/components/QuickFacts";
 import FadeIn from "@/components/FadeIn";
 import FeaturedParks from "@/components/FeaturedParks";
+import SeasonalPicks from "@/components/SeasonalPicks";
+import WhyCards from "@/components/WhyCards";
 import HeroVideo from "@/components/HeroVideo";
+
+const MiniMapPreview = dynamic(() => import("@/components/MiniMapPreview"), {
+  ssr: false,
+  loading: () => (
+    <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="flex h-[340px] items-center justify-center rounded-2xl bg-slate-100 lg:h-[400px]">
+        <div className="text-center">
+          <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-coastal-200 border-t-coastal-600" />
+          <p className="mt-3 text-sm text-slate-500">Loading map...</p>
+        </div>
+      </div>
+    </div>
+  ),
+});
 
 export const metadata: Metadata = {
   title: {
@@ -72,31 +88,6 @@ const features = [
     accentColor: "bg-coastal-sand-light",
     icon: <IconParks />,
     image: "/images/features/explore-area.jpg",
-  },
-];
-
-/* ─── "Why it's useful" value props ─── */
-const valueProps = [
-  {
-    title: "Real Data, Not Guesswork",
-    description:
-      "Every park listing comes from the City of Charleston Open Data portal — the same source the city uses to manage its parks system.",
-    accentColor: "bg-coastal-200",
-    tag: "Reliable",
-  },
-  {
-    title: "Made for Busy Schedules",
-    description:
-      "Need a playground for Saturday morning? A dog-friendly trail after work? Filter by amenities and find the right park in seconds.",
-    accentColor: "bg-coastal-seafoam-200",
-    tag: "Practical",
-  },
-  {
-    title: "Locals and Visitors Welcome",
-    description:
-      "Whether you've lived here for years or you're visiting for the weekend, Lowcountry Parks helps you discover green spaces you might have missed.",
-    accentColor: "bg-coastal-sand-light",
-    tag: "For Everyone",
   },
 ];
 
@@ -217,26 +208,19 @@ export default function HomePage() {
         <FeaturedParks />
       </FadeIn>
 
-      {/* ─── Why It's Useful ─── */}
+      {/* ─── Seasonal Picks ─── */}
       <FadeIn>
-        <Section
-          title="Why Lowcountry Parks"
-          subtitle="Built to help you spend less time searching and more time outside"
-          className="bg-slate-50"
-        >
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {valueProps.map((item, index) => (
-              <FadeIn key={item.title} delay={index * 100}>
-                <Card
-                  title={item.title}
-                  description={item.description}
-                  accentColor={item.accentColor}
-                  tag={item.tag}
-                />
-              </FadeIn>
-            ))}
-          </div>
-        </Section>
+        <SeasonalPicks />
+      </FadeIn>
+
+      {/* ─── Why Lowcountry Parks ─── */}
+      <FadeIn>
+        <WhyCards />
+      </FadeIn>
+
+      {/* ─── Mini Map Preview ─── */}
+      <FadeIn>
+        <MiniMapPreview />
       </FadeIn>
 
       {/* ─── CTA: Get Started ─── */}
