@@ -87,6 +87,8 @@ export default function HistoricalCulturalPage() {
         title="Charleston Through the Centuries"
         description="From a colonial trading port to one of America's most beloved cities — explore 350 years of history, culture, and resilience in the Holy City."
         accent="sand"
+        backgroundImage="/images/history/history-hero.jpg"
+        backgroundAlt="Historic Charleston cobblestone street at dusk with gas lamps and antebellum mansions"
       />
 
       {sections.map((section, i) => (

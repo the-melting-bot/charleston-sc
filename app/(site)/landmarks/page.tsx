@@ -27,6 +27,8 @@ export default function LandmarksPage() {
         title="Charleston Landmarks"
         description="From Civil War forts and colonial plantations to modernist bridges and ancient live oaks — explore the landmarks that make Charleston one of America's most storied cities."
         accent="blue"
+        backgroundImage="/images/landmarks/landmarks-hero.jpg"
+        backgroundAlt="Charleston waterfront skyline at sunset with church steeples and the Ravenel Bridge"
       />
 
       <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
