@@ -5,9 +5,9 @@ import PageHero from "@/components/PageHero";
 import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
-  title: "Charleston Landmarks | Charleston SC Explorer",
+  title: "Landmarks | Lowcountry Parks",
   description:
-    "Explore Charleston's most iconic landmarks — from Rainbow Row to the Angel Oak Tree.",
+    "Explore Charleston's most iconic landmarks — from Rainbow Row and the Angel Oak Tree to Waterfront Park and the Ravenel Bridge.",
 };
 
 const landmarks = [
@@ -128,7 +128,7 @@ export default function LandmarksPage() {
           <InfoBanner
             title="Find These Landmarks"
             description="All landmarks are pinned on our interactive map with their exact locations."
-            buttonLabel="Open Map"
+            buttonLabel="Open Interactive Map"
             buttonHref="/maps"
             variant="blue"
           />

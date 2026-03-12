@@ -6,11 +6,11 @@ import { useState, useEffect } from "react";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/neighborhoods", label: "Neighborhoods" },
   { href: "/parks-outdoor", label: "Parks" },
-  { href: "/historical-cultural", label: "Historical" },
+  { href: "/maps", label: "Map" },
+  { href: "/neighborhoods", label: "By Area" },
   { href: "/landmarks", label: "Landmarks" },
-  { href: "/maps", label: "Maps" },
+  { href: "/historical-cultural", label: "History" },
 ];
 
 export default function Navbar() {
@@ -45,7 +45,7 @@ export default function Navbar() {
             viewBox="0 0 32 32"
             className="h-8 w-8 text-coastal-700 transition-colors group-hover:text-coastal-500"
             fill="none"
-            aria-label="Charleston SC Explorer"
+            aria-label="Lowcountry Parks"
           >
             <circle cx="16" cy="16" r="15" stroke="currentColor" strokeWidth="1.5" />
             <path
@@ -65,7 +65,7 @@ export default function Navbar() {
             <path d="M13.5 17.5 L16 15 L18.5 17.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
           </svg>
           <span className="text-lg font-bold tracking-tight text-slate-900 sm:text-xl">
-            Charleston<span className="text-coastal-600"> SC</span>
+            Lowcountry<span className="text-coastal-600"> Parks</span>
           </span>
         </Link>
 

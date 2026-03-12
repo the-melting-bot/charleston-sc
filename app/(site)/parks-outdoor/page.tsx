@@ -8,9 +8,9 @@ import QuickFacts from "@/components/QuickFacts";
 import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
-  title: "Parks & Outdoor Activities | Charleston SC Explorer",
+  title: "Parks & Green Spaces | Lowcountry Parks",
   description:
-    "Explore Charleston's beautiful parks and outdoor spaces — from Waterfront Park to James Island County Park.",
+    "Browse 124 parks and recreation facilities across the Charleston, SC area. Find playgrounds, trails, sports fields, and waterfront green spaces by neighborhood.",
 };
 
 /* ─── Park type (matches data/parks.json) ─── */
@@ -126,8 +126,8 @@ export default function ParksOutdoorPage() {
   return (
     <>
       <PageHero
-        title="Parks & Outdoor"
-        description="With over 230 sunny days a year and miles of coastline, Charleston is made for outdoor exploration. From urban green spaces to wild barrier islands, there's always somewhere to get outside."
+        title="Parks & Green Spaces"
+        description="124 parks and recreation facilities across six Charleston neighborhoods. Find playgrounds, trails, sports fields, dog parks, and waterfront green spaces near you."
         accent="seafoam"
       />
 
@@ -168,8 +168,8 @@ export default function ParksOutdoorPage() {
 
       {/* ─── Outdoor Activities ─── */}
       <Section
-        title="Outdoor Activities"
-        subtitle="Things to do beyond the parks"
+        title="Things to Do Outdoors"
+        subtitle="Popular activities around the Charleston area"
         className="bg-slate-50"
       >
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -189,9 +189,9 @@ export default function ParksOutdoorPage() {
       <div className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <InfoBanner
-            title="See It on the Map"
-            description="View all parks and outdoor spots on our interactive map with directions and details."
-            buttonLabel="Open Map"
+            title="Find Parks on the Map"
+            description="See every park on our interactive map. Tap a marker for address, amenities, and hours."
+            buttonLabel="Open Interactive Map"
             buttonHref="/maps"
             variant="seafoam"
           />

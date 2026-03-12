@@ -5,9 +5,9 @@ import PageHero from "@/components/PageHero";
 import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
-  title: "Charleston Neighborhoods & Areas | Charleston SC Explorer",
+  title: "Parks by Area | Lowcountry Parks",
   description:
-    "Explore Charleston's diverse neighborhoods — from historic Downtown to the beaches of Sullivan's Island and Folly Beach.",
+    "Find parks and green spaces in every Charleston neighborhood — from Downtown to Folly Beach, West Ashley to Daniel Island.",
 };
 
 const neighborhoods = [
@@ -80,14 +80,14 @@ export default function NeighborhoodsPage() {
   return (
     <>
       <PageHero
-        title="Neighborhoods & Areas"
-        description="Every corner of Charleston has its own personality. From the cobblestone charm of the historic district to the salt-sprayed shores of the barrier islands, discover the places that make the Lowcountry home."
+        title="Parks by Area"
+        description="Charleston's neighborhoods each have their own character — and their own parks. Browse by area to find green spaces, playgrounds, and trails near where you live or are visiting."
         accent="blue"
       />
 
       <Section
-        title="Where to Explore"
-        subtitle="Click into any neighborhood to learn what makes it unique"
+        title="Charleston Neighborhoods"
+        subtitle="Each area has parks and green spaces worth exploring"
       >
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {neighborhoods.map((n) => (
@@ -102,12 +102,13 @@ export default function NeighborhoodsPage() {
         </div>
       </Section>
 
-      {/* Placeholder: Getting around */}
       <div className="px-4 pb-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <InfoBanner
-            title="Getting Around"
-            description="Charleston is a walkable city at its core, but getting between neighborhoods is easy with CARTA buses, water taxis, and rideshare. Detailed transit info coming soon."
+            title="See All Parks on the Map"
+            description="View every park across all Charleston neighborhoods on our interactive map."
+            buttonLabel="Open Interactive Map"
+            buttonHref="/maps"
             variant="sand"
           />
         </div>

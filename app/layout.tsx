@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Charleston SC Explorer | Discover the Lowcountry",
+  title: "Lowcountry Parks | Charleston's Parks & Green Spaces",
   description:
-    "Explore Charleston, South Carolina — discover neighborhoods, parks, historical sites, landmarks, and more in the Lowcountry.",
+    "Find parks, trails, and green spaces across the Charleston, SC area. Browse 120+ parks by neighborhood, explore an interactive map, and plan your next outdoor day in the Lowcountry.",
 };
 
 export default function RootLayout({

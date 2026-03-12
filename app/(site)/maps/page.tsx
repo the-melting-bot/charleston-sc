@@ -3,9 +3,9 @@ import dynamic from "next/dynamic";
 import parksData from "@/public/data/parks.json";
 
 export const metadata: Metadata = {
-  title: "Interactive Map | Charleston SC Explorer",
+  title: "Interactive Map | Lowcountry Parks",
   description:
-    "Explore Charleston with an interactive map — 120+ parks and recreation facilities from the City of Charleston Open Data portal.",
+    "View 120+ parks and recreation facilities on an interactive map of the Charleston, SC area. Tap a marker for address, amenities, and hours.",
 };
 
 // Dynamic import to avoid SSR issues with Leaflet (needs `window`)
@@ -37,11 +37,11 @@ export default function MapsPage() {
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
-              Interactive Map
+              Interactive Park Map
             </h1>
             <p className="mt-3 text-sm leading-relaxed text-white/70 sm:text-base">
-              Explore {totalParks} parks and recreation facilities across {neighborhoods.length} Charleston
-              neighborhoods. Data sourced from the City of Charleston Open Data portal.
+              {totalParks} parks and recreation facilities across {neighborhoods.length} Charleston
+              neighborhoods. Tap any marker for details.
             </p>
           </div>
         </div>
@@ -101,16 +101,7 @@ export default function MapsPage() {
           </div>
         </div>
 
-        {/* Future features placeholder */}
-        <div className="mt-6 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-6 text-center sm:p-8">
-          <p className="text-sm font-medium text-slate-500">
-            More map features coming soon
-          </p>
-          <p className="mt-1 text-xs text-slate-400">
-            Neighborhood filters, search, directions, and custom map layers are
-            planned for future updates.
-          </p>
-        </div>
+
       </div>
     </>
   );

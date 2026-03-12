@@ -5,9 +5,9 @@ import PageHero from "@/components/PageHero";
 import InfoBanner from "@/components/InfoBanner";
 
 export const metadata: Metadata = {
-  title: "Historical & Cultural Sites | Charleston SC Explorer",
+  title: "History & Culture | Lowcountry Parks",
   description:
-    "Discover Charleston's rich history and vibrant culture — from Fort Sumter to the Dock Street Theatre.",
+    "Discover Charleston's historical parks, cultural landmarks, and heritage sites — from Fort Sumter to the International African American Museum.",
 };
 
 const sites = [
@@ -123,7 +123,6 @@ export default function HistoricalCulturalPage() {
         </div>
       </Section>
 
-      {/* Timeline placeholder */}
       <Section title="Charleston Timeline" subtitle="Key moments in the Holy City's history">
         <div className="relative border-l-2 border-coastal-200 pl-8 space-y-10">
           {[
@@ -150,7 +149,7 @@ export default function HistoricalCulturalPage() {
           <InfoBanner
             title="Plan Your History Tour"
             description="Use our interactive map to plot a route through Charleston's most significant historical sites."
-            buttonLabel="Open Map"
+            buttonLabel="Open Interactive Map"
             buttonHref="/maps"
             variant="sand"
           />

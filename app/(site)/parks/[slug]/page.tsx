@@ -88,10 +88,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const park = getParkBySlug(params.slug);
   if (!park) {
-    return { title: "Park Not Found | Charleston SC Explorer" };
+    return { title: "Park Not Found | Lowcountry Parks" };
   }
   return {
-    title: `${park.name} | Charleston SC Explorer`,
+    title: `${park.name} | Lowcountry Parks`,
     description:
       park.description ??
       `Explore ${park.name} in ${park.neighborhood ?? "Charleston"} — hours, location, amenities, and more.`,

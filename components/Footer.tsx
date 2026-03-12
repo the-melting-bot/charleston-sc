@@ -1,18 +1,17 @@
 import Link from "next/link";
 
 const explore = [
-  { href: "/neighborhoods", label: "Neighborhoods" },
-  { href: "/parks-outdoor", label: "Parks & Outdoor" },
-  { href: "/historical-cultural", label: "Historical & Cultural" },
-  { href: "/landmarks", label: "Landmarks" },
+  { href: "/parks-outdoor", label: "Browse Parks" },
   { href: "/maps", label: "Interactive Map" },
+  { href: "/neighborhoods", label: "Parks by Area" },
+  { href: "/landmarks", label: "Landmarks" },
+  { href: "/historical-cultural", label: "History & Culture" },
 ];
 
-const resources = [
-  { label: "Getting Around", href: "#" },
-  { label: "Dining Guide", href: "#" },
-  { label: "Events Calendar", href: "#" },
-  { label: "Visitor Tips", href: "#" },
+const about = [
+  { label: "Open Data", href: "https://data-charleston-sc.opendata.arcgis.com/", external: true },
+  { label: "City of Charleston", href: "https://www.charleston-sc.gov/", external: true },
+  { label: "Charleston Parks Conservancy", href: "https://www.charlestonparksconservancy.org/", external: true },
 ];
 
 export default function Footer() {
@@ -41,12 +40,12 @@ export default function Footer() {
                 <path d="M13.5 17.5 L16 15 L18.5 17.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
               </svg>
               <span className="text-lg font-bold tracking-tight text-slate-900">
-                Charleston <span className="text-coastal-600">SC</span>
+                Lowcountry <span className="text-coastal-600">Parks</span>
               </span>
             </div>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-slate-500">
-              Your guide to discovering the best of Charleston and the
-              Lowcountry — neighborhoods, parks, history, landmarks, and more.
+              A modern guide to parks, trails, and green spaces across
+              the Charleston, SC area. Built on City of Charleston Open Data.
             </p>
           </div>
 
@@ -69,61 +68,57 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources (placeholder) */}
+          {/* Resources */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-widest text-slate-400">
               Resources
             </h4>
             <ul className="mt-4 space-y-2.5">
-              {resources.map((l) => (
+              {about.map((l) => (
                 <li key={l.label}>
-                  <span className="text-sm text-slate-400 cursor-default">
+                  <a
+                    href={l.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-slate-600 transition-colors hover:text-coastal-700"
+                  >
                     {l.label}
-                    <span className="ml-1.5 inline-block rounded bg-slate-200 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-slate-500">
-                      Soon
-                    </span>
-                  </span>
+                    <span className="ml-1 text-slate-300">{"\u2197"}</span>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Newsletter placeholder */}
+          {/* About */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-widest text-slate-400">
-              Stay Updated
+              About
             </h4>
-            <p className="mt-4 text-sm text-slate-500">
-              Get the latest on Charleston events, new spots, and seasonal guides.
+            <p className="mt-4 text-sm leading-relaxed text-slate-500">
+              Lowcountry Parks is a community project that makes it easier
+              to find and enjoy Charleston&apos;s outdoor spaces. Park data is
+              sourced from the City of Charleston Open Data portal.
             </p>
-            <div className="mt-3 flex gap-2">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                disabled
-                className="flex-1 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-400 placeholder:text-slate-300"
-              />
-              <button
-                disabled
-                className="rounded-lg bg-coastal-600 px-4 py-2 text-sm font-medium text-white opacity-50"
-              >
-                Join
-              </button>
-            </div>
-            <p className="mt-1.5 text-xs text-slate-400">Coming soon</p>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center gap-4 border-t border-slate-200 pt-6 sm:flex-row sm:justify-between">
           <p className="text-sm text-slate-400">
-            &copy; {new Date().getFullYear()} Charleston SC Explorer. All rights reserved.
+            &copy; {new Date().getFullYear()} Lowcountry Parks
           </p>
-          <div className="flex items-center gap-4 text-sm text-slate-400">
-            <span className="cursor-default">Privacy</span>
-            <span className="text-slate-300">|</span>
-            <span className="cursor-default">Terms</span>
-          </div>
+          <p className="text-xs text-slate-400">
+            Park data from{" "}
+            <a
+              href="https://data-charleston-sc.opendata.arcgis.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-coastal-600 hover:underline"
+            >
+              City of Charleston Open Data
+            </a>
+          </p>
         </div>
       </div>
     </footer>
