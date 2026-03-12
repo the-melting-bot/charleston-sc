@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 /* ─── SVG Icons ─── */
@@ -134,6 +135,8 @@ const whyCards = [
     icon: <IconShield />,
     gradient: "from-coastal-50 to-white",
     border: "border-t-coastal-500",
+    image: "/images/why/reliable.jpg",
+    imageAlt: "Aerial view of Charleston parks and waterfront",
   },
   {
     tag: "Practical",
@@ -143,6 +146,8 @@ const whyCards = [
     icon: <IconClock />,
     gradient: "from-coastal-seafoam-50 to-white",
     border: "border-t-coastal-seafoam",
+    image: "/images/why/practical.jpg",
+    imageAlt: "Family walking along a sunny park trail",
   },
   {
     tag: "For Everyone",
@@ -152,15 +157,39 @@ const whyCards = [
     icon: <IconPeople />,
     gradient: "from-coastal-sand-50 to-white",
     border: "border-t-coastal-sand",
+    image: "/images/why/everyone.jpg",
+    imageAlt: "Friends enjoying a sunny day together in a park",
   },
 ];
 
+/* ─── Decorative wave SVG (subtle background pattern) ─── */
+const WavePattern = () => (
+  <svg
+    className="absolute inset-0 h-full w-full opacity-[0.03]"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M0,192L48,176C96,160,192,128,288,133.3C384,139,480,181,576,197.3C672,213,768,203,864,176C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      className="fill-coastal-700"
+    />
+    <path
+      d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,197.3C672,213,768,235,864,229.3C960,224,1056,192,1152,176C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      className="fill-coastal-500"
+    />
+  </svg>
+);
+
 export default function WhyCards() {
   return (
-    <section className="bg-slate-50 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-      <div className="mx-auto max-w-7xl">
-        {/* Header */}
-        <div className="mb-10 max-w-2xl sm:mb-12">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-coastal-50/30 to-white px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+      {/* Subtle wave background */}
+      <WavePattern />
+
+      <div className="relative mx-auto max-w-7xl">
+        {/* Centered header */}
+        <div className="mx-auto mb-12 max-w-2xl text-center sm:mb-14">
           <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl">
             Why Lowcountry Parks
           </h2>
@@ -173,11 +202,27 @@ export default function WhyCards() {
           {whyCards.map((card, index) => (
             <FadeIn key={card.title} delay={index * 120}>
               <div
-                className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border border-t-[5px] bg-gradient-to-b ${card.gradient} ${card.border} border-slate-200/80 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-slate-200/60`}
+                className={`group relative flex h-full flex-col overflow-hidden rounded-xl border border-t-[5px] bg-gradient-to-b ${card.gradient} ${card.border} border-slate-200/80 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-slate-300/40`}
               >
+                {/* Card photo */}
+                <div className="relative h-[140px] overflow-hidden">
+                  <Image
+                    src={card.image}
+                    alt={card.imageAlt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  {/* Soft bottom fade so photo blends into the card */}
+                  <div
+                    className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-white/80 to-transparent"
+                    aria-hidden="true"
+                  />
+                </div>
+
                 <div className="flex flex-1 flex-col p-6 sm:p-7">
                   {/* Icon */}
-                  <div className="mb-5 transition-transform duration-300 group-hover:scale-110">
+                  <div className="mb-4 transition-transform duration-300 group-hover:scale-110">
                     {card.icon}
                   </div>
 
