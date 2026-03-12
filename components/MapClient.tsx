@@ -29,8 +29,7 @@ const TILE_LAYERS = {
   },
   satellite: {
     url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    attribution:
-      "Tiles &copy; Esri",
+    attribution: "Tiles &copy; Esri",
     label: "Satellite",
   },
 };
@@ -46,6 +45,13 @@ const parkIcon = L.divIcon({
   iconAnchor: [14, 36],
   popupAnchor: [0, -36],
 });
+
+/* ─── Image helper ─── */
+function getParkImageSrc(park: Park): string {
+  const hasCuratedImage = park.images && park.images.length > 0;
+  if (hasCuratedImage) return `/images/parks/${park.slug}/1.jpg`;
+  return `/images/parks/categories/${park.categoryImage || "green-space"}.jpg`;
+}
 
 /* ─── FlyTo helper component ─── */
 function FlyToHandler({
@@ -181,7 +187,6 @@ export default function MapClient({
   );
 
   const tileConfig = TILE_LAYERS[activeLayer];
-  const hasImages = (park: Park) => park.images && park.images.length > 0;
 
   return (
     <div className="relative h-full w-full">
@@ -198,10 +203,7 @@ export default function MapClient({
           url={tileConfig.url}
         />
 
-        <MarkerClusterGroup
-          chunkedLoading
-          maxClusterRadius={50}
-        >
+        <MarkerClusterGroup chunkedLoading maxClusterRadius={50}>
           {parks.map((park) => (
             <Marker
               key={park.slug}
@@ -214,21 +216,13 @@ export default function MapClient({
             >
               <Popup maxWidth={280} minWidth={240}>
                 <div className="w-[260px]">
-                  {/* Park image or gradient placeholder */}
+                  {/* Park image */}
                   <div className="relative h-32 w-full overflow-hidden">
-                    {hasImages(park) ? (
-                      <img
-                        src={`/images/parks/${park.slug}/1.jpg`}
-                        alt={park.name}
-                        className="h-full w-full object-cover"
-                      />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-coastal-200 to-teal-200">
-                        <span className="text-4xl font-bold text-coastal-600/30">
-                          {park.name.charAt(0)}
-                        </span>
-                      </div>
-                    )}
+                    <img
+                      src={getParkImageSrc(park)}
+                      alt={park.name}
+                      className="h-full w-full object-cover"
+                    />
                     <span className="absolute left-2 top-2 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-semibold text-coastal-700 backdrop-blur-sm">
                       {park.area}
                     </span>
@@ -251,29 +245,23 @@ export default function MapClient({
                         ))}
                       </div>
                     )}
-                    {/* Detail link */}
-                    <a
-                      href={
-                        hasImages(park)
-                          ? `/parks/${park.slug}`
-                          : `/maps?park=${park.slug}`
-                      }
-                      className="inline-flex items-center gap-1 text-xs font-semibold text-coastal-700 hover:text-coastal-800 hover:underline"
-                    >
-                      View Details
-                      <svg
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                    {/* Links */}
+                    <div className="flex items-center gap-3">
+                      <a
+                        href={`/parks/${park.slug}`}
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-coastal-700 hover:text-coastal-800 hover:underline"
                       >
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                      </svg>
-                    </a>
+                        View Details &rarr;
+                      </a>
+                      <a
+                        href={`https://www.google.com/maps/dir/?api=1&destination=${park.latitude},${park.longitude}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-slate-700 hover:underline"
+                      >
+                        Directions &rarr;
+                      </a>
+                    </div>
                   </div>
                 </div>
               </Popup>
@@ -281,7 +269,12 @@ export default function MapClient({
           ))}
         </MarkerClusterGroup>
 
-        <FlyToHandler selectedPark={selectedPark} markersRef={markersRef as React.RefObject<Map<string, L.Marker>>} />
+        <FlyToHandler
+          selectedPark={selectedPark}
+          markersRef={
+            markersRef as React.RefObject<Map<string, L.Marker>>
+          }
+        />
       </MapContainer>
 
       {/* Layer control overlay */}

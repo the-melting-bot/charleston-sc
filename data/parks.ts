@@ -10,6 +10,7 @@ export interface Park {
   latitude: number;
   longitude: number;
   images: string[];
+  categoryImage?: string;
 }
 
 export const parks: Park[] = [

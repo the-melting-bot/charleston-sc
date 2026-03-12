@@ -1,9 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useMemo } from "react";
 import dynamic from "next/dynamic";
 import type { Park } from "@/data/parks";
-import { DesktopSidebar, MobileBottomSheet } from "./MapSidebar";
+import {
+  DesktopSidebar,
+  MobileBottomSheet,
+  type MobileBottomSheetHandle,
+} from "./MapSidebar";
 
 const MapClient = dynamic(() => import("@/components/MapClient"), {
   ssr: false,
@@ -19,9 +23,29 @@ const MapClient = dynamic(() => import("@/components/MapClient"), {
 
 export default function MapsLayout({ parks }: { parks: Park[] }) {
   const [selectedPark, setSelectedPark] = useState<Park | null>(null);
+  const [mobileSearch, setMobileSearch] = useState("");
+  const bottomSheetRef = useRef<MobileBottomSheetHandle>(null);
+
+  // Filtered parks for mobile search — filters both list AND map markers
+  const mobileQuery = mobileSearch.toLowerCase().trim();
+  const mobileFiltered = useMemo(() => {
+    if (!mobileQuery) return parks;
+    return parks.filter(
+      (p) =>
+        p.name.toLowerCase().includes(mobileQuery) ||
+        p.area.toLowerCase().includes(mobileQuery) ||
+        p.amenities.some((a) => a.toLowerCase().includes(mobileQuery))
+    );
+  }, [parks, mobileQuery]);
+
+  const handleParkSelect = (park: Park) => {
+    setSelectedPark(park);
+    // On mobile, expand bottom sheet to half
+    bottomSheetRef.current?.expandToHalf();
+  };
 
   return (
-    <div className="flex h-[calc(100vh-56px)] w-full">
+    <div className="flex h-[calc(100dvh-56px)] w-full overflow-hidden">
       {/* Desktop sidebar */}
       <DesktopSidebar
         parks={parks}
@@ -32,14 +56,20 @@ export default function MapsLayout({ parks }: { parks: Park[] }) {
       {/* Map + mobile bottom sheet */}
       <div className="relative flex-1">
         <MapClient
-          parks={parks}
+          parks={mobileFiltered}
           selectedPark={selectedPark}
-          onParkSelect={setSelectedPark}
+          onParkSelect={handleParkSelect}
         />
         <MobileBottomSheet
+          ref={bottomSheetRef}
           parks={parks}
+          filteredParks={mobileFiltered}
           selectedPark={selectedPark}
-          onParkSelect={setSelectedPark}
+          onParkSelect={(park) => {
+            setSelectedPark(park);
+          }}
+          search={mobileSearch}
+          setSearch={setMobileSearch}
         />
       </div>
     </div>

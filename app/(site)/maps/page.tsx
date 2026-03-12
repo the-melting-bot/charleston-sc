@@ -52,6 +52,7 @@ export default function MapsPage() {
         amenities: string[];
         latitude: number;
         longitude: number;
+        categoryImage?: string;
       }) => ({
         id: p.slug,
         slug: p.slug,
@@ -64,6 +65,7 @@ export default function MapsPage() {
         latitude: p.latitude,
         longitude: p.longitude,
         images: CURATED_SLUGS.has(p.slug) ? ["1.jpg"] : [],
+        categoryImage: p.categoryImage || "green-space",
       })
     );
 

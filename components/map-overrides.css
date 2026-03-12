@@ -108,3 +108,10 @@
   border-color: #0369a1;
   color: #0369a1;
 }
+
+/* ─── Mobile: push zoom controls above collapsed bottom sheet ─── */
+@media (max-width: 1023px) {
+  .leaflet-control-zoom {
+    margin-bottom: 140px !important;
+  }
+}
