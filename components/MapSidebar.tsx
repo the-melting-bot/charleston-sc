@@ -51,7 +51,7 @@ function ParkList({
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search by name or amenity..."
+            placeholder="Search by name, area, or amenity..."
             className="w-full rounded-lg border border-slate-200 bg-slate-50 py-2 pl-9 pr-3 text-sm text-slate-700 placeholder:text-slate-400 focus:border-coastal-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-coastal-100"
           />
           {search && (
@@ -91,6 +91,7 @@ function ParkList({
         ) : (
           filtered.map((park) => {
             const isActive = selectedPark?.slug === park.slug;
+            const hasImage = park.images && park.images.length > 0;
             return (
               <button
                 key={park.slug}
@@ -101,16 +102,24 @@ function ParkList({
                     : "border-l-[3px] border-l-transparent"
                 }`}
               >
-                {/* Thumbnail */}
+                {/* Thumbnail or gradient placeholder */}
                 <div className="h-12 w-12 flex-shrink-0 overflow-hidden rounded-lg bg-slate-100">
-                  <img
-                    src={`/images/parks/${park.slug}/1.jpg`}
-                    alt=""
-                    className="h-full w-full object-cover"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = "none";
-                    }}
-                  />
+                  {hasImage ? (
+                    <img
+                      src={`/images/parks/${park.slug}/1.jpg`}
+                      alt=""
+                      className="h-full w-full object-cover"
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).style.display = "none";
+                      }}
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-coastal-200 to-teal-200">
+                      <span className="text-lg font-bold text-coastal-600/40">
+                        {park.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
                 </div>
                 {/* Info */}
                 <div className="min-w-0 flex-1">
@@ -124,21 +133,23 @@ function ParkList({
                   <p className="mt-0.5 text-[11px] text-slate-500">
                     {park.area}
                   </p>
-                  <div className="mt-1 flex flex-wrap gap-1">
-                    {park.amenities.slice(0, 2).map((a) => (
-                      <span
-                        key={a}
-                        className="inline-block rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-500"
-                      >
-                        {a}
-                      </span>
-                    ))}
-                    {park.amenities.length > 2 && (
-                      <span className="inline-block rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-400">
-                        +{park.amenities.length - 2}
-                      </span>
-                    )}
-                  </div>
+                  {park.amenities.length > 0 && (
+                    <div className="mt-1 flex flex-wrap gap-1">
+                      {park.amenities.slice(0, 2).map((a) => (
+                        <span
+                          key={a}
+                          className="inline-block rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-500"
+                        >
+                          {a}
+                        </span>
+                      ))}
+                      {park.amenities.length > 2 && (
+                        <span className="inline-block rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-medium text-slate-400">
+                          +{park.amenities.length - 2}
+                        </span>
+                      )}
+                    </div>
+                  )}
                 </div>
               </button>
             );

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import fs from "fs";
+import path from "path";
 import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import FadeIn from "@/components/FadeIn";
 import InfoBanner from "@/components/InfoBanner";
-import { parks } from "@/data/parks";
 
 export const metadata: Metadata = {
   title: "Explore by Area | Lowcountry Parks",
@@ -50,18 +51,28 @@ const areas = [
   },
   {
     name: "Cainhoy / Wando",
-    slug: "Cainhoy / Wando",
+    slug: "Cainhoy",
     image: "/images/areas/cainhoy-wando.jpg",
     description:
       "Charleston's expanding frontier — vast natural landscapes, new developments, and pristine Lowcountry wilderness.",
   },
 ];
 
-function getParkCount(areaName: string): number {
-  return parks.filter((p) => p.area === areaName).length;
+function getAreaCounts(): Record<string, number> {
+  const filePath = path.join(process.cwd(), "data", "parks.json");
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const data = JSON.parse(raw);
+  const counts: Record<string, number> = {};
+  for (const p of data.parks) {
+    if (p.neighborhood) {
+      counts[p.neighborhood] = (counts[p.neighborhood] || 0) + 1;
+    }
+  }
+  return counts;
 }
 
 export default function NeighborhoodsPage() {
+  const areaCounts = getAreaCounts();
   return (
     <>
       <PageHero
@@ -86,7 +97,7 @@ export default function NeighborhoodsPage() {
 
           <div className="grid gap-6 sm:grid-cols-2">
             {areas.map((area, i) => {
-              const count = getParkCount(area.slug);
+              const count = areaCounts[area.slug] || 0;
               const hasParks = count > 0;
 
               return (

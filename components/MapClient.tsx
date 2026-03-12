@@ -35,17 +35,16 @@ const TILE_LAYERS = {
   },
 };
 
-/* ─── Custom teal marker icon ─── */
+/* ─── Custom coastal-600 SVG marker icon ─── */
 const parkIcon = L.divIcon({
   className: "",
-  html: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" fill="none">
-    <path d="M16 0C7.164 0 0 7.164 0 16c0 12 16 24 16 24s16-12 16-24C32 7.164 24.836 0 16 0z" fill="#0369a1"/>
-    <circle cx="16" cy="14" r="7" fill="white" opacity="0.9"/>
-    <path d="M16 9.5c-1.5 0-2.7.8-3.3 2l-.7 1.3h1.5l.3-.6c.4-.7 1.2-1.2 2.2-1.2s1.8.5 2.2 1.2l.3.6h1.5l-.7-1.3c-.6-1.2-1.8-2-3.3-2zm-3 4.5l2 4h2l2-4h-6z" fill="#0369a1"/>
+  html: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="36" viewBox="0 0 28 36" fill="none">
+    <path d="M14 0C6.268 0 0 6.268 0 14c0 10.5 14 22 14 22s14-11.5 14-22C28 6.268 21.732 0 14 0z" fill="#0284c7"/>
+    <circle cx="14" cy="12" r="5.5" fill="white" opacity="0.95"/>
   </svg>`,
-  iconSize: [32, 40],
-  iconAnchor: [16, 40],
-  popupAnchor: [0, -40],
+  iconSize: [28, 36],
+  iconAnchor: [14, 36],
+  popupAnchor: [0, -36],
 });
 
 /* ─── FlyTo helper component ─── */
@@ -182,6 +181,7 @@ export default function MapClient({
   );
 
   const tileConfig = TILE_LAYERS[activeLayer];
+  const hasImages = (park: Park) => park.images && park.images.length > 0;
 
   return (
     <div className="relative h-full w-full">
@@ -214,17 +214,21 @@ export default function MapClient({
             >
               <Popup maxWidth={280} minWidth={240}>
                 <div className="w-[260px]">
-                  {/* Park image */}
-                  <div className="relative h-36 w-full overflow-hidden">
-                    <img
-                      src={`/images/parks/${park.slug}/1.jpg`}
-                      alt={park.name}
-                      className="h-full w-full object-cover"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src =
-                          "/images/parks/placeholder.jpg";
-                      }}
-                    />
+                  {/* Park image or gradient placeholder */}
+                  <div className="relative h-32 w-full overflow-hidden">
+                    {hasImages(park) ? (
+                      <img
+                        src={`/images/parks/${park.slug}/1.jpg`}
+                        alt={park.name}
+                        className="h-full w-full object-cover"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-coastal-200 to-teal-200">
+                        <span className="text-4xl font-bold text-coastal-600/30">
+                          {park.name.charAt(0)}
+                        </span>
+                      </div>
+                    )}
                     <span className="absolute left-2 top-2 rounded-full bg-white/90 px-2 py-0.5 text-[10px] font-semibold text-coastal-700 backdrop-blur-sm">
                       {park.area}
                     </span>
@@ -235,19 +239,25 @@ export default function MapClient({
                       {park.name}
                     </h3>
                     {/* Amenity tags */}
-                    <div className="flex flex-wrap gap-1">
-                      {park.amenities.slice(0, 3).map((a) => (
-                        <span
-                          key={a}
-                          className="inline-block rounded-full bg-coastal-50 px-2 py-0.5 text-[10px] font-medium text-coastal-700"
-                        >
-                          {a}
-                        </span>
-                      ))}
-                    </div>
+                    {park.amenities.length > 0 && (
+                      <div className="flex flex-wrap gap-1">
+                        {park.amenities.slice(0, 3).map((a) => (
+                          <span
+                            key={a}
+                            className="inline-block rounded-full bg-coastal-50 px-2 py-0.5 text-[10px] font-medium text-coastal-700"
+                          >
+                            {a}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                     {/* Detail link */}
                     <a
-                      href={`/parks/${park.slug}`}
+                      href={
+                        hasImages(park)
+                          ? `/parks/${park.slug}`
+                          : `/maps?park=${park.slug}`
+                      }
                       className="inline-flex items-center gap-1 text-xs font-semibold text-coastal-700 hover:text-coastal-800 hover:underline"
                     >
                       View Details
