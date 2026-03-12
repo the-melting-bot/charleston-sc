@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Section from "@/components/Section";
+import ImageCard from "@/components/ImageCard";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
 import QuickFacts from "@/components/QuickFacts";
-import InfoBanner from "@/components/InfoBanner";
+import FadeIn from "@/components/FadeIn";
+import FeaturedParks from "@/components/FeaturedParks";
 import HeroVideo from "@/components/HeroVideo";
 
 export const metadata: Metadata = {
@@ -50,6 +53,7 @@ const features = [
     href: "/parks-outdoor",
     accentColor: "bg-coastal-seafoam-200",
     icon: <IconSearch />,
+    image: "/images/features/browse-parks.jpg",
   },
   {
     title: "View the Map",
@@ -58,6 +62,7 @@ const features = [
     href: "/maps",
     accentColor: "bg-coastal-200",
     icon: <IconMap />,
+    image: "/images/features/view-map.jpg",
   },
   {
     title: "Explore by Area",
@@ -66,6 +71,7 @@ const features = [
     href: "/neighborhoods",
     accentColor: "bg-coastal-sand-light",
     icon: <IconParks />,
+    image: "/images/features/explore-area.jpg",
   },
 ];
 
@@ -183,55 +189,106 @@ export default function HomePage() {
       </div>
 
       {/* ─── What You Can Do ─── */}
-      <Section
-        title="What You Can Do"
-        subtitle="Three ways to find the right park for your day"
-      >
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((item) => (
-            <Card
-              key={item.title}
-              title={item.title}
-              description={item.description}
-              href={item.href}
-              accentColor={item.accentColor}
-              icon={item.icon}
-            />
-          ))}
-        </div>
-      </Section>
+      <FadeIn>
+        <Section
+          title="What You Can Do"
+          subtitle="Three ways to find the right park for your day"
+        >
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((item, index) => (
+              <FadeIn key={item.title} delay={index * 100}>
+                <ImageCard
+                  title={item.title}
+                  description={item.description}
+                  href={item.href}
+                  accentColor={item.accentColor}
+                  icon={item.icon}
+                  imageSrc={item.image}
+                  imageAlt={`${item.title} — ${item.description.slice(0, 60)}`}
+                />
+              </FadeIn>
+            ))}
+          </div>
+        </Section>
+      </FadeIn>
+
+      {/* ─── Featured Parks ─── */}
+      <FadeIn>
+        <FeaturedParks />
+      </FadeIn>
 
       {/* ─── Why It's Useful ─── */}
-      <Section
-        title="Why Lowcountry Parks"
-        subtitle="Built to help you spend less time searching and more time outside"
-        className="bg-slate-50"
-      >
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {valueProps.map((item) => (
-            <Card
-              key={item.title}
-              title={item.title}
-              description={item.description}
-              accentColor={item.accentColor}
-              tag={item.tag}
-            />
-          ))}
-        </div>
-      </Section>
+      <FadeIn>
+        <Section
+          title="Why Lowcountry Parks"
+          subtitle="Built to help you spend less time searching and more time outside"
+          className="bg-slate-50"
+        >
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {valueProps.map((item, index) => (
+              <FadeIn key={item.title} delay={index * 100}>
+                <Card
+                  title={item.title}
+                  description={item.description}
+                  accentColor={item.accentColor}
+                  tag={item.tag}
+                />
+              </FadeIn>
+            ))}
+          </div>
+        </Section>
+      </FadeIn>
 
       {/* ─── CTA: Get Started ─── */}
-      <div className="px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <InfoBanner
-            title="Ready to Get Outside?"
-            description="Start with the interactive map to see every park in the Charleston area, or browse the full list by neighborhood."
-            buttonLabel="Open Interactive Map"
-            buttonHref="/maps"
-            variant="seafoam"
-          />
+      <FadeIn>
+        <div className="px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="relative overflow-hidden rounded-2xl">
+              {/* Background image */}
+              <Image
+                src="/images/cta-background.jpg"
+                alt="Scenic Charleston Lowcountry landscape"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
+              {/* Dark overlay */}
+              <div
+                className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60"
+                aria-hidden="true"
+              />
+              {/* Content */}
+              <div className="relative z-10 flex flex-col items-center px-6 py-20 text-center sm:px-12 sm:py-24">
+                <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl lg:text-4xl">
+                  Ready to Get Outside?
+                </h2>
+                <p className="mt-4 max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+                  Start with the interactive map to see every park in the
+                  Charleston area, or browse the full list by neighborhood.
+                </p>
+                <div className="mt-8 flex flex-wrap justify-center gap-3">
+                  <Button
+                    href="/parks-outdoor"
+                    variant="primary"
+                    size="lg"
+                    className="!bg-white !text-coastal-800 shadow-lg hover:!bg-slate-100"
+                  >
+                    Browse All Parks
+                  </Button>
+                  <Button
+                    href="/maps"
+                    variant="outline"
+                    size="lg"
+                    className="!border-white/50 !text-white shadow-lg backdrop-blur-sm hover:!bg-white/15"
+                  >
+                    Open Map
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </FadeIn>
     </>
   );
 }
