@@ -13,12 +13,12 @@
       "name": "Ackerman Park",
       "slug": "ackerman-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "55 Sycamore Ave",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Ackerman Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy multi-purpose field, dog park, skate park.",
+      "description": "Ackerman Park features West Ashley's skate park alongside multi-purpose field and dog park. It's a popular gathering spot for skaters and active recreation.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Ackerman-33",
       "latitude": 32.789593,
@@ -28,7 +28,8 @@
         "Dog Park",
         "Skate Park"
       ],
-      "areaSqFt": 59508
+      "areaSqFt": 59508,
+      "categoryImage": "dog-park"
     },
     {
       "id": 24,
@@ -36,12 +37,12 @@
       "name": "Alberta Long Lake Park",
       "slug": "alberta-long-lake-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "55 Halsey Blvd",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Alberta Long Lake Park is a neighborhood lakeside park in historic downtown Charleston. Visitors can enjoy fishing.",
+      "description": "Situated along the water in Peninsula, Alberta Long Lake Park offers a scenic lakeside retreat. Amenities include fishing.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Alberta-Long-Park-86",
       "latitude": 32.780167,
@@ -49,7 +50,8 @@
       "amenities": [
         "Fishing"
       ],
-      "areaSqFt": 65622
+      "areaSqFt": 65622,
+      "categoryImage": "fishing"
     },
     {
       "id": 100,
@@ -57,12 +59,12 @@
       "name": "Allan Park",
       "slug": "allan-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "365 Ashley Ave",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Allan Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A tree-shaded neighborhood park in Peninsula, ideal for afternoon walks and a bit of fresh air.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/allan-park/",
       "latitude": 32.797227,
@@ -70,7 +72,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 2776
+      "areaSqFt": 2776,
+      "categoryImage": "green-space"
     },
     {
       "id": 41,
@@ -78,12 +81,12 @@
       "name": "Angel Oak Park",
       "slug": "angel-oak-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "3688 Angel Oak Rd",
       "neighborhood": "Johns Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Angel Oak Park is a neighborhood park on Johns Island. Visitors can enjoy picnic area, playground.",
+      "description": "Angel Oak Park on Johns Island is home to the legendary Angel Oak, one of the oldest living things east of the Mississippi. Visitors come to marvel at the massive live oak's canopy and enjoy a picnic beneath its ancient branches.",
       "hours": "Sun-Sat, Other",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Angel-Oak-Park-7?&centerLat=32.71873184728985&centerLng=-80.07017660409944&zoom=15",
       "latitude": 32.71735,
@@ -92,7 +95,8 @@
         "Picnic Area",
         "Playground"
       ],
-      "areaSqFt": 12208
+      "areaSqFt": 12208,
+      "categoryImage": "playground"
     },
     {
       "id": 78,
@@ -100,12 +104,12 @@
       "name": "Ashley River Road Bike Path",
       "slug": "ashley-river-road-bike-path",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "2889 Ashley River Rd",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Ashley River Road Bike Path is a popular multi-use path in the West Ashley area of Charleston, ideal for walking, jogging, and cycling. Visitors can enjoy cycling.",
+      "description": "One of West Ashley's go-to green spaces for cycling and casual recreation.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/larry-d-shirley-ashley-river-road-bike-path/",
       "latitude": 32.851766,
@@ -113,7 +117,8 @@
       "amenities": [
         "Cycling"
       ],
-      "areaSqFt": 66543
+      "areaSqFt": 66543,
+      "categoryImage": "trails"
     },
     {
       "id": 30,
@@ -121,12 +126,12 @@
       "name": "Backyard Park",
       "slug": "backyard-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "23 1/2 Anita Dr",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Backyard Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy picnic area, playground.",
+      "description": "A quiet pocket of green in West Ashley where residents come to unwind under the live oaks.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/backyard-park/",
       "latitude": 32.791889,
@@ -135,7 +140,8 @@
         "Picnic Area",
         "Playground"
       ],
-      "areaSqFt": 5751
+      "areaSqFt": 5751,
+      "categoryImage": "playground"
     },
     {
       "id": 89,
@@ -143,12 +149,12 @@
       "name": "Balsam Park",
       "slug": "balsam-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1654 Balsam St",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Balsam Park is a neighborhood park in the West Ashley area of Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "This West Ashley park offers a shady retreat from the Charleston heat with open lawns and room to play.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/balsam-park/",
       "latitude": 32.788833,
@@ -156,7 +162,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 1685
+      "areaSqFt": 1685,
+      "categoryImage": "green-space"
     },
     {
       "id": 84,
@@ -164,12 +171,12 @@
       "name": "Bayview Soccer Complex",
       "slug": "bayview-soccer-complex",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1045 Fort Johnson Rd",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Bayview Soccer Complex is a neighborhood sports complex on James Island. Visitors can enjoy restrooms, soccer, picnic area. The 4.7-acre site provides ample room for outdoor recreation.",
+      "description": "Bayview Soccer Complex in James Island packs restrooms, soccer, picnic area into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Bayview-Soccer-Complex-34",
       "latitude": 32.725748,
@@ -179,7 +186,8 @@
         "Soccer",
         "Picnic Area"
       ],
-      "areaSqFt": 203358
+      "areaSqFt": 203358,
+      "categoryImage": "sports"
     },
     {
       "id": 16,
@@ -187,12 +195,12 @@
       "name": "Bees Landing Recreation Complex",
       "slug": "bees-landing-recreation-complex",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1580 Ashley Gardens Blvd",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Bees Landing Recreation Complex is a public water access point in the West Ashley area of Charleston, providing access to local waterways. Visitors can enjoy restrooms, baseball, basketball, picnic area. The 3.4-acre site provides ample room for outdoor recreation.",
+      "description": "Bees Landing Recreation Complex is West Ashley's premier multi-sport facility with baseball, basketball, tennis, a dog park, playground, and picnic areas. The sprawling complex serves as the neighborhood's athletic and community hub.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/5",
       "latitude": 32.831778,
@@ -207,7 +215,8 @@
         "Dog Park",
         "Tennis"
       ],
-      "areaSqFt": 148203
+      "areaSqFt": 148203,
+      "categoryImage": "dog-park"
     },
     {
       "id": 79,
@@ -215,12 +224,12 @@
       "name": "Beresford Creek Public Access Park",
       "slug": "beresford-creek-public-access-park",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1132 Saint Thomas Island Dr",
       "neighborhood": "Cainhoy",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Beresford Creek Public Access Park is a public water access point in the Cainhoy area of Charleston, providing access to local waterways. Visitors can enjoy fishing. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A well-loved community park in Cainhoy with fishing — a favorite stop for families in the neighborhood.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/beresford-creek-dock/",
       "latitude": 32.869709,
@@ -228,7 +237,8 @@
       "amenities": [
         "Fishing"
       ],
-      "areaSqFt": 343
+      "areaSqFt": 343,
+      "categoryImage": "fishing"
     },
     {
       "id": 11,
@@ -236,12 +246,12 @@
       "name": "Brittlebank Park",
       "slug": "brittlebank-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "181 Lockwood Dr",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Brittlebank Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy picnic area, playground, fishing.",
+      "description": "Brittlebank Park sits along the Ashley River on the Peninsula, offering picnic areas, a playground, and prime fishing spots. The park provides stunning sunset views and easy waterfront access.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Brittlebank-Park-89",
       "latitude": 32.787729,
@@ -251,7 +261,8 @@
         "Playground",
         "Fishing"
       ],
-      "areaSqFt": 62991
+      "areaSqFt": 62991,
+      "categoryImage": "fishing"
     },
     {
       "id": 26,
@@ -259,12 +270,12 @@
       "name": "Cannon Park",
       "slug": "cannon-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "123 Rutledge Ave",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Cannon Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy playground, dog park.",
+      "description": "Tucked into a Peninsula residential block, this park provides a welcome green break from the surrounding streets.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Cannon-Park-90",
       "latitude": 32.783452,
@@ -273,7 +284,8 @@
         "Playground",
         "Dog Park"
       ],
-      "areaSqFt": 16274
+      "areaSqFt": 16274,
+      "categoryImage": "dog-park"
     },
     {
       "id": 74,
@@ -281,12 +293,12 @@
       "name": "Carr-Richardson Park",
       "slug": "carr-richardson-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "1071 Bender St",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Carr-Richardson Park is a neighborhood park in the West Ashley area of Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "Residents of West Ashley gather here for fresh air and easy access to a bit of nature without leaving the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.797348,
@@ -294,7 +306,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 16579
+      "areaSqFt": 16579,
+      "categoryImage": "green-space"
     },
     {
       "id": 40,
@@ -302,12 +315,12 @@
       "name": "Charleston 9 Memorial",
       "slug": "charleston-9-memorial",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1807 Savannah Hwy",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Charleston 9 Memorial is a peaceful memorial in the West Ashley area of Charleston, offering a place for quiet reflection and remembrance. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "Charleston 9 Memorial in West Ashley honors the nine firefighters lost in the 2007 Sofa Super Store tragedy. A solemn green space for reflection and remembrance.",
       "hours": "Sun-Sat, Daylight",
       "url": "http://charleston-sc.gov/index.aspx?nid=1643",
       "latitude": 32.787867,
@@ -315,7 +328,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 10102
+      "areaSqFt": 10102,
+      "categoryImage": "green-space"
     },
     {
       "id": 66,
@@ -323,12 +337,12 @@
       "name": "Charleston Maritime Center",
       "slug": "charleston-maritime-center",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "10 Wharfside St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Charleston Maritime Center is a neighborhood park in historic downtown Charleston. Visitors can enjoy restrooms, playground, boating.",
+      "description": "Charleston Maritime Center sits on the Peninsula waterfront with restrooms, playground, boating. It's a hub for boaters and families looking for harborside recreation.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Charleston-Maritime-Center-9",
       "latitude": 32.788567,
@@ -338,7 +352,8 @@
         "Playground",
         "Boating"
       ],
-      "areaSqFt": 26050
+      "areaSqFt": 26050,
+      "categoryImage": "fishing"
     },
     {
       "id": 15,
@@ -346,12 +361,12 @@
       "name": "Charleston Municipal Golf Course",
       "slug": "charleston-municipal-golf-course",
       "type": "recreation",
-      "status": null,
+      "status": "active",
       "address": "2110 Maybank Hwy",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Charleston Municipal Golf Course is a neighborhood recreation center on James Island. A welcoming green space for the local community to enjoy fresh air and outdoor time. The 17.6-acre site provides ample room for outdoor recreation.",
+      "description": "Charleston Municipal Golf Course in James Island provides golfers a public course with classic Charleston scenery. A well-established venue for rounds with friends or solo practice.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.754487,
@@ -359,7 +374,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 768100
+      "areaSqFt": 768100,
+      "categoryImage": "green-space"
     },
     {
       "id": 32,
@@ -367,12 +383,12 @@
       "name": "Charleston Tennis Center",
       "slug": "charleston-tennis-center",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "19 Farmfield Ave",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Charleston Tennis Center is a neighborhood tennis facility in the West Ashley area of Charleston. Visitors can enjoy restrooms.",
+      "description": "A small but cherished green space in West Ashley that serves as the block's backyard for picnics and play.",
       "hours": "Sun-Sat, Other",
       "url": "http://charleston-sc.gov/Facilities/Facility/Details/38",
       "latitude": 32.781732,
@@ -380,7 +396,8 @@
       "amenities": [
         "Restrooms"
       ],
-      "areaSqFt": 28515
+      "areaSqFt": 28515,
+      "categoryImage": "recreation"
     },
     {
       "id": 47,
@@ -388,12 +405,12 @@
       "name": "Charlestowne Landing",
       "slug": "charlestowne-landing",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1500 Old Towne Rd",
       "neighborhood": "West Ashley",
       "owner": "SCPRT",
       "maintainedBy": "SCPRT",
-      "description": "Charlestowne Landing State Park",
+      "description": "Charlestowne Landing is a historic outdoor destination in West Ashley with restrooms, picnic area, playground, cycling. It draws visitors looking to combine history with recreation along the Charleston waterfront.",
       "hours": "Sun-Sat, Other",
       "url": null,
       "latitude": 32.80696,
@@ -404,7 +421,8 @@
         "Playground",
         "Cycling"
       ],
-      "areaSqFt": 2287405
+      "areaSqFt": 2287405,
+      "categoryImage": "trails"
     },
     {
       "id": 103,
@@ -412,12 +430,12 @@
       "name": "Charlotte Street Park",
       "slug": "charlotte-street-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "0 Charlotte St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Charlotte Street Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy fishing. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "This pocket park gives Peninsula locals a place to stretch their legs, sit in the shade, and enjoy the outdoors.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/charlotte-street-park/",
       "latitude": 32.792048,
@@ -425,7 +443,8 @@
       "amenities": [
         "Fishing"
       ],
-      "areaSqFt": 3883
+      "areaSqFt": 3883,
+      "categoryImage": "fishing"
     },
     {
       "id": 21,
@@ -433,12 +452,12 @@
       "name": "Cheney Park",
       "slug": "cheney-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "109 Murray Blvd",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Cheney Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Set among the Peninsula neighborhoods, this park is a calm spot for morning walks and evening cool-downs.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/cheney-park/",
       "latitude": 32.773306,
@@ -446,7 +465,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 59
+      "areaSqFt": 59,
+      "categoryImage": "green-space"
     },
     {
       "id": 98,
@@ -454,12 +474,12 @@
       "name": "Coach Stanley Chisolm Park",
       "slug": "coach-stanley-chisolm-park",
       "type": "recreation",
-      "status": null,
+      "status": "active",
       "address": "2055 Austin Ave",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Coach Stanley Chisolm Park is a neighborhood recreation center in historic downtown Charleston. Visitors can enjoy green space. The 3.8-acre site provides ample room for outdoor recreation.",
+      "description": "Coach Stanley Chisolm Park commemorates a respected local coach and community leader on the Peninsula. The park serves as a gathering place for the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.830183,
@@ -467,7 +487,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 167557
+      "areaSqFt": 167557,
+      "categoryImage": "green-space"
     },
     {
       "id": 35,
@@ -475,12 +496,12 @@
       "name": "Colonial Lake Park",
       "slug": "colonial-lake-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "41 Rutledge Ave",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Colonial Lake Park is a neighborhood lakeside park in historic downtown Charleston. Visitors can enjoy fishing.",
+      "description": "Situated along the water in Peninsula, Colonial Lake Park offers a scenic lakeside retreat. Amenities include fishing.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Colonial-Lake-Park-92",
       "latitude": 32.775785,
@@ -488,7 +509,8 @@
       "amenities": [
         "Fishing"
       ],
-      "areaSqFt": 52825
+      "areaSqFt": 52825,
+      "categoryImage": "fishing"
     },
     {
       "id": 29,
@@ -496,12 +518,12 @@
       "name": "Coming Crosstown Park",
       "slug": "coming-crosstown-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "89 Fishburne St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Coming Crosstown Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A laid-back green space in Peninsula where you can escape the bustle and enjoy some time outdoors.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/coming-crosstown/",
       "latitude": 32.795799,
@@ -509,7 +531,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 1574
+      "areaSqFt": 1574,
+      "categoryImage": "green-space"
     },
     {
       "id": 113,
@@ -517,12 +540,12 @@
       "name": "Corrinne V Jones Playground",
       "slug": "corrinne-v-jones-playground",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "36 Marlow Dr",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Corrinne V Jones Playground is a neighborhood playground in historic downtown Charleston. Visitors can enjoy basketball, playground, multi-purpose field.",
+      "description": "Corrinne V Jones Playground in Peninsula packs basketball, playground, multi-purpose field into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Corinne-Jones-Playground-Hester-Park-39",
       "latitude": 32.807626,
@@ -532,7 +555,8 @@
         "Playground",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 19110
+      "areaSqFt": 19110,
+      "categoryImage": "playground"
     },
     {
       "id": 92,
@@ -540,12 +564,12 @@
       "name": "Courtenay Square Park",
       "slug": "courtenay-square-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "262 Meeting St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Courtenay Square Park is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Right in the heart of Peninsula, this park offers open green space and a peaceful atmosphere for all ages.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/courtenay-square/",
       "latitude": 32.783439,
@@ -554,7 +578,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 189
+      "areaSqFt": 189,
+      "categoryImage": "trails"
     },
     {
       "id": 122,
@@ -562,12 +587,12 @@
       "name": "Deming Park",
       "slug": "deming-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1030 5th Ave",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Deming Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy restrooms, baseball, basketball, playground.",
+      "description": "Deming Park in West Ashley packs restrooms, baseball, basketball, playground into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Deming-Playground-42",
       "latitude": 32.795515,
@@ -578,7 +603,8 @@
         "Basketball",
         "Playground"
       ],
-      "areaSqFt": 19283
+      "areaSqFt": 19283,
+      "categoryImage": "playground"
     },
     {
       "id": 91,
@@ -586,12 +612,12 @@
       "name": "DeReef Park",
       "slug": "dereef-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "78 Morris St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "DeReef Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A tree-shaded neighborhood park in Peninsula, ideal for afternoon walks and a bit of fresh air.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/Dereef-Park-118?&centerLat=32.788807914330576&centerLng=-79.94406958923928&zoom=17",
       "latitude": 32.789189,
@@ -599,7 +625,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 1986
+      "areaSqFt": 1986,
+      "categoryImage": "green-space"
     },
     {
       "id": 48,
@@ -607,12 +634,12 @@
       "name": "East Bay Bike Path",
       "slug": "east-bay-bike-path",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "700 E Bay St",
       "neighborhood": "Peninsula",
       "owner": "ROW and Private",
       "maintainedBy": "City of Charleston",
-      "description": "East Bay Bike Path is a popular multi-use path in historic downtown Charleston, ideal for walking, jogging, and cycling. Visitors can enjoy cycling. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "One of Peninsula's go-to green spaces for cycling and casual recreation.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/east-bay-bike-path/",
       "latitude": 32.796179,
@@ -620,7 +647,8 @@
       "amenities": [
         "Cycling"
       ],
-      "areaSqFt": 2671
+      "areaSqFt": 2671,
+      "categoryImage": "trails"
     },
     {
       "id": 107,
@@ -628,12 +656,12 @@
       "name": "East Bay Calhoun Park",
       "slug": "east-bay-calhoun-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "347 E Bay St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "East Bay Calhoun Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A quiet pocket of green in Peninsula where residents come to unwind under the live oaks.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/east-bay-calhoun/",
       "latitude": 32.788602,
@@ -641,7 +669,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 295
+      "areaSqFt": 295,
+      "categoryImage": "green-space"
     },
     {
       "id": 99,
@@ -649,12 +678,12 @@
       "name": "Elliottborough Park and Community Garden",
       "slug": "elliottborough-park-and-community-garden",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "134 Line St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Elliottborough Park and Community Garden is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Elliottborough Park and Community Garden blends green space with community engagement in Peninsula. Visitors enjoy walking path, green space in a relaxed neighborhood setting.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/Elliotborough-Park-and-Community-Garden-45?&centerLat=32.79070917304928&centerLng=-79.9417333305115&zoom=15",
       "latitude": 32.79388,
@@ -663,7 +692,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 3364
+      "areaSqFt": 3364,
+      "categoryImage": "trails"
     },
     {
       "id": 10,
@@ -671,12 +701,12 @@
       "name": "Ellis Oaks Park",
       "slug": "ellis-oaks-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "779 Daniel Ellis Dr",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Ellis Oaks Park is a neighborhood park on James Island. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "This James Island park offers a shady retreat from the Charleston heat with open lawns and room to play.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/ellis-oaks/",
       "latitude": 32.74667,
@@ -684,7 +714,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 7049
+      "areaSqFt": 7049,
+      "categoryImage": "green-space"
     },
     {
       "id": 114,
@@ -692,12 +723,12 @@
       "name": "Etiwan Park",
       "slug": "etiwan-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "453 Seven Farms Dr",
       "neighborhood": "Daniel Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Etiwan Park is a neighborhood park on Daniel Island. Visitors can enjoy basketball, playground, multi-purpose field.",
+      "description": "Etiwan Park in Daniel Island packs basketball, playground, multi-purpose field into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Etiwan-Park-46",
       "latitude": 32.858395,
@@ -707,7 +738,8 @@
         "Playground",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 38681
+      "areaSqFt": 38681,
+      "categoryImage": "playground"
     },
     {
       "id": 31,
@@ -715,12 +747,12 @@
       "name": "Fallen Oak Park",
       "slug": "fallen-oak-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "509 Island Park Dr",
       "neighborhood": "Daniel Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Fallen Oak Park is a neighborhood park on Daniel Island. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "A well-loved community park in Daniel Island with green space — a favorite stop for families in the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/Daniel-Island-Neighborhood-Park-4-40?&centerLat=32.878742629757234&centerLng=-79.88927313173298&zoom=14",
       "latitude": 32.882362,
@@ -728,7 +760,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 35101
+      "areaSqFt": 35101,
+      "categoryImage": "green-space"
     },
     {
       "id": 83,
@@ -736,12 +769,12 @@
       "name": "Ferguson Village Park",
       "slug": "ferguson-village-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1935 Ferguson Rd",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Ferguson Village Park is a neighborhood park on James Island. Visitors can enjoy baseball, basketball, picnic area, playground.",
+      "description": "Ferguson Village Park is one of James Island's most well-equipped parks, offering baseball, basketball, picnic area, and more. With 5 amenities, it serves as a community hub for sports, play, and outdoor gatherings.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Ferguson-Village-Park-48",
       "latitude": 32.729313,
@@ -753,7 +786,8 @@
         "Playground",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 32785
+      "areaSqFt": 32785,
+      "categoryImage": "playground"
     },
     {
       "id": 36,
@@ -761,12 +795,12 @@
       "name": "Flag Park",
       "slug": "flag-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "34 Reid St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Flag Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Tucked into a Peninsula residential block, this park provides a welcome green break from the surrounding streets.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/flag-park/",
       "latitude": 32.793846,
@@ -774,7 +808,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 228
+      "areaSqFt": 228,
+      "categoryImage": "green-space"
     },
     {
       "id": 65,
@@ -782,12 +817,12 @@
       "name": "Folly Road Blvd Park",
       "slug": "folly-road-blvd-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "25 Folly Road Blvd",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Folly Road Blvd Park is a neighborhood park in the West Ashley area of Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "Residents of West Ashley gather here for fresh air and easy access to a bit of nature without leaving the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.779466,
@@ -795,7 +830,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 6020
+      "areaSqFt": 6020,
+      "categoryImage": "green-space"
     },
     {
       "id": 112,
@@ -803,12 +839,12 @@
       "name": "Forest Park Playground",
       "slug": "forest-park-playground",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "780 Playground Rd",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Forest Park Playground is a neighborhood playground in the West Ashley area of Charleston. Visitors can enjoy baseball.",
+      "description": "A small but cherished green space in West Ashley that serves as the block's backyard for picnics and play.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charleston-sc.gov/facilities/facility/details/49#:~:text=Features&text=The%20playground%20building%20is%20staffed,p.m.%2C%20Saturday%20Noon%2D5%20p.m.",
       "latitude": 32.791286,
@@ -816,7 +852,8 @@
       "amenities": [
         "Baseball"
       ],
-      "areaSqFt": 42545
+      "areaSqFt": 42545,
+      "categoryImage": "sports"
     },
     {
       "id": 123,
@@ -824,12 +861,12 @@
       "name": "Freddie Whaley Playground",
       "slug": "freddie-whaley-playground",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1810 Doscher Ave",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Freddie Whaley Playground is a neighborhood playground in historic downtown Charleston. Visitors can enjoy basketball, playground.",
+      "description": "This pocket park gives Peninsula locals a place to stretch their legs, sit in the shade, and enjoy the outdoors.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Freddie-Whaley-Rosemont-Park-51",
       "latitude": 32.827549,
@@ -838,7 +875,8 @@
         "Basketball",
         "Playground"
       ],
-      "areaSqFt": 6603
+      "areaSqFt": 6603,
+      "categoryImage": "playground"
     },
     {
       "id": 95,
@@ -846,12 +884,12 @@
       "name": "Freedom Park",
       "slug": "freedom-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "985 Barfield St",
       "neighborhood": "Daniel Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Freedom Park is a neighborhood park on Daniel Island. Visitors can enjoy baseball, basketball, soccer, picnic area.",
+      "description": "Freedom Park is Daniel Island's flagship recreation complex with baseball, basketball, soccer, tennis, a playground, dog park, and picnic area. It's the island's go-to destination for organized sports and family outings alike.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Freedom-Park-52",
       "latitude": 32.848659,
@@ -866,7 +904,8 @@
         "Dog Park",
         "Tennis"
       ],
-      "areaSqFt": 61792
+      "areaSqFt": 61792,
+      "categoryImage": "dog-park"
     },
     {
       "id": 19,
@@ -874,12 +913,12 @@
       "name": "Future Brantley Park",
       "slug": "future-brantley-park",
       "type": "park",
-      "status": null,
+      "status": "coming-soon",
       "address": "1708 Brantley Dr",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Future Brantley Park is a neighborhood park on James Island. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Set among the James Island neighborhoods, this park is a calm spot for morning walks and evening cool-downs.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.740945,
@@ -887,7 +926,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 2684
+      "areaSqFt": 2684,
+      "categoryImage": "green-space"
     },
     {
       "id": 23,
@@ -895,12 +935,12 @@
       "name": "Future Fort Pemberton Park",
       "slug": "future-fort-pemberton-park",
       "type": "park",
-      "status": null,
+      "status": "coming-soon",
       "address": "221 Yates Ave",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Future Fort Pemberton Park is a neighborhood park on James Island. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "A laid-back green space in James Island where you can escape the bustle and enjoy some time outdoors.",
       "hours": "Dawn to Dusk",
       "url": "https://sccbank.sc.gov/fort-pemberton",
       "latitude": 32.760004,
@@ -908,7 +948,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 50168
+      "areaSqFt": 50168,
+      "categoryImage": "green-space"
     },
     {
       "id": 118,
@@ -916,12 +957,12 @@
       "name": "Future Griffith Ln Park",
       "slug": "future-griffith-ln-park",
       "type": "park",
-      "status": null,
+      "status": "coming-soon",
       "address": "1850 Griffith Ln",
       "neighborhood": "Johns Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Future Griffith Ln Park is a neighborhood park on Johns Island. A welcoming green space for the local community to enjoy fresh air and outdoor time. The 3.6-acre site provides ample room for outdoor recreation.",
+      "description": "Right in the heart of Johns Island, this park offers open green space and a peaceful atmosphere for all ages.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.732381,
@@ -929,7 +970,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 155351
+      "areaSqFt": 155351,
+      "categoryImage": "green-space"
     },
     {
       "id": 52,
@@ -937,12 +979,12 @@
       "name": "Gadsdenboro Park",
       "slug": "gadsdenboro-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "309 Concord St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Gadsdenboro Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy playground, multi-purpose field.",
+      "description": "A tree-shaded neighborhood park in Peninsula, ideal for afternoon walks and letting kids burn off energy on the playground.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Gadsdenboro-FieldsConcord-Park-36",
       "latitude": 32.788153,
@@ -951,7 +993,8 @@
         "Playground",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 28269
+      "areaSqFt": 28269,
+      "categoryImage": "playground"
     },
     {
       "id": 109,
@@ -959,12 +1002,12 @@
       "name": "Gaillard Center Park",
       "slug": "gaillard-center-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "95 Calhoun St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Gaillard Center Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "One of Peninsula's go-to green spaces for green space and casual recreation.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/gaillard-center-park-grounds/",
       "latitude": 32.787541,
@@ -972,7 +1015,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 6380
+      "areaSqFt": 6380,
+      "categoryImage": "green-space"
     },
     {
       "id": 121,
@@ -980,12 +1024,12 @@
       "name": "General William Moultrie Playground",
       "slug": "general-william-moultrie-playground",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "41 Ashley Ave",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "General William Moultrie Playground is a neighborhood playground in historic downtown Charleston. Visitors can enjoy baseball, basketball, playground, tennis.",
+      "description": "General William Moultrie Playground in Peninsula packs baseball, basketball, playground, tennis into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Moultrie-Playground-20?&centerLat=32.77584237392322&centerLng=-79.94207488343409&zoom=17",
       "latitude": 32.776841,
@@ -996,7 +1040,8 @@
         "Playground",
         "Tennis"
       ],
-      "areaSqFt": 26592
+      "areaSqFt": 26592,
+      "categoryImage": "playground"
     },
     {
       "id": 13,
@@ -1004,12 +1049,12 @@
       "name": "Gillon Street Park",
       "slug": "gillon-street-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "15 Gillon St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Gillon Street Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A quiet pocket of green in Peninsula where residents come to unwind under the live oaks.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/exchange-bldg-pocket-park/",
       "latitude": 32.777037,
@@ -1017,7 +1062,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 255
+      "areaSqFt": 255,
+      "categoryImage": "green-space"
     },
     {
       "id": 46,
@@ -1025,12 +1071,12 @@
       "name": "Governors Park",
       "slug": "governors-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "165 Fairbanks Dr",
       "neighborhood": "Daniel Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Governors Park is a neighborhood park on Daniel Island. Visitors can enjoy baseball, soccer, playground, multi-purpose field. The 5.1-acre site provides ample room for outdoor recreation.",
+      "description": "Governors Park is one of Daniel Island's most well-equipped parks, offering baseball, soccer, playground, and more. With 5 amenities, it serves as a community hub for sports, play, and outdoor gatherings.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Governors-Park-76",
       "latitude": 32.86525,
@@ -1042,7 +1088,8 @@
         "Multi-Purpose Field",
         "Dog Park"
       ],
-      "areaSqFt": 223605
+      "areaSqFt": 223605,
+      "categoryImage": "dog-park"
     },
     {
       "id": 120,
@@ -1050,12 +1097,12 @@
       "name": "Hampstead Park",
       "slug": "hampstead-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "67 Columbus St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Hampstead Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy green space. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "This Peninsula park offers a shady retreat from the Charleston heat with open lawns and room to play.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.795761,
@@ -1063,7 +1110,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 3575
+      "areaSqFt": 3575,
+      "categoryImage": "green-space"
     },
     {
       "id": 117,
@@ -1071,12 +1119,12 @@
       "name": "Hampstead Square SE quadrant",
       "slug": "hampstead-square-se-quadrant",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "65 Columbus St",
       "neighborhood": "Peninsula",
       "owner": "School Distirct or City",
       "maintainedBy": "City of Charleston",
-      "description": "Hampstead Square SE quadrant is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A well-loved community park in Peninsula with walking path — a favorite stop for families in the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.796038,
@@ -1085,7 +1133,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 3520
+      "areaSqFt": 3520,
+      "categoryImage": "trails"
     },
     {
       "id": 12,
@@ -1093,12 +1142,12 @@
       "name": "Hampton Park",
       "slug": "hampton-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "30 Mary Murray Dr",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Hampton Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy picnic area, dog park. The 6.7-acre site provides ample room for outdoor recreation.",
+      "description": "Hampton Park is one of the Peninsula's most cherished green spaces, spanning 60 acres with meandering paths, a dog park, and picnic areas. The park's rose garden and live oaks make it a year-round destination for walkers, joggers, and families.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Hampton-Park-81",
       "latitude": 32.800036,
@@ -1107,7 +1156,8 @@
         "Picnic Area",
         "Dog Park"
       ],
-      "areaSqFt": 293707
+      "areaSqFt": 293707,
+      "categoryImage": "dog-park"
     },
     {
       "id": 102,
@@ -1115,12 +1165,12 @@
       "name": "Hampton Park Dog Park",
       "slug": "hampton-park-dog-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "129 Grove St",
       "neighborhood": "Peninsula",
       "owner": "SCE&G",
       "maintainedBy": "City of Charleston",
-      "description": "Hampton Park Dog Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy dog park.",
+      "description": "Tucked into a Peninsula residential block, this park provides a welcome green break from the surrounding streets.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/hampton-park-dog-run/",
       "latitude": 32.802703,
@@ -1128,7 +1178,8 @@
       "amenities": [
         "Dog Park"
       ],
-      "areaSqFt": 6322
+      "areaSqFt": 6322,
+      "categoryImage": "dog-park"
     },
     {
       "id": 61,
@@ -1136,12 +1187,12 @@
       "name": "Harborview Fort Johnson Park",
       "slug": "harborview-fort-johnson-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "621 Harbor View Rd",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Harborview Fort Johnson Park is a neighborhood park on James Island. Visitors can enjoy playground, tennis.",
+      "description": "Residents of James Island gather here for fresh air and easy access to a bit of nature without leaving the neighborhood.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/HarborviewFt-Johnson-Park-77",
       "latitude": 32.740978,
@@ -1150,7 +1201,8 @@
         "Playground",
         "Tennis"
       ],
-      "areaSqFt": 27001
+      "areaSqFt": 27001,
+      "categoryImage": "playground"
     },
     {
       "id": 51,
@@ -1158,12 +1210,12 @@
       "name": "Harborwalk Park",
       "slug": "harborwalk-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "330 Concord St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Harborwalk Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy green space. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A small but cherished green space in Peninsula that serves as the block's backyard for picnics and play.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/dockside-laurens-place-harborwalk/",
       "latitude": 32.789867,
@@ -1171,7 +1223,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 4191
+      "areaSqFt": 4191,
+      "categoryImage": "green-space"
     },
     {
       "id": 85,
@@ -1179,12 +1232,12 @@
       "name": "Harmon Field Park",
       "slug": "harmon-field-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "201 President St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Harmon Field Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy baseball, soccer, playground, multi-purpose field.",
+      "description": "Harmon Field Park in Peninsula packs baseball, soccer, playground, multi-purpose field into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Harmon-Field-78",
       "latitude": 32.791505,
@@ -1195,7 +1248,8 @@
         "Playground",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 78873
+      "areaSqFt": 78873,
+      "categoryImage": "playground"
     },
     {
       "id": 33,
@@ -1203,12 +1257,12 @@
       "name": "Hazel Parker Playground",
       "slug": "hazel-parker-playground",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "70 E Bay St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Hazel Parker Playground is a neighborhood playground in historic downtown Charleston. Visitors can enjoy restrooms, basketball, picnic area, playground.",
+      "description": "Hazel Parker Playground on the Peninsula is a beloved community hub with basketball, tennis, a dog park, playground, picnic area, and a multi-purpose field. Locals of all ages gather here for pickup games and afternoon hangouts.",
       "hours": "Sun-Sat, Other",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Hazel-Parker-Playground-1",
       "latitude": 32.774637,
@@ -1222,7 +1276,8 @@
         "Dog Park",
         "Tennis"
       ],
-      "areaSqFt": 19109
+      "areaSqFt": 19109,
+      "categoryImage": "dog-park"
     },
     {
       "id": 20,
@@ -1230,12 +1285,12 @@
       "name": "High Battery Park",
       "slug": "high-battery-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "16 E Battery St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "High Battery Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "This pocket park gives Peninsula locals a place to stretch their legs, sit in the shade, and enjoy the outdoors.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/High-Battery-Park-82?&centerLat=32.77283285871962&centerLng=-79.9309516550408&zoom=15",
       "latitude": 32.770177,
@@ -1243,7 +1298,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 2554
+      "areaSqFt": 2554,
+      "categoryImage": "green-space"
     },
     {
       "id": 105,
@@ -1251,12 +1307,12 @@
       "name": "Horse Lot Park",
       "slug": "horse-lot-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "4 Chisolm St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Horse Lot Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "Set among the Peninsula neighborhoods, this park is a calm spot for morning walks and evening cool-downs.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/Horse-Lot-64?&centerLat=32.77381979625133&centerLng=-79.94196609607046&zoom=16",
       "latitude": 32.774308,
@@ -1264,7 +1320,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 11386
+      "areaSqFt": 11386,
+      "categoryImage": "green-space"
     },
     {
       "id": 5,
@@ -1272,12 +1329,12 @@
       "name": "House Park",
       "slug": "house-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "44 America St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "House Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A laid-back green space in Peninsula where you can escape the bustle and enjoy some time outdoors.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/house-park/",
       "latitude": 32.79372,
@@ -1285,7 +1342,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 462
+      "areaSqFt": 462,
+      "categoryImage": "green-space"
     },
     {
       "id": 3,
@@ -1293,12 +1351,12 @@
       "name": "International African American Museum Property",
       "slug": "international-african-american-museum-property",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "14 Wharfside St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "International African American Museum Property is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "International African American Museum Property in Peninsula combines cultural significance with open green space, offering visitors a place for reflection and learning.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.788691,
@@ -1306,7 +1364,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 13072
+      "areaSqFt": 13072,
+      "categoryImage": "green-space"
     },
     {
       "id": 77,
@@ -1314,12 +1373,12 @@
       "name": "Jack Adams Tennis Center",
       "slug": "jack-adams-tennis-center",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "285 Congress St",
       "neighborhood": "Peninsula",
       "owner": "Citadel",
       "maintainedBy": "City of Charleston",
-      "description": "Jack Adams Tennis Center is a neighborhood tennis facility in historic downtown Charleston. Visitors can enjoy tennis.",
+      "description": "Right in the heart of Peninsula, this park offers open green space and a peaceful atmosphere for all ages.",
       "hours": "Sun-Sat, Other",
       "url": "http://www.charleston-sc.gov/Facilities/Facility/Details/74",
       "latitude": 32.794463,
@@ -1327,7 +1386,8 @@
       "amenities": [
         "Tennis"
       ],
-      "areaSqFt": 6503
+      "areaSqFt": 6503,
+      "categoryImage": "sports"
     },
     {
       "id": 97,
@@ -1335,12 +1395,12 @@
       "name": "James Island County Park",
       "slug": "james-island-county-park",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "871 Riverland Dr",
       "neighborhood": "James Island",
       "owner": "Charleston County Park and Recreation District",
       "maintainedBy": "County",
-      "description": "James Island County Park is a neighborhood recreation center on James Island. Visitors can enjoy restrooms, picnic area, playground, multi-purpose field. The 41.5-acre site provides ample room for outdoor recreation.",
+      "description": "James Island County Park is a sprawling recreation destination with disc golf, fishing, cycling trails, a dog park, and much more. The park hosts the annual Holiday Festival of Lights and Reggae Nights concert series.",
       "hours": "Sun-Sat, Other",
       "url": "https://www.ccprc.com/68/James-Island-County-Park",
       "latitude": 32.734334,
@@ -1355,7 +1415,8 @@
         "Disc Golf",
         "Cycling"
       ],
-      "areaSqFt": 1807538
+      "areaSqFt": 1807538,
+      "categoryImage": "dog-park"
     },
     {
       "id": 18,
@@ -1363,12 +1424,12 @@
       "name": "James Island Recreation Complex",
       "slug": "james-island-recreation-complex",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1088 Quail Dr",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "James Island Recreation Complex is a neighborhood recreation complex on James Island. Visitors can enjoy restrooms, baseball, basketball, picnic area. The 3.8-acre site provides ample room for outdoor recreation.",
+      "description": "James Island Recreation Complex is one of James Island's most well-equipped parks, offering restrooms, baseball, basketball, and more. With 5 amenities, it serves as a community hub for sports, play, and outdoor gatherings.",
       "hours": "Sun-Sat, Other",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/4",
       "latitude": 32.737453,
@@ -1380,7 +1441,8 @@
         "Picnic Area",
         "Playground"
       ],
-      "areaSqFt": 163851
+      "areaSqFt": 163851,
+      "categoryImage": "playground"
     },
     {
       "id": 1,
@@ -1388,12 +1450,12 @@
       "name": "Joe Riley Waterfront Park",
       "slug": "joe-riley-waterfront-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "170 Concord St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Joe Riley Waterfront Park is a scenic waterfront space in historic downtown Charleston, featuring views of the surrounding waterways. Visitors can enjoy restrooms, picnic area, fishing. The 2.7-acre site provides ample room for outdoor recreation.",
+      "description": "Joe Riley Waterfront Park is a scenic waterfront gem in historic downtown Charleston with restrooms, picnic area, and fishing access. The iconic Pineapple Fountain anchors this beloved gathering spot along the harbor.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/joe-riley-waterfront-park/",
       "latitude": 32.777408,
@@ -1403,7 +1465,8 @@
         "Picnic Area",
         "Fishing"
       ],
-      "areaSqFt": 116277
+      "areaSqFt": 116277,
+      "categoryImage": "fishing"
     },
     {
       "id": 87,
@@ -1411,12 +1474,12 @@
       "name": "Johns Island Park",
       "slug": "johns-island-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1761 Hay Rd",
       "neighborhood": "Johns Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Johns Island Park is a neighborhood park on Johns Island. Visitors can enjoy baseball, picnic area, playground, multi-purpose field. The 3.6-acre site provides ample room for outdoor recreation.",
+      "description": "Johns Island Park in Johns Island stands out with its disc golf course plus baseball, picnic area, playground, multi-purpose field, tennis, restrooms, dog park. A versatile destination for both casual visitors and dedicated players.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/Johns-Island-Park-66",
       "latitude": 32.7243,
@@ -1426,37 +1489,13 @@
         "Picnic Area",
         "Playground",
         "Multi-Purpose Field",
-        "Tennis"
-      ],
-      "areaSqFt": 155570
-    },
-    {
-      "id": 88,
-      "facilityId": "FAC-848",
-      "name": "Johns Island Park",
-      "slug": "johns-island-park",
-      "type": "park",
-      "status": "ACTIVE",
-      "address": "1761 Hay Rd",
-      "neighborhood": "Johns Island",
-      "owner": "City of Charleston",
-      "maintainedBy": "City of Charleston",
-      "description": "Johns Island Park is a neighborhood park on Johns Island. Visitors can enjoy restrooms, baseball, picnic area, playground. The 3.6-acre site provides ample room for outdoor recreation.",
-      "hours": "Sun-Sat, Daylight",
-      "url": "http://www.charleston-sc.gov/Facilities/Facility/Details/Johns-Island-Park-66",
-      "latitude": 32.7243,
-      "longitude": -80.083052,
-      "amenities": [
-        "Restrooms",
-        "Baseball",
-        "Picnic Area",
-        "Playground",
-        "Multi-Purpose Field",
-        "Dog Park",
         "Tennis",
+        "Restrooms",
+        "Dog Park",
         "Disc Golf"
       ],
-      "areaSqFt": 155570
+      "areaSqFt": 155570,
+      "categoryImage": "dog-park"
     },
     {
       "id": 59,
@@ -1464,12 +1503,12 @@
       "name": "Joseph P Riley Jr Park",
       "slug": "joseph-p-riley-jr-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "360 Fishburne St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Joseph P Riley Jr Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "A tree-shaded neighborhood park in Peninsula, ideal for afternoon walks and a bit of fresh air.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/joseph-p-riley-jr-park/",
       "latitude": 32.790672,
@@ -1477,7 +1516,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 54881
+      "areaSqFt": 54881,
+      "categoryImage": "green-space"
     },
     {
       "id": 37,
@@ -1485,12 +1525,12 @@
       "name": "Lenevar Playground",
       "slug": "lenevar-playground",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1305 S Lenevar Dr",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Lenevar Playground is a neighborhood playground in the West Ashley area of Charleston. Visitors can enjoy restrooms, baseball, basketball, playground.",
+      "description": "Lenevar Playground is one of West Ashley's most well-equipped parks, offering restrooms, baseball, basketball, and more. With 6 amenities, it serves as a community hub for sports, play, and outdoor gatherings.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Lenevar-Park-75",
       "latitude": 32.806083,
@@ -1503,7 +1543,8 @@
         "Dog Park",
         "Tennis"
       ],
-      "areaSqFt": 43430
+      "areaSqFt": 43430,
+      "categoryImage": "dog-park"
     },
     {
       "id": 101,
@@ -1511,12 +1552,12 @@
       "name": "Liberty Square",
       "slug": "liberty-square",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "340 Concord St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Liberty Square is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls.",
+      "description": "One of Peninsula's go-to green spaces for walking path and casual recreation.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/liberty-square/",
       "latitude": 32.790538,
@@ -1525,7 +1566,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 6843
+      "areaSqFt": 6843,
+      "categoryImage": "trails"
     },
     {
       "id": 56,
@@ -1533,12 +1575,12 @@
       "name": "Live To Play (LTP) Tennis Center",
       "slug": "live-to-play-ltp-tennis-center",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "161 Seven Farms Dr",
       "neighborhood": "Daniel Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Live To Play (LTP) Tennis Center is a neighborhood tennis facility on Daniel Island. Visitors can enjoy tennis. The 4.5-acre site provides ample room for outdoor recreation.",
+      "description": "A quiet pocket of green in Daniel Island where residents come to unwind under the live oaks.",
       "hours": "Sun-Sat, Other",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Family-Circle-Tennis-Facility-47",
       "latitude": 32.860699,
@@ -1546,7 +1588,8 @@
       "amenities": [
         "Tennis"
       ],
-      "areaSqFt": 194692
+      "areaSqFt": 194692,
+      "categoryImage": "sports"
     },
     {
       "id": 27,
@@ -1554,12 +1597,12 @@
       "name": "Logan Street Triangle Park",
       "slug": "logan-street-triangle-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "147 Logan St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "Charleston Parks Conservancy",
-      "description": "Logan Street Triangle Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy picnic area. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "This Peninsula park offers a shady retreat from the Charleston heat with open lawns and room to play.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/logan-street-triangle-park/",
       "latitude": 32.780053,
@@ -1567,7 +1610,8 @@
       "amenities": [
         "Picnic Area"
       ],
-      "areaSqFt": 435
+      "areaSqFt": 435,
+      "categoryImage": "picnic"
     },
     {
       "id": 68,
@@ -1575,12 +1619,12 @@
       "name": "Low Battery Park",
       "slug": "low-battery-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "21 Murray Blvd",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Low Battery Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy green space.",
+      "description": "A well-loved community park in Peninsula with green space — a favorite stop for families in the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/battery-high-low/",
       "latitude": 32.771196,
@@ -1588,7 +1632,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 6859
+      "areaSqFt": 6859,
+      "categoryImage": "green-space"
     },
     {
       "id": 4,
@@ -1596,12 +1641,12 @@
       "name": "Lowcountry Senior Center",
       "slug": "lowcountry-senior-center",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "865 Riverland Drive",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Lowcountry Senior Center is a neighborhood recreation center on James Island. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "Tucked into a James Island residential block, this park provides a welcome green break from the surrounding streets.",
       "hours": "Dawn to Dusk",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Lowcountry-Senior-Center-71",
       "latitude": 32.736292,
@@ -1609,7 +1654,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 28095
+      "areaSqFt": 28095,
+      "categoryImage": "green-space"
     },
     {
       "id": 55,
@@ -1617,12 +1663,12 @@
       "name": "Lucas Park",
       "slug": "lucas-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "78 Barre St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Lucas Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy playground. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Residents of Peninsula gather here for fresh air and easy access to a bit of nature without leaving the neighborhood.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/lucas-park/",
       "latitude": 32.78209,
@@ -1630,7 +1676,8 @@
       "amenities": [
         "Playground"
       ],
-      "areaSqFt": 2799
+      "areaSqFt": 2799,
+      "categoryImage": "playground"
     },
     {
       "id": 116,
@@ -1638,12 +1685,12 @@
       "name": "Magnolia Bridge Park",
       "slug": "magnolia-bridge-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "2245 Heriot St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Magnolia Bridge Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A small but cherished green space in Peninsula that serves as the block's backyard for picnics and play.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.81579,
@@ -1651,7 +1698,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 30
+      "areaSqFt": 30,
+      "categoryImage": "green-space"
     },
     {
       "id": 110,
@@ -1659,12 +1707,12 @@
       "name": "Magnolia Park and Community Garden",
       "slug": "magnolia-park-and-community-garden",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "14 Sycamore Ave",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Magnolia Park and Community Garden is a neighborhood garden in the West Ashley area of Charleston. The park offers a quiet green space for relaxation and leisurely strolls.",
+      "description": "Magnolia Park and Community Garden blends green space with community engagement in West Ashley. Visitors enjoy walking path, green space in a relaxed neighborhood setting.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Magnolia-Park-Community-Garden-99",
       "latitude": 32.788213,
@@ -1673,7 +1721,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 22303
+      "areaSqFt": 22303,
+      "categoryImage": "trails"
     },
     {
       "id": 28,
@@ -1681,12 +1730,12 @@
       "name": "Mall Playground",
       "slug": "mall-playground",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "68 Columbus St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Mall Playground is a neighborhood playground in historic downtown Charleston. Visitors can enjoy basketball, playground. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "This pocket park gives Peninsula locals a place to stretch their legs, sit in the shade, and enjoy the outdoors.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Mall-Playground-73",
       "latitude": 32.796261,
@@ -1695,7 +1744,8 @@
         "Basketball",
         "Playground"
       ],
-      "areaSqFt": 4038
+      "areaSqFt": 4038,
+      "categoryImage": "playground"
     },
     {
       "id": 58,
@@ -1703,12 +1753,12 @@
       "name": "Marion Square",
       "slug": "marion-square",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "329 Meeting St",
       "neighborhood": "Peninsula",
       "owner": "Washington Light Infantry and Sumter Guards",
       "maintainedBy": "City of Charleston",
-      "description": "Marion Square is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls.",
+      "description": "Marion Square is the Peninsula's central public gathering space, hosting the beloved Saturday farmers market and community events year-round. Walking paths crisscross the tree-lined green with open lawns perfect for relaxing.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Marion-Square-83?&centerLat=32.785293913419046&centerLng=-79.93425648144232&zoom=16",
       "latitude": 32.786359,
@@ -1717,7 +1767,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 34526
+      "areaSqFt": 34526,
+      "categoryImage": "trails"
     },
     {
       "id": 54,
@@ -1725,12 +1776,12 @@
       "name": "Martin Park",
       "slug": "martin-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "155 Jackson St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Martin Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy baseball, basketball, picnic area, playground.",
+      "description": "Martin Park is one of Peninsula's most well-equipped parks, offering baseball, basketball, picnic area, and more. With 5 amenities, it serves as a community hub for sports, play, and outdoor gatherings.",
       "hours": "Mon-Fri, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Martin-Park-84",
       "latitude": 32.79957,
@@ -1742,7 +1793,8 @@
         "Playground",
         "Tennis"
       ],
-      "areaSqFt": 18922
+      "areaSqFt": 18922,
+      "categoryImage": "playground"
     },
     {
       "id": 64,
@@ -1750,12 +1802,12 @@
       "name": "Mary Conway Park",
       "slug": "mary-conway-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "66 Columbus St",
       "neighborhood": "Peninsula",
       "owner": "Trident Technical College",
       "maintainedBy": "City of Charleston",
-      "description": "Mary Conway Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Set among the Peninsula neighborhoods, this park is a calm spot for morning walks and evening cool-downs.",
       "hours": "Sun-Sat, Daylight",
       "url": null,
       "latitude": 32.796778,
@@ -1763,7 +1815,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 3607
+      "areaSqFt": 3607,
+      "categoryImage": "green-space"
     },
     {
       "id": 22,
@@ -1771,12 +1824,12 @@
       "name": "Mary Utsey Playground / Orange Grove Park",
       "slug": "mary-utsey-playground-orange-grove-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1350 Orange Grove Rd",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Mary Utsey Playground / Orange Grove Park is a neighborhood playground in the West Ashley area of Charleston. Visitors can enjoy restrooms, baseball, basketball, picnic area.",
+      "description": "Mary Utsey Playground / Orange Grove Park is one of West Ashley's most well-equipped parks, offering restrooms, baseball, basketball, and more. With 6 amenities, it serves as a community hub for sports, play, and outdoor gatherings.",
       "hours": "Dawn to Dusk",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Mary-UtseyOrange-Grove-Playground-72",
       "latitude": 32.817248,
@@ -1789,7 +1842,8 @@
         "Playground",
         "Tennis"
       ],
-      "areaSqFt": 42561
+      "areaSqFt": 42561,
+      "categoryImage": "playground"
     },
     {
       "id": 2,
@@ -1797,12 +1851,12 @@
       "name": "Mary Watson Park",
       "slug": "mary-watson-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "55 America St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Mary Watson Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A laid-back green space in Peninsula where you can escape the bustle and enjoy some time outdoors.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/america-amherst-street-mini-park/",
       "latitude": 32.794359,
@@ -1810,7 +1864,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 372
+      "areaSqFt": 372,
+      "categoryImage": "green-space"
     },
     {
       "id": 80,
@@ -1818,12 +1873,12 @@
       "name": "Maybank Tennis Center",
       "slug": "maybank-tennis-center",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1880 Houghton Dr",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Maybank Tennis Center is a neighborhood tennis facility on James Island. Visitors can enjoy tennis.",
+      "description": "Right in the heart of James Island, this park offers open green space and a peaceful atmosphere for all ages.",
       "hours": "Sun-Sat, Other",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Maybank-Tennis-Center-70",
       "latitude": 32.752581,
@@ -1831,7 +1886,8 @@
       "amenities": [
         "Tennis"
       ],
-      "areaSqFt": 33572
+      "areaSqFt": 33572,
+      "categoryImage": "sports"
     },
     {
       "id": 34,
@@ -1839,12 +1895,12 @@
       "name": "McLeod Plantation",
       "slug": "mcleod-plantation",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "325 Country Club Dr",
       "neighborhood": "James Island",
       "owner": "Charleston County",
       "maintainedBy": "County",
-      "description": "McLeod Plantation is a neighborhood park on James Island. A welcoming green space for the local community to enjoy fresh air and outdoor time. The 4.1-acre site provides ample room for outdoor recreation.",
+      "description": "McLeod Plantation on James Island offers a glimpse into Charleston's layered past alongside green space for walking and reflection.",
       "hours": "Dawn to Dusk",
       "url": "https://www.ccprc.com/1447/McLeod-Plantation-Historic-Site",
       "latitude": 32.76242,
@@ -1852,7 +1908,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 180148
+      "areaSqFt": 180148,
+      "categoryImage": "green-space"
     },
     {
       "id": 81,
@@ -1860,12 +1917,12 @@
       "name": "McLeod Plantation Riverfront area",
       "slug": "mcleod-plantation-riverfront-area",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "314 Country Club Dr",
       "neighborhood": "James Island",
       "owner": "Charleston County",
       "maintainedBy": "County",
-      "description": "McLeod Plantation Riverfront area is a neighborhood park on James Island. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "McLeod Plantation Riverfront area on James Island offers a glimpse into Charleston's layered past alongside green space for walking and reflection.",
       "hours": "Dawn to Dusk",
       "url": "https://www.ccprc.com/1447/McLeod-Plantation-Historic-Site",
       "latitude": 32.765373,
@@ -1873,7 +1930,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 31230
+      "areaSqFt": 31230,
+      "categoryImage": "green-space"
     },
     {
       "id": 70,
@@ -1881,12 +1939,12 @@
       "name": "McMahon Playground",
       "slug": "mcmahon-playground",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "55 Cleveland St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "McMahon Playground is a neighborhood playground in historic downtown Charleston. Visitors can enjoy baseball, basketball, playground, multi-purpose field.",
+      "description": "McMahon Playground in Peninsula packs baseball, basketball, playground, multi-purpose field into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/McMahon-Playground-69",
       "latitude": 32.800642,
@@ -1897,7 +1955,8 @@
         "Playground",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 31533
+      "areaSqFt": 31533,
+      "categoryImage": "playground"
     },
     {
       "id": 53,
@@ -1905,12 +1964,12 @@
       "name": "Medway Park",
       "slug": "medway-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "2113 Medway Rd",
       "neighborhood": "James Island",
       "owner": "School District",
       "maintainedBy": "City of Charleston",
-      "description": "Medway Park is a neighborhood park on James Island. Visitors can enjoy baseball, multi-purpose field.",
+      "description": "A tree-shaded neighborhood park in James Island, ideal for afternoon walks and a bit of fresh air.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Medway-Park-68",
       "latitude": 32.760224,
@@ -1919,7 +1978,8 @@
         "Baseball",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 30845
+      "areaSqFt": 30845,
+      "categoryImage": "sports"
     },
     {
       "id": 42,
@@ -1927,12 +1987,12 @@
       "name": "Melton Peter Demetre Park",
       "slug": "melton-peter-demetre-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "646 Wampler Dr",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Melton Peter Demetre Park is a neighborhood park on James Island. Visitors can enjoy picnic area, boating, fishing.",
+      "description": "Melton Peter Demetre Park provides direct water access in James Island along with picnic area, fishing. It's a prime spot for boaters, anglers, and anyone drawn to the Lowcountry waterways.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Melton-Peter-Demetre-Park-85",
       "latitude": 32.752772,
@@ -1942,7 +2002,8 @@
         "Boating",
         "Fishing"
       ],
-      "areaSqFt": 33175
+      "areaSqFt": 33175,
+      "categoryImage": "fishing"
     },
     {
       "id": 44,
@@ -1950,12 +2011,12 @@
       "name": "Mitchell Playground",
       "slug": "mitchell-playground",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "145 Fishburne St",
       "neighborhood": "Peninsula",
       "owner": "Mitchell School",
       "maintainedBy": "City of Charleston",
-      "description": "Mitchell Playground is a neighborhood playground in historic downtown Charleston. Visitors can enjoy restrooms, basketball, picnic area, playground.",
+      "description": "Mitchell Playground in Peninsula packs restrooms, basketball, picnic area, playground into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Mitchell-Playground-67",
       "latitude": 32.794207,
@@ -1966,7 +2027,8 @@
         "Picnic Area",
         "Playground"
       ],
-      "areaSqFt": 9390
+      "areaSqFt": 9390,
+      "categoryImage": "playground"
     },
     {
       "id": 94,
@@ -1974,12 +2036,12 @@
       "name": "Mulberry Park",
       "slug": "mulberry-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1646 Juniper St",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Mulberry Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy fishing.",
+      "description": "One of West Ashley's go-to green spaces for fishing and casual recreation.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/mulberry-pond-park/",
       "latitude": 32.790516,
@@ -1987,7 +2049,8 @@
       "amenities": [
         "Fishing"
       ],
-      "areaSqFt": 38601
+      "areaSqFt": 38601,
+      "categoryImage": "fishing"
     },
     {
       "id": 25,
@@ -1995,12 +2058,12 @@
       "name": "New Street Mini Park",
       "slug": "new-street-mini-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "41 New St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "New Street Mini Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A quiet pocket of green in Peninsula where residents come to unwind under the live oaks.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.775855,
@@ -2008,7 +2071,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 185
+      "areaSqFt": 185,
+      "categoryImage": "green-space"
     },
     {
       "id": 111,
@@ -2016,12 +2080,12 @@
       "name": "Northbridge Park",
       "slug": "northbridge-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "929 Sam Rittenberg Blvd",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Northbridge Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy picnic area, boating, fishing.",
+      "description": "Northbridge Park provides direct water access in West Ashley along with picnic area, fishing. It's a prime spot for boaters, anglers, and anyone drawn to the Lowcountry waterways.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/northbridge-park/",
       "latitude": 32.834486,
@@ -2031,7 +2095,8 @@
         "Boating",
         "Fishing"
       ],
-      "areaSqFt": 18910
+      "areaSqFt": 18910,
+      "categoryImage": "fishing"
     },
     {
       "id": 8,
@@ -2039,12 +2104,12 @@
       "name": "Old Towne Creek County Park",
       "slug": "old-towne-creek-county-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "1400 Old Towne Rd",
       "neighborhood": "West Ashley",
       "owner": "CCPRC",
       "maintainedBy": "CCPRC",
-      "description": "Old Towne Creek County Park",
+      "description": "This West Ashley park offers a shady retreat from the Charleston heat with open lawns and room to play.",
       "hours": "Dawn to Dusk",
       "url": "https://ccprc.com/oldtownecreek",
       "latitude": 32.805409,
@@ -2052,7 +2117,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 386911
+      "areaSqFt": 386911,
+      "categoryImage": "green-space"
     },
     {
       "id": 72,
@@ -2060,12 +2126,12 @@
       "name": "Parkshore Park",
       "slug": "parkshore-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1 Windsor Dr",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Parkshore Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy baseball, picnic area, playground, tennis.",
+      "description": "Parkshore Park in West Ashley packs baseball, picnic area, playground, tennis into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/23",
       "latitude": 32.824111,
@@ -2076,7 +2142,8 @@
         "Playground",
         "Tennis"
       ],
-      "areaSqFt": 57612
+      "areaSqFt": 57612,
+      "categoryImage": "playground"
     },
     {
       "id": 115,
@@ -2084,12 +2151,12 @@
       "name": "Plymouth Park",
       "slug": "plymouth-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "85 Plymouth Ave",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Plymouth Park is a neighborhood park on James Island. Visitors can enjoy baseball, playground.",
+      "description": "A well-loved community park in James Island with baseball — a favorite stop for families in the neighborhood.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Plymouth-Park-24",
       "latitude": 32.768228,
@@ -2098,7 +2165,8 @@
         "Baseball",
         "Playground"
       ],
-      "areaSqFt": 20665
+      "areaSqFt": 20665,
+      "categoryImage": "playground"
     },
     {
       "id": 14,
@@ -2106,12 +2174,12 @@
       "name": "Randolph Park",
       "slug": "randolph-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1701 Pearlott St",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Randolph Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy soccer, picnic area, playground, multi-purpose field.",
+      "description": "Randolph Park in West Ashley packs soccer, picnic area, playground, multi-purpose field into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "http://www.charleston-sc.gov/Facilities/Facility/Details/25",
       "latitude": 32.78592,
@@ -2122,7 +2190,8 @@
         "Playground",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 8544
+      "areaSqFt": 8544,
+      "categoryImage": "playground"
     },
     {
       "id": 38,
@@ -2130,12 +2199,12 @@
       "name": "Rosemont Field",
       "slug": "rosemont-field",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1960 Austin Ave",
       "neighborhood": "Peninsula",
       "owner": "Private",
       "maintainedBy": "City of Charleston",
-      "description": "Rosemont Field is a neighborhood park in historic downtown Charleston. Visitors can enjoy baseball, multi-purpose field.",
+      "description": "Tucked into a Peninsula residential block, this park provides a welcome green break from the surrounding streets.",
       "hours": "Sun-Sat, Daylight",
       "url": null,
       "latitude": 32.831404,
@@ -2144,7 +2213,8 @@
         "Baseball",
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 15262
+      "areaSqFt": 15262,
+      "categoryImage": "sports"
     },
     {
       "id": 71,
@@ -2152,12 +2222,12 @@
       "name": "Septima Clark Park",
       "slug": "septima-clark-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "149 President St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Septima Clark Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Named after civil rights educator Septima Poinsette Clark, this Peninsula park celebrates Charleston's rich history of activism. A dignified green space that invites reflection.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/septima-clark-park/",
       "latitude": 32.788962,
@@ -2165,7 +2235,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 341
+      "areaSqFt": 341,
+      "categoryImage": "green-space"
     },
     {
       "id": 6,
@@ -2173,12 +2244,12 @@
       "name": "Shaw Community Center",
       "slug": "shaw-community-center",
       "type": "recreation",
-      "status": null,
+      "status": "active",
       "address": "22 Mary St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Shaw Community Center is a neighborhood community park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Residents of Peninsula gather here for fresh air and easy access to a bit of nature without leaving the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.792653,
@@ -2186,7 +2257,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 2357
+      "areaSqFt": 2357,
+      "categoryImage": "green-space"
     },
     {
       "id": 75,
@@ -2194,12 +2266,12 @@
       "name": "Shiloh Park",
       "slug": "shiloh-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "172 Smith St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Shiloh Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy green space. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A small but cherished green space in Peninsula that serves as the block's backyard for picnics and play.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charleston-sc.gov/DocumentCenter/View/30842/Shiloh-Park-CP",
       "latitude": 32.788971,
@@ -2207,7 +2279,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 1072
+      "areaSqFt": 1072,
+      "categoryImage": "green-space"
     },
     {
       "id": 62,
@@ -2215,12 +2288,12 @@
       "name": "Simonton Park",
       "slug": "simonton-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "71 Morris St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Simonton Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "This pocket park gives Peninsula locals a place to stretch their legs, sit in the shade, and enjoy the outdoors.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/simonton-park/",
       "latitude": 32.788542,
@@ -2228,7 +2301,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 1594
+      "areaSqFt": 1594,
+      "categoryImage": "green-space"
     },
     {
       "id": 60,
@@ -2236,12 +2310,12 @@
       "name": "Singleton Park",
       "slug": "singleton-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "388 N Nassau St",
       "neighborhood": "Peninsula",
       "owner": "SCE&G",
       "maintainedBy": "City of Charleston",
-      "description": "Singleton Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "Set among the Peninsula neighborhoods, this park is a calm spot for morning walks and evening cool-downs.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/Simmons-Playground-Cool-Blow-Park-27?&centerLat=32.805924076980794&centerLng=-79.94639753337293&zoom=17",
       "latitude": 32.806472,
@@ -2249,7 +2323,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 10883
+      "areaSqFt": 10883,
+      "categoryImage": "green-space"
     },
     {
       "id": 73,
@@ -2257,12 +2332,12 @@
       "name": "St Julian Devine Community Center",
       "slug": "st-julian-devine-community-center",
       "type": "recreation",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1 Cooper St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "St Julian Devine Community Center is a neighborhood community park in historic downtown Charleston. Visitors can enjoy restrooms, basketball, picnic area, playground.",
+      "description": "St Julian Devine Community Center in Peninsula packs restrooms, basketball, picnic area, playground into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Mon-Fri, Other",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/St-Julian-Devine-Community-Center-2",
       "latitude": 32.799418,
@@ -2273,7 +2348,8 @@
         "Picnic Area",
         "Playground"
       ],
-      "areaSqFt": 6394
+      "areaSqFt": 6394,
+      "categoryImage": "playground"
     },
     {
       "id": 7,
@@ -2281,12 +2357,12 @@
       "name": "Stephen Washington Park",
       "slug": "stephen-washington-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1148 Fort Johnson Rd",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Stephen Washington Park is a neighborhood park on James Island. Visitors can enjoy baseball, picnic area, playground.",
+      "description": "Stephen Washington Park in James Island packs baseball, picnic area, playground into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Stephen-Washington-Park-29",
       "latitude": 32.726762,
@@ -2296,7 +2372,8 @@
         "Picnic Area",
         "Playground"
       ],
-      "areaSqFt": 51178
+      "areaSqFt": 51178,
+      "categoryImage": "playground"
     },
     {
       "id": 93,
@@ -2304,12 +2381,12 @@
       "name": "Stoney Field",
       "slug": "stoney-field",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "300 Fishburne St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Stoney Field is a neighborhood park in historic downtown Charleston. Visitors can enjoy multi-purpose field.",
+      "description": "A laid-back green space in Peninsula where you can escape the bustle and enjoy some time outdoors.",
       "hours": "Mon-Fri, Other",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Stoney-Field-32",
       "latitude": 32.790804,
@@ -2317,7 +2394,8 @@
       "amenities": [
         "Multi-Purpose Field"
       ],
-      "areaSqFt": 94813
+      "areaSqFt": 94813,
+      "categoryImage": "sports"
     },
     {
       "id": 45,
@@ -2325,12 +2403,12 @@
       "name": "Susie Jackson Freedom Memorial Garden",
       "slug": "susie-jackson-freedom-memorial-garden",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "71 Alexander St",
       "neighborhood": "Peninsula",
       "owner": "Charleston County",
       "maintainedBy": "City of Charleston",
-      "description": "Susie Jackson Freedom Memorial Garden is a neighborhood garden in historic downtown Charleston. Visitors can enjoy walking path, green space. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Susie Jackson Freedom Memorial Garden is a contemplative garden on the Peninsula dedicated to the memory of those lost in the 2015 Emanuel AME Church shooting. Walking paths wind through the peaceful grounds.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.788994,
@@ -2339,7 +2417,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 272
+      "areaSqFt": 272,
+      "categoryImage": "trails"
     },
     {
       "id": 57,
@@ -2347,12 +2426,12 @@
       "name": "Theodora Park",
       "slug": "theodora-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "86 Anson St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Theodora Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy playground. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Right in the heart of Peninsula, this park offers open green space and a peaceful atmosphere for all ages.",
       "hours": "Sun-Sat, 24 Hours/Day",
       "url": "https://www.charlestonparksconservancy.org/park-finder/theodora-park/",
       "latitude": 32.785904,
@@ -2360,7 +2439,8 @@
       "amenities": [
         "Playground"
       ],
-      "areaSqFt": 1112
+      "areaSqFt": 1112,
+      "categoryImage": "playground"
     },
     {
       "id": 106,
@@ -2368,12 +2448,12 @@
       "name": "Thomas Johnson Park",
       "slug": "thomas-johnson-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1443 Secessionville Rd",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Thomas Johnson Park is a neighborhood park on James Island. Visitors can enjoy restrooms, baseball, soccer, playground.",
+      "description": "Thomas Johnson Park is one of James Island's most well-equipped parks, offering restrooms, baseball, soccer, and more. With 6 amenities, it serves as a community hub for sports, play, and outdoor gatherings.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Thomas-Johnson-Playground-Westchester-58",
       "latitude": 32.712284,
@@ -2386,7 +2466,8 @@
         "Multi-Purpose Field",
         "Tennis"
       ],
-      "areaSqFt": 62583
+      "areaSqFt": 62583,
+      "categoryImage": "playground"
     },
     {
       "id": 50,
@@ -2394,12 +2475,12 @@
       "name": "Tiedemann Park",
       "slug": "tiedemann-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "38 Elizabeth St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Tiedemann Park is a neighborhood park in historic downtown Charleston. Visitors can enjoy basketball, picnic area, playground.",
+      "description": "Tiedemann Park in Peninsula packs basketball, picnic area, playground into a single destination. Whether you're here for a game, a walk, or a family outing, there's something for everyone.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Tiedemann-Park-Nature-Center-Playground-96",
       "latitude": 32.79061,
@@ -2409,7 +2490,8 @@
         "Picnic Area",
         "Playground"
       ],
-      "areaSqFt": 5218
+      "areaSqFt": 5218,
+      "categoryImage": "playground"
     },
     {
       "id": 76,
@@ -2417,12 +2499,12 @@
       "name": "Vangie Rainsford Park",
       "slug": "vangie-rainsford-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "56 Chapel St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Vangie Rainsford Park is a neighborhood park in historic downtown Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Vangie Rainsford Park honors a beloved community figure on the Peninsula. This green space provides a quiet spot for neighbors to gather and reflect.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/chapel-street-fountain-park/",
       "latitude": 32.789875,
@@ -2430,7 +2512,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 793
+      "areaSqFt": 793,
+      "categoryImage": "green-space"
     },
     {
       "id": 67,
@@ -2438,12 +2521,12 @@
       "name": "Vivian Anderson Moultrie Playground",
       "slug": "vivian-anderson-moultrie-playground",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1201 King St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Vivian Anderson Moultrie Playground is a neighborhood playground in historic downtown Charleston. Visitors can enjoy playground.",
+      "description": "A tree-shaded neighborhood park in Peninsula, ideal for afternoon walks and letting kids burn off energy on the playground.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/Vivian-Anderson-Moultrie-Playground-55",
       "latitude": 32.811594,
@@ -2451,7 +2534,8 @@
       "amenities": [
         "Playground"
       ],
-      "areaSqFt": 5577
+      "areaSqFt": 5577,
+      "categoryImage": "playground"
     },
     {
       "id": 104,
@@ -2459,12 +2543,12 @@
       "name": "Wappoo Bridge Cemetery Park",
       "slug": "wappoo-bridge-cemetery-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "326 Country Club Dr",
       "neighborhood": "James Island",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Wappoo Bridge Cemetery Park is a neighborhood park on James Island. Visitors can enjoy green space.",
+      "description": "One of James Island's go-to green spaces for green space and casual recreation.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/wappoo-bridge-park/",
       "latitude": 32.764122,
@@ -2472,7 +2556,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 5641
+      "areaSqFt": 5641,
+      "categoryImage": "green-space"
     },
     {
       "id": 9,
@@ -2480,12 +2565,12 @@
       "name": "Waring Senior Center",
       "slug": "waring-senior-center",
       "type": "recreation",
-      "status": null,
+      "status": "active",
       "address": "2001 Henry Tecklenberg Dr",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Waring Senior Center is a neighborhood recreation center in the West Ashley area of Charleston. Visitors can enjoy green space.",
+      "description": "A quiet pocket of green in West Ashley where residents come to unwind under the live oaks.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.807743,
@@ -2493,7 +2578,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 43713
+      "areaSqFt": 43713,
+      "categoryImage": "green-space"
     },
     {
       "id": 82,
@@ -2501,12 +2587,12 @@
       "name": "Washington Square",
       "slug": "washington-square",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "80 Broad St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Washington Square is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls.",
+      "description": "This Peninsula park offers a shady retreat from the Charleston heat with open lawns and room to play.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/washington-square/",
       "latitude": 32.776677,
@@ -2515,7 +2601,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 6357
+      "areaSqFt": 6357,
+      "categoryImage": "trails"
     },
     {
       "id": 43,
@@ -2523,12 +2610,12 @@
       "name": "Wedgepark Road Park",
       "slug": "wedgepark-road-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "2 Wedgepark Rd",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Wedgepark Road Park is a neighborhood park in the West Ashley area of Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A well-loved community park in West Ashley with green space — a favorite stop for families in the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/wedge-park/",
       "latitude": 32.783794,
@@ -2536,7 +2623,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 580
+      "areaSqFt": 580,
+      "categoryImage": "green-space"
     },
     {
       "id": 69,
@@ -2544,12 +2632,12 @@
       "name": "West Ashley Bikeway",
       "slug": "west-ashley-bikeway",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "801 Playground Rd",
       "neighborhood": "West Ashley",
       "owner": "Private",
       "maintainedBy": "City of Charleston",
-      "description": "West Ashley Bikeway is a neighborhood park in the West Ashley area of Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time. The 2.8-acre site provides ample room for outdoor recreation.",
+      "description": "West Ashley Bikeway is a popular multi-use trail in West Ashley connecting neighborhoods for cyclists, joggers, and walkers. It's one of Charleston's best car-free corridors for active recreation.",
       "hours": "Dawn to Dusk",
       "url": "https://www.sctrails.net/trails/trail/west-ashley-bikeway",
       "latitude": 32.791047,
@@ -2557,7 +2645,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 123561
+      "areaSqFt": 123561,
+      "categoryImage": "green-space"
     },
     {
       "id": 96,
@@ -2565,12 +2654,12 @@
       "name": "West Ashley Bikeway Extension",
       "slug": "west-ashley-bikeway-extension",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "1012 Main St",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "West Ashley Bikeway Extension is a neighborhood park in the West Ashley area of Charleston. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "West Ashley Bikeway Extension is a popular multi-use trail in West Ashley connecting neighborhoods for cyclists, joggers, and walkers. It's one of Charleston's best car-free corridors for active recreation.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.794533,
@@ -2578,7 +2667,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 68807
+      "areaSqFt": 68807,
+      "categoryImage": "green-space"
     },
     {
       "id": 17,
@@ -2586,12 +2676,12 @@
       "name": "West Ashley Greenway",
       "slug": "west-ashley-greenway",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "29 Nicholson St",
       "neighborhood": "West Ashley",
       "owner": "CPW",
       "maintainedBy": "City of Charleston",
-      "description": "West Ashley Greenway is a popular multi-use path in the West Ashley area of Charleston, ideal for walking, jogging, and cycling. A welcoming green space for the local community to enjoy fresh air and outdoor time. The 12.7-acre site provides ample room for outdoor recreation.",
+      "description": "West Ashley Greenway is a popular multi-use trail in West Ashley connecting neighborhoods for cyclists, joggers, and walkers. It's one of Charleston's best car-free corridors for active recreation.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/west-ashley-greenway/",
       "latitude": 32.795157,
@@ -2600,7 +2690,8 @@
         "Walking Path",
         "Cycling"
       ],
-      "areaSqFt": 552877
+      "areaSqFt": 552877,
+      "categoryImage": "trails"
     },
     {
       "id": 108,
@@ -2608,12 +2699,12 @@
       "name": "West Ashley Park",
       "slug": "west-ashley-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "3601 Mary Ader Ave",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "West Ashley Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy baseball, basketball, picnic area, playground. The 26.6-acre site provides ample room for outdoor recreation.",
+      "description": "West Ashley Park packs baseball, basketball, disc golf, fishing, playground, and picnic areas into one of the area's most versatile green spaces. It's a full-day destination for families, athletes, and anglers alike.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://charleston-sc.gov/Facilities/Facility/Details/West-Ashley-Park-57",
       "latitude": 32.81932,
@@ -2627,7 +2718,8 @@
         "Fishing",
         "Disc Golf"
       ],
-      "areaSqFt": 1157966
+      "areaSqFt": 1157966,
+      "categoryImage": "fishing"
     },
     {
       "id": 119,
@@ -2635,12 +2727,12 @@
       "name": "White Point Garden",
       "slug": "white-point-garden",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "2 Murray Blvd",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "White Point Garden is a neighborhood garden in historic downtown Charleston. Visitors can enjoy fishing.",
+      "description": "White Point Garden at the tip of the Peninsula offers fishing access and sweeping views of Charleston Harbor. Shaded by massive live oaks, the historic park features Civil War-era cannons and monuments.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/white-point-garden/",
       "latitude": 32.769461,
@@ -2648,7 +2740,8 @@
       "amenities": [
         "Fishing"
       ],
-      "areaSqFt": 32777
+      "areaSqFt": 32777,
+      "categoryImage": "fishing"
     },
     {
       "id": 63,
@@ -2656,12 +2749,12 @@
       "name": "Willie Gains Park",
       "slug": "willie-gains-park",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "1820 Taberwood Cir",
       "neighborhood": "West Ashley",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Willie Gains Park is a neighborhood park in the West Ashley area of Charleston. Visitors can enjoy basketball, playground. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "Tucked into a West Ashley residential block, this park provides a welcome green break from the surrounding streets.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charleston-sc.gov/Facilities/Facility/Details/59",
       "latitude": 32.805502,
@@ -2670,7 +2763,8 @@
         "Basketball",
         "Playground"
       ],
-      "areaSqFt": 3770
+      "areaSqFt": 3770,
+      "categoryImage": "playground"
     },
     {
       "id": 124,
@@ -2678,12 +2772,12 @@
       "name": "Wragg Mall",
       "slug": "wragg-mall",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "10 Ann St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Wragg Mall is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls.",
+      "description": "Residents of Peninsula gather here for fresh air and easy access to a bit of nature without leaving the neighborhood.",
       "hours": "Dawn to Dusk",
       "url": "https://www.charlestonparksconservancy.org/park-finder/wragg-mall/",
       "latitude": 32.790663,
@@ -2691,7 +2785,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 5457
+      "areaSqFt": 5457,
+      "categoryImage": "green-space"
     },
     {
       "id": 39,
@@ -2699,12 +2794,12 @@
       "name": "Wragg Mall Extension",
       "slug": "wragg-mall-extension",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "20 Ann St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Wragg Mall Extension is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls. A charming pocket park perfect for a quick break or a peaceful moment outdoors.",
+      "description": "A small but cherished green space in Peninsula that serves as the block's backyard for picnics and play.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.790424,
@@ -2712,7 +2807,8 @@
       "amenities": [
         "Green Space"
       ],
-      "areaSqFt": 2204
+      "areaSqFt": 2204,
+      "categoryImage": "green-space"
     },
     {
       "id": 86,
@@ -2720,12 +2816,12 @@
       "name": "Wragg Square",
       "slug": "wragg-square",
       "type": "park",
-      "status": "ACTIVE",
+      "status": "active",
       "address": "340 Meeting St",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Wragg Square is a neighborhood garden in historic downtown Charleston. The park offers a quiet green space for relaxation and leisurely strolls.",
+      "description": "This pocket park gives Peninsula locals a place to stretch their legs, sit in the shade, and enjoy the outdoors.",
       "hours": "Sun-Sat, Daylight",
       "url": "https://www.charlestonparksconservancy.org/park-finder/wragg-square/",
       "latitude": 32.788587,
@@ -2734,7 +2830,8 @@
         "Walking Path",
         "Green Space"
       ],
-      "areaSqFt": 5327
+      "areaSqFt": 5327,
+      "categoryImage": "trails"
     },
     {
       "id": 90,
@@ -2742,12 +2839,12 @@
       "name": "Yvonne duFort Evans Ashley Riverwalk Park",
       "slug": "yvonne-dufort-evans-ashley-riverwalk-park",
       "type": "park",
-      "status": null,
+      "status": "active",
       "address": "11 Lockwood Dr",
       "neighborhood": "Peninsula",
       "owner": "City of Charleston",
       "maintainedBy": "City of Charleston",
-      "description": "Yvonne duFort Evans Ashley Riverwalk Park is a scenic waterfront space in historic downtown Charleston, featuring views of the surrounding waterways. A welcoming green space for the local community to enjoy fresh air and outdoor time.",
+      "description": "Yvonne duFort Evans Ashley Riverwalk Park stretches along the water in Peninsula, offering scenic views and a refreshing walk. Features include walking path, water access.",
       "hours": "Dawn to Dusk",
       "url": null,
       "latitude": 32.781001,
@@ -2756,7 +2853,8 @@
         "Walking Path",
         "Water Access"
       ],
-      "areaSqFt": 8737
+      "areaSqFt": 8737,
+      "categoryImage": "fishing"
     }
   ]
 }

@@ -41,6 +41,7 @@ interface LegacyPark {
   longitude: number;
   amenities: string[];
   areaSqFt: number | null;
+  categoryImage?: string;
 }
 
 /* ─── Helpers: load legacy parks from JSON ─── */
@@ -432,7 +433,7 @@ function LegacyParkView({ park }: { park: LegacyPark }) {
     `${park.slug}.jpg`
   );
 
-  let imageSrc = "/parks/placeholder.jpg";
+  let imageSrc = `/images/parks/categories/${park.categoryImage || "green-space"}.jpg`;
   if (fs.existsSync(path.join(slugDir, "1.jpg"))) {
     imageSrc = `/images/parks/${park.slug}/1.jpg`;
   } else if (fs.existsSync(flatFile)) {
@@ -637,12 +638,18 @@ function LegacyParkView({ park }: { park: LegacyPark }) {
                       <dd className="mt-0.5 flex items-center gap-1.5 text-sm text-slate-700">
                         <span
                           className={`inline-block h-2 w-2 rounded-full ${
-                            park.status === "ACTIVE"
+                            park.status === "active" || park.status === "ACTIVE"
                               ? "bg-emerald-500"
-                              : "bg-slate-400"
+                              : park.status === "coming-soon"
+                                ? "bg-amber-400"
+                                : "bg-slate-400"
                           }`}
                         />
-                        {park.status === "ACTIVE" ? "Open" : park.status}
+                        {park.status === "active" || park.status === "ACTIVE"
+                          ? "Open"
+                          : park.status === "coming-soon"
+                            ? "Coming Soon"
+                            : park.status}
                       </dd>
                     </div>
                   )}
