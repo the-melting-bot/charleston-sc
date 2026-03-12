@@ -68,6 +68,8 @@ export default function NeighborhoodsPage() {
         title="Explore by Area"
         description="Charleston's parks and green spaces span a diverse landscape — from the historic downtown peninsula to barrier islands and rural Lowcountry. Discover what each area has to offer."
         accent="blue"
+        backgroundImage="/images/areas/areas-hero.jpg"
+        backgroundAlt="Aerial view of the Charleston peninsula at twilight with church steeples, lit streets, and harbor"
       />
 
       <section className="px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">

@@ -129,6 +129,8 @@ export default function ParksOutdoorPage() {
         title="Parks & Green Spaces"
         description="124 parks and recreation facilities across six Charleston neighborhoods. Find playgrounds, trails, sports fields, dog parks, and waterfront green spaces near you."
         accent="seafoam"
+        backgroundImage="/images/parks/parks-hero.jpg"
+        backgroundAlt="Families strolling through a Charleston park with live oaks, Spanish moss, and a fountain at golden hour"
       />
 
       <div className="-mt-6 relative z-10 mb-4">
