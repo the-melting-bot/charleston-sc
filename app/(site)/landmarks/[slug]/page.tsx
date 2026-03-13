@@ -10,6 +10,8 @@ import {
   getAllLandmarkSlugs,
 } from "@/data/landmarks";
 
+const SITE_URL = "https://www.lowcountryparks.com";
+
 const ParkMiniMap = dynamic(() => import("@/components/ParkMiniMap"), {
   ssr: false,
   loading: () => (
@@ -40,9 +42,27 @@ export async function generateMetadata({
   if (!landmark) {
     return { title: "Landmark Not Found | Lowcountry Parks" };
   }
+  const title = `${landmark.name} | Lowcountry Parks`;
+  const description = landmark.description.slice(0, 160);
+  const ogImage = landmark.images?.length
+    ? `/images/landmarks/${landmark.slug}/1.jpg`
+    : "/images/og-default.jpg";
   return {
-    title: `${landmark.name} | Lowcountry Parks`,
-    description: landmark.description.slice(0, 160),
+    title,
+    description,
+    alternates: { canonical: `/landmarks/${landmark.slug}` },
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}/landmarks/${landmark.slug}`,
+      images: [{ url: ogImage, alt: landmark.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 
@@ -54,6 +74,30 @@ export default function LandmarkDetailPage({
   const landmark = getLandmarkBySlug(params.slug);
   if (!landmark) notFound();
 
+  const landmarkJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    name: landmark.name,
+    description: landmark.description,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: landmark.address,
+      addressLocality: "Charleston",
+      addressRegion: "SC",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: landmark.latitude,
+      longitude: landmark.longitude,
+    },
+    url: `${SITE_URL}/landmarks/${landmark.slug}`,
+    ...(landmark.images?.length
+      ? { image: `${SITE_URL}/images/landmarks/${landmark.slug}/1.jpg` }
+      : {}),
+    isAccessibleForFree: true,
+    touristType: landmark.category,
+  };
+
   const related = landmarks
     .filter((l) => l.id !== landmark.id)
     .sort(() => 0.5 - Math.random())
@@ -61,6 +105,11 @@ export default function LandmarkDetailPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(landmarkJsonLd) }}
+      />
+
       {/* ─── Hero ─── */}
       <div className="relative h-64 w-full bg-slate-200 sm:h-80 md:h-96 lg:h-[28rem]">
         <Image

@@ -10,6 +10,21 @@ export const metadata: Metadata = {
   title: "Charleston Landmarks | Lowcountry Parks",
   description:
     "Explore Charleston's most iconic landmarks — from Fort Sumter and Rainbow Row to the Angel Oak Tree and historic plantations along the Ashley River.",
+  alternates: { canonical: "/landmarks" },
+  openGraph: {
+    title: "Charleston Landmarks | Lowcountry Parks",
+    description:
+      "Explore Charleston's most iconic landmarks — from Fort Sumter and Rainbow Row to the Angel Oak Tree and historic plantations along the Ashley River.",
+    url: "https://www.lowcountryparks.com/landmarks",
+    images: [{ url: "/images/landmarks/landmarks-hero.jpg", alt: "Charleston landmarks and historic sites" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Charleston Landmarks | Lowcountry Parks",
+    description:
+      "Explore Charleston's iconic landmarks — from Fort Sumter and Rainbow Row to the Angel Oak Tree.",
+    images: ["/images/landmarks/landmarks-hero.jpg"],
+  },
 };
 
 const categoryColors: Record<string, string> = {

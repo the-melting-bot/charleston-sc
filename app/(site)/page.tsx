@@ -98,13 +98,22 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Lowcountry Parks",
-  url: "https://lowcountryparks.com",
+  url: "https://www.lowcountryparks.com",
   description:
     "Find parks, trails, and green spaces across the Charleston, SC area.",
   publisher: {
     "@type": "Organization",
     name: "Lowcountry Parks",
-    url: "https://lowcountryparks.com",
+    url: "https://www.lowcountryparks.com",
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate:
+        "https://www.lowcountryparks.com/parks-outdoor?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
   },
 };
 

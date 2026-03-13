@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   title: "Interactive Park Map",
   description:
     "Explore 124 Charleston parks on an interactive map with satellite imagery, marker clustering, and detailed park information.",
+  alternates: { canonical: "/maps" },
+  openGraph: {
+    title: "Interactive Park Map | Lowcountry Parks",
+    description:
+      "Explore 124 Charleston parks on an interactive map with satellite imagery, marker clustering, and detailed park information.",
+    url: "https://www.lowcountryparks.com/maps",
+    images: [{ url: "/images/og-default.jpg", alt: "Lowcountry Parks interactive map" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Interactive Park Map | Lowcountry Parks",
+    description:
+      "Explore 124 Charleston parks on an interactive map with satellite imagery and marker clustering.",
+    images: ["/images/og-default.jpg"],
+  },
 };
 
 /* ─── Curated parks that have real images and detail pages ─── */

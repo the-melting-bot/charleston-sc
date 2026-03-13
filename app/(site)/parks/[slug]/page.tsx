@@ -75,6 +75,8 @@ export async function generateStaticParams() {
 }
 
 /* ─── Metadata ─── */
+const SITE_URL = "https://www.lowcountryparks.com";
+
 export async function generateMetadata({
   params,
 }: {
@@ -82,21 +84,84 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const detailed = getDetailedPark(params.slug);
   if (detailed) {
+    const heroImage = `/images/parks/${detailed.slug}/1.jpg`;
     return {
       title: `${detailed.name} | Lowcountry Parks`,
       description: detailed.description.slice(0, 160),
+      alternates: { canonical: `/parks/${detailed.slug}` },
+      openGraph: {
+        title: detailed.name,
+        description: detailed.description.slice(0, 160),
+        url: `${SITE_URL}/parks/${detailed.slug}`,
+        images: [{ url: heroImage, alt: detailed.name }],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: detailed.name,
+        description: detailed.description.slice(0, 160),
+        images: [heroImage],
+      },
     };
   }
   const legacy = getLegacyParkBySlug(params.slug);
   if (legacy) {
+    const desc =
+      legacy.description ??
+      `Explore ${legacy.name} in ${legacy.neighborhood ?? "Charleston"}.`;
     return {
       title: `${legacy.name} | Lowcountry Parks`,
-      description:
-        legacy.description ??
-        `Explore ${legacy.name} in ${legacy.neighborhood ?? "Charleston"}.`,
+      description: desc,
+      alternates: { canonical: `/parks/${legacy.slug}` },
+      openGraph: {
+        title: legacy.name,
+        description: desc,
+        url: `${SITE_URL}/parks/${legacy.slug}`,
+      },
+      twitter: {
+        card: "summary",
+        title: legacy.name,
+        description: desc,
+      },
     };
   }
   return { title: "Park Not Found | Lowcountry Parks" };
+}
+
+/* ─── JSON-LD helpers ─── */
+function buildParkJsonLd(park: {
+  name: string;
+  slug: string;
+  description?: string | null;
+  address?: string | null;
+  latitude: number;
+  longitude: number;
+  amenities?: string[];
+  image?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Park",
+    name: park.name,
+    url: `${SITE_URL}/parks/${park.slug}`,
+    description: park.description || `${park.name} in Charleston, SC`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: park.address || undefined,
+      addressLocality: "Charleston",
+      addressRegion: "SC",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: park.latitude,
+      longitude: park.longitude,
+    },
+    ...(park.image ? { image: `${SITE_URL}${park.image}` } : {}),
+    ...(park.amenities && park.amenities.length > 0
+      ? { amenityFeature: park.amenities.map((a) => ({ "@type": "LocationFeatureSpecification", name: a, value: true })) }
+      : {}),
+    isAccessibleForFree: true,
+  };
 }
 
 /* ─────────────────── Page Component ─────────────────── */
@@ -119,9 +184,23 @@ export default function ParkDetailPage({
    ════════════════════════════════════════════════════════ */
 function DetailedParkView({ park }: { park: DetailedPark }) {
   const heroImage = `/images/parks/${park.slug}/1.jpg`;
+  const parkJsonLd = buildParkJsonLd({
+    name: park.name,
+    slug: park.slug,
+    description: park.description,
+    address: park.address,
+    latitude: park.latitude,
+    longitude: park.longitude,
+    amenities: park.amenities,
+    image: heroImage,
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(parkJsonLd) }}
+      />
       {/* ─── Hero ─── */}
       <div className="relative h-64 w-full bg-slate-200 sm:h-80 md:h-96 lg:h-[28rem]">
         <Image
@@ -443,9 +522,22 @@ function LegacyParkView({ park }: { park: LegacyPark }) {
   }
 
   const area = formatArea(park.areaSqFt);
+  const legacyJsonLd = buildParkJsonLd({
+    name: park.name,
+    slug: park.slug,
+    description: park.description,
+    address: park.address,
+    latitude: park.latitude,
+    longitude: park.longitude,
+    amenities: park.amenities,
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(legacyJsonLd) }}
+      />
       {/* ─── Breadcrumb ─── */}
       <div className="border-b border-slate-200 bg-white px-4 py-3 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">

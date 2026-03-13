@@ -10,6 +10,21 @@ export const metadata: Metadata = {
   title: "Charleston History | Lowcountry Parks",
   description:
     "Explore 350 years of Charleston history — from the colonial founding of Charles Towne to the modern renaissance of one of America's most beloved cities.",
+  alternates: { canonical: "/historical-cultural" },
+  openGraph: {
+    title: "Charleston History | Lowcountry Parks",
+    description:
+      "Explore 350 years of Charleston history — from the colonial founding of Charles Towne to the modern renaissance of one of America's most beloved cities.",
+    url: "https://www.lowcountryparks.com/historical-cultural",
+    images: [{ url: "/images/history/history-hero.jpg", alt: "Historic Charleston cobblestone street" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Charleston History | Lowcountry Parks",
+    description:
+      "Explore 350 years of Charleston history — from colonial Charles Towne to the modern Holy City.",
+    images: ["/images/history/history-hero.jpg"],
+  },
 };
 
 const sections = [

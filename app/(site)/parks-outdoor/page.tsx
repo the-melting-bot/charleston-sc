@@ -13,6 +13,21 @@ export const metadata: Metadata = {
   title: "Parks & Green Spaces",
   description:
     "Browse 124 parks and recreation facilities across the Charleston, SC area. Find playgrounds, trails, sports fields, and waterfront green spaces by neighborhood.",
+  alternates: { canonical: "/parks-outdoor" },
+  openGraph: {
+    title: "Parks & Green Spaces | Lowcountry Parks",
+    description:
+      "Browse 124 parks and recreation facilities across the Charleston, SC area. Find playgrounds, trails, sports fields, and waterfront green spaces by neighborhood.",
+    url: "https://www.lowcountryparks.com/parks-outdoor",
+    images: [{ url: "/images/parks/parks-hero.jpg", alt: "Charleston parks and green spaces" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Parks & Green Spaces | Lowcountry Parks",
+    description:
+      "Browse 124 parks and recreation facilities across the Charleston, SC area.",
+    images: ["/images/parks/parks-hero.jpg"],
+  },
 };
 
 /* ─── Park type (matches data/parks.json) ─── */

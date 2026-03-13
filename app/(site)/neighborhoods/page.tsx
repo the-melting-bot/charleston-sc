@@ -11,6 +11,21 @@ export const metadata: Metadata = {
   title: "Explore by Area | Lowcountry Parks",
   description:
     "Discover Charleston's parks and green spaces organized by area — from the historic Peninsula to the beaches of Folly and the Lowcountry wilderness beyond.",
+  alternates: { canonical: "/neighborhoods" },
+  openGraph: {
+    title: "Explore by Area | Lowcountry Parks",
+    description:
+      "Discover Charleston's parks and green spaces organized by area — from the historic Peninsula to the beaches of Folly and the Lowcountry wilderness beyond.",
+    url: "https://www.lowcountryparks.com/neighborhoods",
+    images: [{ url: "/images/areas/areas-hero.jpg", alt: "Aerial view of Charleston neighborhoods" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Explore by Area | Lowcountry Parks",
+    description:
+      "Discover Charleston's parks organized by area — from the historic Peninsula to the Lowcountry wilderness.",
+    images: ["/images/areas/areas-hero.jpg"],
+  },
 };
 
 const areas = [

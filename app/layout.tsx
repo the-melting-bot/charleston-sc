@@ -9,7 +9,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://lowcountryparks.com";
+const SITE_URL = "https://www.lowcountryparks.com";
 const SITE_NAME = "Lowcountry Parks";
 const DEFAULT_DESCRIPTION =
   "Find parks, trails, and green spaces across the Charleston, SC area. Browse 124+ parks by neighborhood, explore an interactive map, and plan your next outdoor day in the Lowcountry.";
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     images: [
       {
-        url: "/media/lowcountryparks-hero-poster.jpg",
-        width: 1920,
-        height: 1080,
-        alt: "Aerial view of Charleston, SC waterfront and green spaces",
+        url: "/images/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Lowcountry Parks — Charleston's Parks & Green Spaces",
       },
     ],
   },
@@ -52,7 +52,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lowcountry Parks — Charleston's Parks & Green Spaces",
     description: DEFAULT_DESCRIPTION,
-    images: ["/media/lowcountryparks-hero-poster.jpg"],
+    images: ["/images/og-default.jpg"],
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
   robots: {
     index: true,

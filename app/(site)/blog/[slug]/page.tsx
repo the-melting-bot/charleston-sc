@@ -6,6 +6,8 @@ import FadeIn from "@/components/FadeIn";
 import BlogPostCard from "@/components/BlogPostCard";
 import { blogPosts } from "@/data/blog-posts";
 
+const SITE_URL = "https://www.lowcountryparks.com";
+
 interface PageProps {
   params: { slug: string };
 }
@@ -47,8 +49,39 @@ export default function BlogPostPage({ params }: PageProps) {
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    image: `${SITE_URL}${post.image}`,
+    datePublished: post.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: post.author,
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Lowcountry Parks",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/favicon.svg`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${post.slug}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       {/* Banner image */}
       <div className="relative h-[40vh] min-h-[280px] max-h-[480px] w-full overflow-hidden">
         <Image

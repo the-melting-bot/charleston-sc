@@ -9,6 +9,20 @@ export const metadata: Metadata = {
   description:
     "Tips, guides, and local knowledge for exploring Charleston's parks and outdoor spaces.",
   alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Blog & Guides | Lowcountry Parks",
+    description:
+      "Tips, guides, and local knowledge for exploring Charleston's parks and outdoor spaces.",
+    url: "https://www.lowcountryparks.com/blog",
+    images: [{ url: "/images/blog/blog-hero.webp", alt: "Oak tree pathway with Spanish moss in the Lowcountry" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog & Guides | Lowcountry Parks",
+    description:
+      "Tips, guides, and local knowledge for exploring Charleston's parks and outdoor spaces.",
+    images: ["/images/blog/blog-hero.webp"],
+  },
 };
 
 export default function BlogIndexPage() {
