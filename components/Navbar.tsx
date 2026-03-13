@@ -11,6 +11,7 @@ const links = [
   { href: "/neighborhoods", label: "By Area" },
   { href: "/landmarks", label: "Landmarks" },
   { href: "/historical-cultural", label: "History" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Navbar() {

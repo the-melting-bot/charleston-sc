@@ -6,6 +6,7 @@ const explore = [
   { href: "/neighborhoods", label: "Parks by Area" },
   { href: "/landmarks", label: "Landmarks" },
   { href: "/historical-cultural", label: "History & Culture" },
+  { href: "/blog", label: "Blog & Guides" },
 ];
 
 const about = [

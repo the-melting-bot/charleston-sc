@@ -10,6 +10,8 @@ import FeaturedParks from "@/components/FeaturedParks";
 import SeasonalPicks from "@/components/SeasonalPicks";
 import WhyCards from "@/components/WhyCards";
 import HeroVideo from "@/components/HeroVideo";
+import BlogPostCard from "@/components/BlogPostCard";
+import { blogPosts } from "@/data/blog-posts";
 
 const MiniMapPreview = dynamic(() => import("@/components/MiniMapPreview"), {
   ssr: false,
@@ -221,6 +223,27 @@ export default function HomePage() {
       {/* ─── Mini Map Preview ─── */}
       <FadeIn>
         <MiniMapPreview />
+      </FadeIn>
+
+      {/* ─── Latest from the Blog ─── */}
+      <FadeIn>
+        <Section
+          title="Latest from the Blog"
+          subtitle="Tips and guides for exploring Charleston's outdoor spaces"
+        >
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {blogPosts.slice(0, 3).map((post, index) => (
+              <FadeIn key={post.slug} delay={index * 100}>
+                <BlogPostCard post={post} />
+              </FadeIn>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Button href="/blog" variant="outline">
+              View All Guides
+            </Button>
+          </div>
+        </Section>
       </FadeIn>
 
       {/* ─── CTA: Get Started ─── */}

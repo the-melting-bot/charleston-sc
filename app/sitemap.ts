@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import fs from "fs";
 import path from "path";
+import { blogPosts } from "@/data/blog-posts";
 
 const BASE_URL = "https://lowcountryparks.com";
 
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/neighborhoods`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/landmarks`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/historical-cultural`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.8 },
   ];
 
   /* Dynamic park pages */
@@ -39,5 +41,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // If parks data unavailable, skip dynamic pages
   }
 
-  return [...staticPages, ...parkPages];
+  /* Blog post pages */
+  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...parkPages, ...blogPages];
 }
