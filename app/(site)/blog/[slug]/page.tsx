@@ -102,7 +102,7 @@ export default function BlogPostPage({ params }: PageProps) {
       <article className="mx-auto max-w-4xl px-4 pb-16 sm:px-6 lg:px-8">
         <header className="relative z-10 -mt-14 mb-10 sm:-mt-16 lg:-mt-20">
           <div
-            className="rounded-2xl border border-slate-200/90 bg-white px-5 py-6 shadow-lg shadow-slate-900/[0.06] ring-1 ring-slate-900/[0.04] sm:px-8 sm:py-8"
+            className="rounded-2xl border border-white/50 bg-[linear-gradient(to_bottom,hsla(0,0%,100%,0.38)_0%,hsla(0,0%,100%,0.82)_26%,hsla(0,0%,100%,0.97)_48%,#ffffff_58%)] px-5 py-6 shadow-lg shadow-slate-900/[0.08] ring-1 ring-slate-900/[0.05] backdrop-blur-md backdrop-saturate-150 sm:px-8 sm:py-8"
           >
             <span className="inline-flex rounded-full bg-coastal-700 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white">
               {post.category}
