@@ -99,12 +99,12 @@ export default function BlogPostPage({ params }: PageProps) {
       </div>
 
       {/* Article header + content */}
-      <article className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <article className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <header className="-mt-16 relative z-10 mb-10">
           <span className="inline-block rounded-full bg-coastal-700 px-3 py-1 text-xs font-semibold text-white">
             {post.category}
           </span>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <h1 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
             {post.title}
           </h1>
           <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-500">
