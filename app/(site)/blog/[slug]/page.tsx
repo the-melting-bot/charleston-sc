@@ -104,12 +104,12 @@ export default function BlogPostPage({ params }: PageProps) {
           <span className="inline-block rounded-full bg-coastal-700 px-3 py-1 text-xs font-semibold text-white">
             {post.category}
           </span>
-          <h1 className="mt-4 max-w-3xl text-3xl font-bold tracking-tight leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <h1 className="mt-4 text-balance text-3xl font-bold tracking-tight leading-[1.05] text-slate-900 sm:text-4xl lg:text-[2.85rem]">
             {post.title}
           </h1>
-          <div className="mt-4 flex flex-wrap items-center gap-3 text-sm text-slate-500">
-            <span>{post.author}</span>
-            <span aria-hidden="true">&middot;</span>
+          <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-slate-600 sm:text-[0.95rem]">
+            <span className="font-medium text-slate-700">{post.author}</span>
+            <span aria-hidden="true" className="text-slate-300">&middot;</span>
             <time dateTime={post.publishedAt}>
               {new Date(post.publishedAt).toLocaleDateString("en-US", {
                 month: "long",
@@ -117,7 +117,7 @@ export default function BlogPostPage({ params }: PageProps) {
                 year: "numeric",
               })}
             </time>
-            <span aria-hidden="true">&middot;</span>
+            <span aria-hidden="true" className="text-slate-300">&middot;</span>
             <span>{post.readTime}</span>
           </div>
         </header>
