@@ -107,16 +107,22 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar — badge centered above copyright row for a clean attribution strip */}
+        {/* Bottom bar — copyright, badge, and data credit on one centered row (wraps on narrow screens) */}
         <div className="mt-12 border-t border-slate-200 pt-8">
-          <div className="flex justify-center">
-            <MeltingBotBadge />
-          </div>
-          <div className="mt-6 flex flex-col items-center gap-4 sm:mt-8 sm:flex-row sm:justify-between">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4 px-2 text-center sm:gap-x-5">
             <p className="text-sm text-slate-400">
               &copy; {new Date().getFullYear()} Lowcountry Parks
             </p>
-            <p className="text-center text-xs text-slate-400 sm:text-right">
+            <span
+              className="hidden h-4 w-px shrink-0 bg-slate-200 sm:block"
+              aria-hidden="true"
+            />
+            <MeltingBotBadge />
+            <span
+              className="hidden h-4 w-px shrink-0 bg-slate-200 sm:block"
+              aria-hidden="true"
+            />
+            <p className="text-xs text-slate-400 sm:text-sm">
               Park data from{" "}
               <a
                 href="https://data-charleston-sc.opendata.arcgis.com/"
