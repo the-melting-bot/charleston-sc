@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MeltingBotBadge from "@/components/MeltingBotBadge";
 
 const explore = [
   { href: "/parks-outdoor", label: "Browse Parks" },
@@ -106,23 +107,28 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center gap-4 border-t border-slate-200 pt-6 sm:flex-row sm:justify-between">
-          <p className="text-sm text-slate-400">
-            &copy; {new Date().getFullYear()} Lowcountry Parks
-          </p>
-          <p className="text-xs text-slate-400">
-            Park data from{" "}
-            <a
-              href="https://data-charleston-sc.opendata.arcgis.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-coastal-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2 focus-visible:rounded"
-              aria-label="City of Charleston Open Data (opens in new tab)"
-            >
-              City of Charleston Open Data
-            </a>
-          </p>
+        {/* Bottom bar — badge centered above copyright row for a clean attribution strip */}
+        <div className="mt-12 border-t border-slate-200 pt-8">
+          <div className="flex justify-center">
+            <MeltingBotBadge />
+          </div>
+          <div className="mt-6 flex flex-col items-center gap-4 sm:mt-8 sm:flex-row sm:justify-between">
+            <p className="text-sm text-slate-400">
+              &copy; {new Date().getFullYear()} Lowcountry Parks
+            </p>
+            <p className="text-center text-xs text-slate-400 sm:text-right">
+              Park data from{" "}
+              <a
+                href="https://data-charleston-sc.opendata.arcgis.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-coastal-600 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coastal-500 focus-visible:ring-offset-2 focus-visible:rounded"
+                aria-label="City of Charleston Open Data (opens in new tab)"
+              >
+                City of Charleston Open Data
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
