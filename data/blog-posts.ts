@@ -161,4 +161,136 @@ export const blogPosts: BlogPost[] = [
       </ul>
     `,
   },
+  {
+    slug: "best-parks-picnic-charleston",
+    title: "Best Parks for a Picnic in Charleston",
+    description:
+      "From waterfront spreads with harbor views to shaded tables beneath centuries-old oaks, here are the best picnic spots in the Charleston area.",
+    category: "Picnic Spots",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-03-23",
+    readTime: "5 min read",
+    image: "/images/blog/picnic-parks.jpg",
+    imageAlt: "Picnic table under shady trees in a Charleston park",
+    content: `
+      <p>Few places in the Southeast reward a well-packed picnic basket like Charleston. The mild Lowcountry climate, centuries-old live oaks dripping with Spanish moss, and waterfront vistas in every direction make dining outdoors here feel less like a casual outing and more like an event. Whether you're after a quick lunch between sightseeing stops or an all-afternoon spread with friends, these parks deliver the setting, the shade, and the amenities to make it easy.</p>
+
+      <h2>1. Waterfront Park — The Harbor View Spread</h2>
+      <p><a href="/parks/waterfront-park">Waterfront Park</a> is Charleston's flagship picnic destination, and for good reason. The long swingbed benches facing Charleston Harbor are iconic, but the real picnic move is to claim one of the grassy patches along the waterfront promenade, spread a blanket, and face the Cooper River. You'll have the Ravenel Bridge framing the horizon and the occasional sailboat drifting past. The park has clean restrooms, water fountains, and trash receptacles throughout. Arrive before 10 AM on weekends to get your pick of spots near the <strong>Pineapple Fountain</strong>, where kids can splash while you set up.</p>
+
+      <h2>2. Hampton Park — The Shaded Picnic Loop</h2>
+      <p><a href="/parks/hampton-park">Hampton Park</a> is the largest park on the Peninsula and arguably the best for a long, leisurely picnic. The designated picnic areas sit beneath massive live oaks that provide nearly complete shade, even at midday in July. The park's rose gardens and seasonal flower beds are within easy strolling distance, and the wide paved loop trail makes it perfect for a post-meal walk. There are no formal picnic tables — bring a blanket or low chairs. The lack of a formal concession stand keeps the atmosphere peaceful and uncrowded on weekday afternoons.</p>
+
+      <h2>3. James Island County Park — The All-Day Destination</h2>
+      <p><a href="/parks/james-island-county-park">James Island County Park</a> has the most complete picnic infrastructure in the Charleston area. Covered shelters with built-in tables and grills dot the park, many of them lakeside. Some shelters can be reserved in advance through Charleston County Parks for larger groups. Beyond the picnic areas, the park's paved trails, fishing docks, playground, and seasonal Splash Zone waterpark mean you can stretch a picnic into a full day out. Restrooms, water fountains, and parking are plentiful. There's a small daily vehicle entry fee.</p>
+
+      <h2>4. White Point Garden — The Historic Battery Picnic</h2>
+      <p>Spreading a blanket at <a href="/parks/white-point-garden">White Point Garden</a> puts you in one of the most photographed spots in Charleston. The garden sits at the southern tip of the Peninsula where the Ashley and Cooper rivers meet, surrounded by antebellum mansions and shaded by oaks that have been growing since before the Civil War. The crushed-shell paths and scattered benches provide options for smaller picnics, while the open lawn areas near the cannons work for groups. There are no restrooms on-site, so plan accordingly — the closest public facilities are a few blocks up East Bay Street.</p>
+
+      <h2>5. Brittlebank Park — The Sunset Pick</h2>
+      <p><a href="/parks/brittlebank-park">Brittlebank Park</a> on the Ashley River is the go-to spot for an evening picnic with a sunset view. The park has picnic tables and open grass overlooking the river, a playground for kids, and a fishing pier if someone in your group wants to cast a line while you eat. The park faces west, which means golden hour here is genuinely spectacular — the sun drops behind the marsh and treeline in a wash of orange and pink. Parking is free and usually available, even on busy evenings.</p>
+
+      <h2>6. Palmetto Islands County Park — The Nature Picnic</h2>
+      <p>If you want your picnic surrounded by nature rather than city, <a href="/parks/palmetto-islands-county-park">Palmetto Islands County Park</a> in Mount Pleasant is the pick. The park's sheltered picnic areas sit alongside tidal creeks and maritime forest, with boardwalk trails leading deeper into the Lowcountry landscape. Bring bug spray — the marsh setting means mosquitoes can be persistent, especially in the warmer months. The trade-off is a picnic setting that feels genuinely wild, with herons, egrets, and the occasional dolphin visible from the water's edge.</p>
+
+      <h3>Picnic Packing Tips</h3>
+      <ul>
+        <li>Bring a ground blanket and a backup tablecloth — not all parks have tables.</li>
+        <li>Pack a cooler with ice. The Charleston heat can spoil food fast, even in spring.</li>
+        <li>Don't forget a trash bag — leave no trace, especially in parks without bins nearby.</li>
+        <li>Sunscreen and a hat are non-negotiable from March through October.</li>
+        <li>Check for reserved shelters at county parks before claiming a covered spot.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "best-walking-jogging-trails-charleston",
+    title: "Charleston's Best Walking and Jogging Trails",
+    description:
+      "From paved greenways to shaded marsh boardwalks, here are the best trails for walking and jogging in the Charleston area.",
+    category: "Trails",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-03-23",
+    readTime: "6 min read",
+    image: "/images/blog/trails.jpg",
+    imageAlt: "Tree-lined walking trail through a shady southern park",
+    content: `
+      <p>Charleston isn't known for elevation changes — this is the Lowcountry, after all — but what the area lacks in hills it makes up for with scenic, well-maintained trails that wind through maritime forest, along tidal marshes, and across waterfront parks. Whether you're training for a race or just looking for a peaceful morning walk, these trails are the best options in the area.</p>
+
+      <h2>1. West Ashley Greenway — 10.5 Miles, Paved</h2>
+      <p>The West Ashley Greenway is the longest dedicated trail in the Charleston area, stretching 10.5 miles from just west of the Ashley River to Johns Island. The paved surface is smooth enough for strollers and road bikes, and the flat terrain makes it accessible for all fitness levels. The trail passes through residential neighborhoods, past community gardens, and alongside patches of Lowcountry forest. Parking is available at several trailheads along the route, including at South Windermere Shopping Center. <strong>Best for:</strong> long runs, bike commuting, and dog walks. Morning shade is good on the eastern sections, but the western half can be exposed — bring water and sunscreen.</p>
+
+      <h2>2. Hampton Park Loop — 1 Mile, Paved</h2>
+      <p>The loop trail at <a href="/parks/hampton-park">Hampton Park</a> is the most popular running route on the Charleston Peninsula. The one-mile paved path circles the park's gardens, gazebo, and open lawns beneath a canopy of live oaks and magnolias. It's flat, shaded, and wide enough to accommodate walkers, joggers, and strollers without feeling crowded. The park is at its best in the early morning, when the light is soft and the regular crew of runners and dog walkers creates a friendly, community atmosphere. Street parking is free along Cleveland Street and Mary Murray Drive. <strong>Difficulty:</strong> Easy. <strong>Surface:</strong> Asphalt.</p>
+
+      <h2>3. James Island County Park Trails — 3+ Miles, Paved & Unpaved</h2>
+      <p><a href="/parks/james-island-county-park">James Island County Park</a> offers a network of interconnected trails that total over three miles. The main paved trail loops around the park's central lake and is popular with joggers and families. For a more varied experience, the unpaved nature trails branch off into marsh-edge forest with views of tidal creeks. The terrain is flat throughout, but the natural-surface trails can be muddy after rain. Parking requires a small daily entry fee. <strong>Best for:</strong> families, mixed-surface runs, and nature walks. <strong>Difficulty:</strong> Easy to moderate.</p>
+
+      <h2>4. Palmetto Islands County Park — 2 Miles, Boardwalk & Natural</h2>
+      <p>The trail system at <a href="/parks/palmetto-islands-county-park">Palmetto Islands County Park</a> is one of the most scenic in the area. The main loop winds through maritime forest and crosses tidal creeks on elevated boardwalks, giving you an immersive Lowcountry experience without getting your feet wet. The boardwalk sections are excellent for birdwatching — keep an eye out for painted buntings in spring and summer. The natural-surface portions can be soft in spots, so trail shoes are recommended over road shoes. A daily park entry fee applies. <strong>Difficulty:</strong> Easy. <strong>Surface:</strong> Boardwalk and packed earth.</p>
+
+      <h2>5. Colonial Lake Loop — 0.5 Miles, Paved</h2>
+      <p>For a quick, scenic walk or jog in the heart of downtown, the loop around <a href="/parks/colonial-lake">Colonial Lake</a> is hard to beat. The half-mile paved path circles the tidal lake and is lined with some of the Peninsula's most beautiful residential architecture. Egrets wade along the banks, and the atmosphere is consistently calm. It's too short for a serious training run, but it's perfect for an easy morning loop or a lunchtime walk. Street parking is available on Rutledge Avenue and Broad Street. <strong>Difficulty:</strong> Easy. <strong>Surface:</strong> Sidewalk and asphalt.</p>
+
+      <h2>6. Laurel Hill County Park Trails — 1.5 Miles, Natural</h2>
+      <p><a href="/parks/laurel-hill-county-park">Laurel Hill County Park</a> on the Wando River offers a quieter alternative to the more popular county parks. The trail system winds through upland forest and along bluffs overlooking the river, with some of the best water views of any trail in the area. The natural surface is well-maintained but can be uneven in places, making it better suited for walking than fast running. The park is rarely crowded, which is part of its appeal. Free parking available on-site. <strong>Difficulty:</strong> Easy to moderate. <strong>Surface:</strong> Packed earth and gravel.</p>
+
+      <h3>Trail Tips</h3>
+      <ul>
+        <li>Hydrate before you go. Water fountains aren't guaranteed at every trailhead.</li>
+        <li>Mornings before 9 AM offer the best combination of cool temperatures and low crowds.</li>
+        <li>Watch for cyclists on shared-use trails, especially the West Ashley Greenway.</li>
+        <li>Bug spray is essential for any trail near marsh or standing water, particularly May through October.</li>
+        <li>Most paved trails are stroller-friendly; boardwalks usually are too, but check for stairs.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "free-outdoor-activities-charleston-spring-2026",
+    title: "Free Things to Do Outdoors in Charleston This Spring",
+    description:
+      "Eight free outdoor activities to enjoy in Charleston this spring — from azalea-lined park walks to beach sunsets and farmers market strolls.",
+    category: "Seasonal",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-03-23",
+    readTime: "6 min read",
+    image: "/images/blog/spring-outdoors.jpg",
+    imageAlt: "Spring blossoms and greenery in a Charleston park",
+    content: `
+      <p>Spring in Charleston is the sweet spot — warm enough for shorts and sandals, cool enough to actually enjoy being outside for more than ten minutes. The azaleas are blooming, the humidity hasn't arrived in full force yet, and the days stretch long enough for a post-dinner walk along the waterfront. Best of all, many of the best outdoor experiences in the Lowcountry don't cost a dime. Here are eight free things to do outdoors in Charleston this spring.</p>
+
+      <h2>1. Walk the Azalea Trails at Hampton Park</h2>
+      <p><a href="/parks/hampton-park">Hampton Park</a> explodes with color every March and April. The park's azalea beds — tucked along the loop trail and around the gazebo — put on one of the best free flower shows in the Southeast. The camellias and magnolias add to the display, and the live oak canopy keeps the light soft and photogenic. Walk the full one-mile loop, then find a bench near the rose garden and soak it in. Free and open daily.</p>
+
+      <h2>2. Sunset at Folly Beach</h2>
+      <p>Folly Beach is Charleston's closest ocean beach, and spring sunsets here are extraordinary. The crowds thin after the winter tourists leave and before the summer rush begins, which means you can often find a stretch of sand to yourself in the evenings. Walk east toward the Morris Island Lighthouse at low tide for dramatic tidal pool scenery, or head to the <a href="/parks/folly-beach-county-park">Folly Beach County Park</a> end for a quieter stretch. Beach access is free; the county park has a small parking fee but street parking on the main island is available.</p>
+
+      <h2>3. Explore the Waterfront Park Promenade</h2>
+      <p><a href="/parks/waterfront-park">Waterfront Park's</a> promenade along Charleston Harbor is one of the best free walks in the city in any season, but spring mornings here are especially good. The swingbed benches face the harbor, the Pineapple Fountain is running, and the palmetto palms are at their greenest. Kids can splash in the fountain, and the views of Fort Sumter and the Ravenel Bridge make for excellent photography. Free parking can be tricky — try the lots on Concord Street or walk from the French Quarter.</p>
+
+      <h2>4. Stroll the Charleston Farmers Market</h2>
+      <p>Every Saturday from April through November, Marion Square hosts the <strong>Charleston Farmers Market</strong> from 8 AM to 2 PM. It's free to attend and worth the visit even if you don't buy anything — local musicians perform, artisans display handmade goods, and the food vendors offer samples of Lowcountry staples. <a href="/parks/marion-square">Marion Square</a> itself is a pleasant green space for sitting under the trees afterward. The spring market is the best time to go, before summer heat drives everyone indoors by noon.</p>
+
+      <h2>5. Birdwatching at Palmetto Islands County Park</h2>
+      <p>Spring migration brings painted buntings, prothonotary warblers, and dozens of shorebird species to the Lowcountry. <a href="/parks/palmetto-islands-county-park">Palmetto Islands County Park</a> in Mount Pleasant is one of the best spots to see them. The boardwalk trails through maritime forest and along tidal creeks provide excellent vantage points. Bring binoculars and arrive early — bird activity peaks in the first two hours after sunrise. Park entry requires a small vehicle fee, but the birdwatching itself is free and extraordinary in April and May.</p>
+
+      <h2>6. Bike the Ravenel Bridge</h2>
+      <p>The Arthur Ravenel Jr. Bridge has a dedicated pedestrian and bicycle lane that offers one of the most dramatic views in Charleston — 200 feet above the Cooper River with the city skyline on one side and Mount Pleasant on the other. The round trip from the Charleston side is about five miles. Spring mornings are ideal: clear skies, moderate temperatures, and a breeze off the harbor. There's no fee, and bike rentals are available at several shops downtown if you don't have your own.</p>
+
+      <h2>7. Picnic at White Point Garden</h2>
+      <p>Pack a lunch and head to <a href="/parks/white-point-garden">White Point Garden</a> at the tip of the Peninsula. The park is shaded by massive live oaks, dotted with Civil War-era cannons, and surrounded by some of the finest residential architecture in Charleston. Spread a blanket on the lawn, watch the boats pass where the rivers meet, and enjoy one of the most scenic free lunch spots anywhere on the East Coast. Spring temperatures make the garden comfortable from mid-morning through late afternoon.</p>
+
+      <h2>8. Kayak-Watch at Shem Creek</h2>
+      <p>Even if you're not paddling, Shem Creek in Mount Pleasant is a free spectacle in spring. Walk the boardwalk along the creek to watch kayakers, stand-up paddleboarders, and shrimp boats navigate the waterway. Dolphins are frequent visitors, especially around the tidal changes. The boardwalk is free and open all day, with several spots to stop and watch the action. Nearby restaurants with outdoor patios make it easy to extend the outing into dinner.</p>
+
+      <h3>Spring Planning Tips</h3>
+      <ul>
+        <li>Charleston spring weather is mostly warm (65–80°F), but pack a light layer for cooler mornings.</li>
+        <li>Pollen season peaks in March and April — antihistamines are your friend.</li>
+        <li>Weekday mornings are the best time to visit popular spots without crowds.</li>
+        <li>Mosquitoes return in force by late April — bring repellent for any activity near water or marsh.</li>
+        <li>Check the <a href="/maps">interactive park map</a> to find parks and green spaces near wherever you're staying.</li>
+      </ul>
+    `,
+  },
 ];
