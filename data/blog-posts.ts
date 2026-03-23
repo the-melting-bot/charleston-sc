@@ -11,7 +11,7 @@ export interface BlogPost {
   content: string;
 }
 
-export const blogPosts: BlogPost[] = [
+const _blogPostsUnsorted: BlogPost[] = [
   {
     slug: "best-dog-friendly-parks-charleston",
     title: "5 Best Dog-Friendly Parks in Charleston",
@@ -294,3 +294,8 @@ export const blogPosts: BlogPost[] = [
     `,
   },
 ];
+
+/** Blog posts sorted newest-first by publishedAt date */
+export const blogPosts: BlogPost[] = [..._blogPostsUnsorted].sort(
+  (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+);
