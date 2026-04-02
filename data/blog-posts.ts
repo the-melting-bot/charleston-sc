@@ -293,6 +293,149 @@ const _blogPostsUnsorted: BlogPost[] = [
       </ul>
     `,
   },
+  {
+    slug: "first-time-charleston-5-parks",
+    title: "First Time in Charleston? Start With These 5 Parks",
+    description:
+      "The five must-visit parks for first-time Charleston visitors — from waterfront promenades and Civil War history to shaded gardens and family-friendly fun.",
+    category: "Visitor Guide",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-02",
+    readTime: "5 min read",
+    image: "/images/blog/first-time-parks.jpg",
+    imageAlt: "The Pineapple Fountain at Waterfront Park in Charleston with harbor views",
+    content: `
+      <p>Charleston has dozens of parks, but if this is your first visit you don't need to see them all. These five deliver the best mix of scenery, history, and Lowcountry charm — and they're all easy to reach whether you're staying downtown, in Mount Pleasant, or on James Island.</p>
+
+      <h2>1. Waterfront Park — The Iconic Starting Point</h2>
+      <p><a href="/parks/waterfront-park">Waterfront Park</a> is Charleston's postcard park and the perfect place to begin any trip. The eight-acre promenade stretches along the Cooper River with sweeping harbor views, swinging benches, and the famous Pineapple Fountain. Arrive before 9 a.m. on weekdays to have the pier almost to yourself. Street parking is available along Concord Street, or use the garage on Cumberland Street. Plan for 45 minutes to an hour.</p>
+      <p><strong>Nearby:</strong> <a href="/landmarks/rainbow-row">Rainbow Row</a> is a two-minute walk south. Combine both for a perfect morning.</p>
+
+      <h2>2. White Point Garden — Where History Meets the Harbor</h2>
+      <p><a href="/parks/white-point-garden">White Point Garden</a> sits at the tip of the Charleston Peninsula where the Ashley and Cooper Rivers meet. The park is filled with Civil War-era cannons and monuments beneath a canopy of live oaks. Walk the perimeter path along <a href="/landmarks/the-battery">The Battery</a> seawall for some of the best views in the city. Street parking is limited, so walk from Waterfront Park in about 10 minutes. Allow 30–45 minutes.</p>
+      <p><strong>Best time:</strong> Late afternoon, when the light hits the harbor and the antebellum mansions along Murray Boulevard.</p>
+
+      <h2>3. Hampton Park — The Local Favorite</h2>
+      <p><a href="/parks/hampton-park">Hampton Park</a> is the largest park on the Peninsula at 60 acres, and it's where Charlestonians go to walk, jog, and picnic. The one-mile loop road is closed to cars on weekends, making it perfect for strollers and cyclists. The rose garden and gazebo are highlights, and the entire park explodes with azaleas in spring. Free street parking is plentiful on surrounding streets. Plan for an hour.</p>
+      <p><strong>Tip:</strong> Pack a picnic from a King Street deli and claim a bench near the pond.</p>
+
+      <h2>4. James Island County Park — Worth the Drive</h2>
+      <p><a href="/parks/james-island-county-park">James Island County Park</a> is 15 minutes from downtown and feels like a different world — 643 acres of tidal creeks, marshland, and paved trails. It's the best option for families who want a half-day outdoor adventure with a splash zone (Splash Island, open seasonally), fishing docks, a climbing wall, and disc golf. Admission is $2 per person. The park has its own lot with ample free parking.</p>
+      <p><strong>How long:</strong> Two to four hours, depending on whether kids hit the waterpark.</p>
+
+      <h2>5. Marion Square — The Downtown Gathering Place</h2>
+      <p><a href="/parks/marion-square">Marion Square</a> is the social hub of the Peninsula. This 10-acre green sits at the intersection of King and Calhoun Streets and hosts the beloved <a href="/landmarks/charleston-city-market">Charleston Farmers Market</a> every Saturday from April through November. Even without the market, the square is a great spot to people-watch, grab coffee from a nearby café, and plan your day. No parking lot — use the visitor center garage on Meeting Street. Allow 20–30 minutes, or longer on market days.</p>
+
+      <h2>Planning Your Park Day</h2>
+      <ul>
+        <li><strong>Morning:</strong> Start at Waterfront Park → walk to White Point Garden along East Bay Street.</li>
+        <li><strong>Midday:</strong> Head to Marion Square for lunch and shopping on King Street.</li>
+        <li><strong>Afternoon:</strong> Drive to Hampton Park or James Island County Park for a more relaxed experience.</li>
+        <li>Use the <a href="/maps">interactive park map</a> to plan distances and find parking options near each park.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "self-guided-walking-tour-downtown-charleston",
+    title: "A Self-Guided Outdoor Walking Tour of Downtown Charleston",
+    description:
+      "A 2.5-mile walking route connecting Charleston's best parks, landmarks, and scenic streets — with timing, directions, and tips for food and water breaks.",
+    category: "Walking Tours",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-02",
+    readTime: "6 min read",
+    image: "/images/blog/walking-tour.jpg",
+    imageAlt: "Historic Charleston downtown street with pastel buildings, palm trees, and a church steeple",
+    content: `
+      <p>Charleston's Peninsula is one of the most walkable historic districts in the country. This self-guided route covers roughly 2.5 miles and connects six parks and landmarks in a logical loop. The full walk takes about two and a half hours at a relaxed pace with photo stops, or you can break it into two shorter sessions.</p>
+
+      <h2>Stop 1: Marion Square (Start Here)</h2>
+      <p>Begin at <a href="/parks/marion-square">Marion Square</a> at the corner of King and Calhoun Streets. This central green is easy to reach from most downtown hotels and has public restrooms at the visitor center nearby. On Saturday mornings, the Charleston Farmers Market fills the square — grab a pastry and coffee to fuel the walk. Spend 15–20 minutes here.</p>
+      <p><em>Walk south on Meeting Street for 6 blocks (10 minutes).</em></p>
+
+      <h2>Stop 2: Charleston City Market</h2>
+      <p>The <a href="/landmarks/charleston-city-market">Charleston City Market</a> stretches four blocks between Meeting and East Bay Streets. Stroll through the open-air sheds where Gullah artisans weave sweetgrass baskets — a tradition dating back centuries. Even if you're not shopping, the architecture and energy make it worth a walk-through. Spend 15–20 minutes.</p>
+      <p><em>Continue east on Market Street to East Bay Street, then turn right and walk south for 3 blocks (5 minutes).</em></p>
+
+      <h2>Stop 3: Waterfront Park</h2>
+      <p><a href="/parks/waterfront-park">Waterfront Park</a> is the highlight of the route. Walk the full length of the promenade, stop at the Pineapple Fountain for photos, and rest on one of the iconic swinging benches facing the harbor. Water fountains and restrooms are available near the pier. Spend 20–30 minutes.</p>
+      <p><em>Exit the park's south end and walk along East Battery for 5 blocks (8 minutes).</em></p>
+
+      <h2>Stop 4: White Point Garden & The Battery</h2>
+      <p><a href="/parks/white-point-garden">White Point Garden</a> anchors the southern tip of the Peninsula. Wander through the live oaks and cannon displays, then walk the seawall path along <a href="/landmarks/the-battery">The Battery</a> for panoramic views of Fort Sumter and the harbor. This is the most photogenic stretch of the walk. Spend 20–30 minutes.</p>
+      <p><em>Walk west along South Battery, then turn right on Legare Street heading north for 4 blocks. Turn left on Broad Street for 2 blocks to reach King Street, then north for 5 blocks (15 minutes).</em></p>
+
+      <h2>Stop 5: Cannon Park</h2>
+      <p><a href="/parks/cannon-park">Cannon Park</a> is a small neighborhood green on the edge of the residential district. It's a quiet spot to sit on a bench under the oaks, rest your feet, and watch the neighborhood go by. There's no formal infrastructure here — just shade and calm. Spend 10 minutes.</p>
+      <p><em>Continue north on Rutledge Avenue for 6 blocks (10 minutes).</em></p>
+
+      <h2>Stop 6: Colonial Lake</h2>
+      <p>Finish the loop at <a href="/parks/colonial-lake">Colonial Lake</a>. The half-mile paved path circling the tidal lake is one of the prettiest short walks in Charleston. Joggers, dog walkers, and families share the path against a backdrop of historic homes. Find a bench on the eastern shore for a sunset view if your timing is right. Spend 15–20 minutes.</p>
+
+      <h2>Practical Tips</h2>
+      <ul>
+        <li><strong>Total distance:</strong> Approximately 2.5 miles.</li>
+        <li><strong>Total time:</strong> 2–3 hours including stops.</li>
+        <li><strong>Water break:</strong> Refill at Waterfront Park's fountains. Bring a bottle — Charleston gets warm even in spring.</li>
+        <li><strong>Food break:</strong> Upper King Street (near Marion Square) and East Bay Street both have plenty of restaurants and cafés.</li>
+        <li><strong>Best time to start:</strong> Early morning (before 9 a.m.) or late afternoon (4 p.m.) to avoid midday heat.</li>
+        <li>View the full route on the <a href="/maps">interactive park map</a> to see all stops plotted on one screen.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "best-parks-near-charleston-hotels",
+    title: "Best Parks Near Charleston's Top Hotels and Vacation Rentals",
+    description:
+      "A neighborhood-by-neighborhood guide to the best parks near Charleston's most popular tourist areas — Historic District, Mount Pleasant, Folly Beach, and Daniel Island.",
+    category: "Visitor Guide",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-02",
+    readTime: "6 min read",
+    image: "/images/blog/parks-near-hotels.jpg",
+    imageAlt: "King Street in Charleston at sunset with historic storefronts and warm evening light",
+    content: `
+      <p>One of the best things about staying in Charleston is how close the green space is — no matter which neighborhood you book, there's a park within walking or short driving distance. Here's a guide organized by the areas where most visitors stay.</p>
+
+      <h2>Historic District & King Street</h2>
+      <p>If you're staying downtown — along King Street, Meeting Street, or near the Market — you're already within walking distance of Charleston's best parks.</p>
+      <h3>Waterfront Park (5–10 min walk from most downtown hotels)</h3>
+      <p><a href="/parks/waterfront-park">Waterfront Park</a> is the crown jewel. Morning visits are best for harbor photos without crowds. The swinging benches and Pineapple Fountain are a short stroll from hotels on East Bay and Vendue Range.</p>
+      <h3>Marion Square (Central King Street)</h3>
+      <p><a href="/parks/marion-square">Marion Square</a> is the green heart of downtown and likely steps from your hotel if you're on upper King Street. Saturday morning farmers market is a must. Grab breakfast and sit on the lawn.</p>
+      <h3>White Point Garden (South of Broad)</h3>
+      <p><a href="/parks/white-point-garden">White Point Garden</a> is a 15-minute walk from most downtown hotels, right at the tip of the Peninsula. The oaks, cannons, and Battery seawall views make it worth the stroll, especially near sunset.</p>
+
+      <h2>Mount Pleasant</h2>
+      <p>Mount Pleasant is across the Cooper River, popular for vacation rentals and resort-style hotels near Shem Creek and the beaches.</p>
+      <h3>Mount Pleasant Waterfront Park</h3>
+      <p><a href="/parks/mount-pleasant-waterfront-park">Mount Pleasant Waterfront Park</a> sits right under the Ravenel Bridge with a long fishing pier, playground, and marsh boardwalk. It's ideal for a morning walk or an evening with a view of the Charleston skyline. Free parking on-site.</p>
+      <h3>Palmetto Islands County Park</h3>
+      <p><a href="/parks/palmetto-islands-county-park">Palmetto Islands County Park</a> is a 10-minute drive from central Mount Pleasant and offers 943 acres of creeks, boardwalks, and nature trails. Bring binoculars — the birdwatching here is some of the best in the area. Great for families looking for a half-day nature escape.</p>
+
+      <h2>Folly Beach & James Island</h2>
+      <p>Folly Beach is Charleston's surf town, and James Island sits between downtown and the coast. Both areas are popular with vacation rental guests looking for a laid-back vibe.</p>
+      <h3>Folly Beach County Park</h3>
+      <p><a href="/parks/folly-beach-county-park">Folly Beach County Park</a> is at the west end of Folly Island with lifeguards, chair rentals, and a calmer stretch of sand than the main beach. Parking is $10 per car — arrive early in summer. Perfect for a full beach day without the party crowd.</p>
+      <h3>James Island County Park</h3>
+      <p><a href="/parks/james-island-county-park">James Island County Park</a> is the outdoor activity hub of the area. Trails, fishing, disc golf, a dog park, and the seasonal Splash Island waterpark make it the best option for families staying on James Island. It's also the home of the annual Holiday Festival of Lights. A 10-minute drive from Folly Beach.</p>
+
+      <h2>Daniel Island</h2>
+      <p>Daniel Island is a planned community east of the Peninsula, known for its golf courses, family-friendly atmosphere, and newer vacation properties.</p>
+      <h3>Waterfront Park at Daniel Island</h3>
+      <p>Daniel Island's waterfront park offers a quiet boardwalk along the Wando River with kayak launches, a playground, and wide open lawns. It's a completely different pace from downtown — perfect for an early morning jog or a sunset picnic without the tourist crowds.</p>
+      <h3>Wannamaker County Park</h3>
+      <p><a href="/parks/wannamaker-county-park">Wannamaker County Park</a> is a 10-minute drive from Daniel Island and has an aquatic center with a lazy river, water slides, and a splash pad. It's the top choice for families with kids who want a full day of outdoor fun. Trails and fishing ponds round out the options for adults.</p>
+
+      <h2>Quick Tips for Visitors</h2>
+      <ul>
+        <li><strong>Parking:</strong> Downtown parks have limited street parking. Use the visitor center garage on Meeting Street. County parks all have free lots.</li>
+        <li><strong>Timing:</strong> Weekday mornings are best for avoiding crowds at downtown parks.</li>
+        <li><strong>Combo plan:</strong> Stay downtown and visit nearby parks on foot, then drive to a county park for a half-day trip.</li>
+        <li>Use the <a href="/maps">interactive park map</a> to find the closest park to your hotel or rental.</li>
+      </ul>
+    `,
+  },
 ];
 
 /** Blog posts sorted newest-first by publishedAt date */
