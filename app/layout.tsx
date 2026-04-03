@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import Analytics from "@/components/Analytics";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
+import GoogleAnalyticsPageViews from "@/components/Analytics";
 import "./globals.css";
 
 const inter = Inter({
@@ -95,7 +96,8 @@ export default function RootLayout({
         `}
       </Script>
       <body className={inter.className}>
-        <Analytics />
+        <VercelAnalytics />
+        <GoogleAnalyticsPageViews />
         {children}
       </body>
     </html>
