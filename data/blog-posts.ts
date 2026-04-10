@@ -436,6 +436,192 @@ const _blogPostsUnsorted: BlogPost[] = [
       </ul>
     `,
   },
+  {
+    slug: "best-sunset-spots-charleston-parks",
+    title: "Best Sunset Spots in Charleston's Parks",
+    description:
+      "Six parks and outdoor spots with the best sunset views in the Charleston area — plus which direction they face, best seasons, and photography tips.",
+    category: "Scenic Views",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-09",
+    readTime: "5 min read",
+    image: "/images/blog/sunset-spots.jpg",
+    imageAlt: "Golden sunset over marsh and water with dramatic clouds",
+    content: `
+      <p>Charleston sits where rivers meet the Atlantic, and that geography delivers some of the most spectacular sunsets on the East Coast. The trick is knowing which parks face the right direction. Here are six spots where the evening light is worth planning your day around.</p>
+
+      <h2>1. Waterfront Park — Harbor Glow</h2>
+      <p><a href="/parks/waterfront-park">Waterfront Park</a> faces east toward the Cooper River, so you won't catch the sun dropping into the water here. What you will get is the warm reflected glow that lights up the harbor, the Ravenel Bridge, and the Pineapple Fountain in golden tones. It's the most photogenic "afterglow" spot in the city. Arrive 20 minutes after official sunset for the best color on the bridge.</p>
+      <p><strong>Faces:</strong> East. <strong>Best season:</strong> Year-round. <strong>Photo tip:</strong> Shoot the fountain with the bridge lit behind it during blue hour.</p>
+
+      <h2>2. The Battery & White Point Garden — The Classic</h2>
+      <p>The seawall path along <a href="/landmarks/the-battery">The Battery</a> at <a href="/parks/white-point-garden">White Point Garden</a> faces south and west — directly into the sunset over the Ashley River. This is Charleston's quintessential sunset walk. The antebellum mansions along Murray Boulevard catch the light beautifully, and on clear evenings the sky over the Ashley turns deep orange and pink.</p>
+      <p><strong>Faces:</strong> South/West. <strong>Best season:</strong> Fall and winter, when the sun sets more directly over the river. <strong>Photo tip:</strong> Stand at the corner of East Battery and Murray for the best composition with the mansions.</p>
+
+      <h2>3. Brittlebank Park — The Wide-Open View</h2>
+      <p><a href="/parks/brittlebank-park">Brittlebank Park</a> sits on the Ashley River with a completely unobstructed western horizon. It's one of the few parks where you can watch the sun drop below the treeline across the river with nothing in the way. The park is less crowded than The Battery, which makes it a great alternative for a quiet sunset.</p>
+      <p><strong>Faces:</strong> West. <strong>Best season:</strong> Spring and summer for the latest sunsets. <strong>Photo tip:</strong> The fishing pier makes an excellent foreground element.</p>
+
+      <h2>4. Mount Pleasant Memorial Waterfront Park — Skyline Silhouette</h2>
+      <p><a href="/parks/mount-pleasant-waterfront-park">Mount Pleasant Waterfront Park</a> faces west toward downtown Charleston, and the sunset drops behind the city skyline and <a href="/landmarks/ravenel-bridge">Ravenel Bridge</a>. The combination of marsh, bridge, and steeple silhouettes makes this arguably the most dramatic sunset viewpoint in the area. The long pier gives you an elevated vantage point.</p>
+      <p><strong>Faces:</strong> West. <strong>Best season:</strong> Year-round. <strong>Photo tip:</strong> Walk to the end of the pier and shoot the bridge silhouetted against the sky.</p>
+
+      <h2>5. Folly Beach County Park — Ocean Horizon</h2>
+      <p><a href="/parks/folly-beach-county-park">Folly Beach County Park</a> faces south-southwest, and during summer months the sun sets far enough to the west that it dips toward the ocean horizon. The wide beach, gentle waves, and lack of buildings create a pure seascape sunset. Pack a blanket and arrive an hour early for the full color progression.</p>
+      <p><strong>Faces:</strong> South/Southwest. <strong>Best season:</strong> Late spring and summer. <strong>Photo tip:</strong> Wet sand near the waterline creates mirror reflections of the sky.</p>
+
+      <h2>6. Shem Creek Boardwalk — The Marsh Sunset</h2>
+      <p>Shem Creek in Mount Pleasant isn't a formal park, but the public boardwalk along the creek offers one of the best sunset experiences in the Lowcountry. The sun drops behind the marsh grass, shrimp boats, and tidal creek in layers of gold and orange. The nearby restaurants have waterfront decks if you want to pair your sunset with dinner.</p>
+      <p><strong>Faces:</strong> West. <strong>Best season:</strong> Year-round. <strong>Photo tip:</strong> Include a shrimp boat in the frame for a classic Lowcountry composition.</p>
+
+      <h2>Sunset Planning Tips</h2>
+      <ul>
+        <li>Check sunset time for Charleston before heading out — it varies from 5:30 p.m. in winter to 8:30 p.m. in summer.</li>
+        <li>Arrive 30 minutes before sunset and stay 20 minutes after — the afterglow is often better than the main event.</li>
+        <li>Use the <a href="/maps">interactive park map</a> to check park locations and plan parking in advance.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "charleston-parks-perfect-date-night",
+    title: "Charleston Parks That Are Perfect for a Date Night",
+    description:
+      "Five romantic parks and outdoor settings in Charleston for couples — from fountain-lit strolls and garden walks to marsh sunsets and lakeside evenings.",
+    category: "Date Ideas",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-09",
+    readTime: "5 min read",
+    image: "/images/blog/date-night.jpg",
+    imageAlt: "Colorful illuminated fountain at dusk with purple and blue water jets",
+    content: `
+      <p>Charleston might be famous for its restaurants, but some of the most romantic moments happen outside — under live oaks, beside fountains, or overlooking the harbor at dusk. These five parks set the stage for a memorable evening out.</p>
+
+      <h2>1. Colonial Lake at Dusk — The Quiet Walk</h2>
+      <p><a href="/parks/colonial-lake">Colonial Lake</a> is one of Charleston's most underrated date spots. The half-mile paved path circling the tidal lake is peaceful in the evening, lined with historic homes and mature trees. As the light fades, the water reflects the surrounding architecture and the sky turns pink. Walk the loop, find a bench on the south side, and watch the neighborhood settle into evening.</p>
+      <p><strong>Dinner nearby:</strong> The restaurants on Broad Street and Rutledge Avenue are a 5-minute walk away — try a prix fixe dinner before the walk.</p>
+      <p><strong>Timing:</strong> Arrive about 45 minutes before sunset for the best light on the water.</p>
+
+      <h2>2. Waterfront Park — The Fountain at Night</h2>
+      <p>The Pineapple Fountain at <a href="/parks/waterfront-park">Waterfront Park</a> takes on a completely different character after dark. The fountain is lit from below, the harbor glitters with boat lights, and the swinging benches become the most romantic seats in Charleston. The park stays open until midnight, and the evening crowd thins out after 9 p.m.</p>
+      <p><strong>Dinner nearby:</strong> East Bay Street has dozens of options — from fine dining to oyster bars — all within a block of the park entrance.</p>
+      <p><strong>Timing:</strong> Go after dinner, around 8:30–9 p.m., for the quietest experience.</p>
+
+      <h2>3. Hampton Park Gardens — The Afternoon Stroll</h2>
+      <p><a href="/parks/hampton-park">Hampton Park</a> is 60 acres of gardens, ponds, and tree-canopied paths. The rose garden is the obvious romantic highlight, but the quieter paths near the gazebo and along the pond are where couples linger. On weekends, the loop road is closed to cars, making the entire park a pedestrian paradise.</p>
+      <p><strong>Dinner nearby:</strong> Upper King Street's restaurant row is a 10-minute drive south. Grab dinner first, then drive up for a sunset walk through the gardens.</p>
+      <p><strong>Timing:</strong> Late afternoon, especially in spring when the azaleas and roses are in bloom.</p>
+
+      <h2>4. White Point Garden — The Evening View</h2>
+      <p><a href="/parks/white-point-garden">White Point Garden</a> and <a href="/landmarks/the-battery">The Battery</a> promenade offer one of the most dramatic walks in Charleston. At sunset, the mansions along South Battery glow warm orange, and the harbor opens up at the point. Walk the full seawall from East Battery to Murray Boulevard. On quiet evenings, you might have the entire southern tip of the park to yourselves.</p>
+      <p><strong>Dinner nearby:</strong> South of Broad has intimate bistros and wine bars on Church and State Streets.</p>
+      <p><strong>Timing:</strong> Sunset — check the time and arrive 30 minutes early.</p>
+
+      <h2>5. Shem Creek Boardwalk — The Marsh Sunset</h2>
+      <p>The boardwalk along Shem Creek in Mount Pleasant is one of the most romantic outdoor walks in the Lowcountry. Watch shrimp boats return to dock as the sun drops behind the marsh, turning everything gold. Dolphins often surface in the creek at dusk. End the walk at one of the creek-side restaurants for drinks on the water.</p>
+      <p><strong>Dinner nearby:</strong> The restaurants are right on the boardwalk — seafood and sunset in one stop.</p>
+      <p><strong>Timing:</strong> Arrive one hour before sunset for the full light show.</p>
+
+      <h2>Date Night Planning Tips</h2>
+      <ul>
+        <li>Bring a light layer — evenings near the water can cool down quickly, even in spring.</li>
+        <li>Parking is easier after 6 p.m. downtown when meters stop enforcing.</li>
+        <li>Check the <a href="/maps">interactive park map</a> for locations and nearby restaurants.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "where-to-see-wildlife-charleston-parks",
+    title: "Where to See Wildlife in Charleston's Parks",
+    description:
+      "The best parks and outdoor spots for seeing birds, dolphins, alligators, and other Lowcountry wildlife — with tips on the best seasons and times of day.",
+    category: "Nature",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-09",
+    readTime: "6 min read",
+    image: "/images/blog/wildlife-parks.jpg",
+    imageAlt: "Great blue heron with a fresh catch on a wooden dock in the Lowcountry",
+    content: `
+      <p>The Charleston Lowcountry is one of the richest wildlife habitats on the East Coast. Tidal marshes, maritime forests, barrier islands, and coastal waterways create overlapping ecosystems where birds, dolphins, alligators, sea turtles, and hundreds of other species thrive. You don't need a boat or a guide — just the right park at the right time.</p>
+
+      <h2>Palmetto Islands County Park — The Birdwatcher's Paradise</h2>
+      <p><a href="/parks/palmetto-islands-county-park">Palmetto Islands County Park</a> in Mount Pleasant is the single best spot for birdwatching in the Charleston area. The park's 943 acres of tidal creeks, marsh, and maritime forest host great blue herons, snowy egrets, wood storks, and osprey year-round. In spring and fall, migrating songbirds pass through in large numbers. The boardwalk through the marsh is the prime viewing area — bring binoculars and arrive early in the morning when birds are most active.</p>
+      <p><strong>Best time:</strong> Sunrise to 9 a.m., year-round. Spring migration (March–May) is peak season.</p>
+
+      <h2>Caw Caw Interpretive Center — Alligators and Wading Birds</h2>
+      <p>Caw Caw is a former rice plantation turned nature preserve on Highway 17 South, about 20 minutes from downtown. The six miles of trails wind through old rice fields, swamp, and bottomland forest. This is the most reliable place near Charleston to see alligators basking in the sun along the dike trails. Wading birds — herons, ibis, and egrets — hunt in the shallow impoundments. The swamp trail also attracts painted buntings in summer.</p>
+      <p><strong>Best time:</strong> Morning, spring through fall. Alligators are most visible on warm sunny days from April to October.</p>
+
+      <h2>Shem Creek — Dolphins at Dusk</h2>
+      <p>The Shem Creek boardwalk in Mount Pleasant is one of the easiest places to spot bottlenose dolphins in the wild. The dolphins follow schools of fish into the tidal creek, often surfacing just feet from the boardwalk. The best viewing is during incoming tides in the late afternoon. You'll also see pelicans diving, herons stalking the shallows, and the occasional stingray gliding past.</p>
+      <p><strong>Best time:</strong> Late afternoon on an incoming tide, year-round. Summer evenings are especially active.</p>
+
+      <h2>Folly Beach County Park — Sea Turtles and Shorebirds</h2>
+      <p><a href="/parks/folly-beach-county-park">Folly Beach County Park</a> is a nesting site for loggerhead sea turtles from May through August. The park marks and protects nests, and volunteers lead nighttime turtle walks during peak season — check with the park office for schedules. Even outside turtle season, the beach hosts sanderlings, plovers, royal terns, and laughing gulls. The calmer western end of the beach is best for shorebirds.</p>
+      <p><strong>Best time:</strong> Early morning for shorebirds. May–August for sea turtle nesting. Late July–September for hatchling emergence.</p>
+
+      <h2>James Island County Park — Marsh Edges</h2>
+      <p>The trails and fishing docks at <a href="/parks/james-island-county-park">James Island County Park</a> border tidal marsh and creeks where herons, egrets, and fiddler crabs are easy to spot. The park's ponds also attract seasonal ducks and coots in winter. Walk the perimeter trails early in the morning for the best sightings. Occasionally, river otters are seen along the creek banks.</p>
+      <p><strong>Best time:</strong> Early morning. Winter for waterfowl, spring/summer for wading birds.</p>
+
+      <h2>Mount Pleasant Waterfront Park — Easy Access Harbor Wildlife</h2>
+      <p><a href="/parks/mount-pleasant-waterfront-park">Mount Pleasant Waterfront Park</a> offers the most convenient wildlife viewing in the area. Walk the marsh boardwalk at low tide to see fiddler crabs by the thousands, and watch the pier for brown pelicans, cormorants, and the occasional dolphin pod cruising past. The park's location under the <a href="/landmarks/ravenel-bridge">Ravenel Bridge</a> also makes it a perching spot for peregrine falcons.</p>
+      <p><strong>Best time:</strong> Low tide for marsh life. Any time for birds and dolphins.</p>
+
+      <h2>Wildlife Viewing Tips</h2>
+      <ul>
+        <li><strong>Binoculars:</strong> Essential for birdwatching. Even a basic pair makes a huge difference.</li>
+        <li><strong>Stay quiet:</strong> Wildlife is most active when the area is calm. Early mornings on weekdays are ideal.</li>
+        <li><strong>Keep distance:</strong> Never approach alligators, nesting birds, or sea turtle nests. Use a zoom lens instead.</li>
+        <li>Use the <a href="/maps">interactive park map</a> to locate parks with marsh and waterfront access.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "ultimate-guide-james-island-parks",
+    title: "The Ultimate Guide to James Island's Parks and Outdoor Spaces",
+    description:
+      "A complete guide to every park and outdoor space on James Island — from the 643-acre county park to hidden neighborhood gems and Folly Beach access.",
+    category: "Area Guide",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-09",
+    readTime: "7 min read",
+    image: "/images/blog/james-island-guide.jpg",
+    imageAlt: "Wooden boardwalk winding through green marsh wetlands",
+    content: `
+      <p>James Island sits between downtown Charleston and Folly Beach, and it packs more outdoor options into one area than most visitors realize. From a 643-acre county park to a historic plantation site to one of the best beaches in the state, James Island can fill an entire vacation with outdoor activities. Here's everything you need to know.</p>
+
+      <h2>James Island County Park — The Anchor</h2>
+      <p><a href="/parks/james-island-county-park">James Island County Park</a> is the largest and most developed park on the island, and one of the best in the entire Charleston County park system. The 643 acres include paved multi-use trails, a fishing and crabbing dock, a climbing wall, disc golf, a dog park, picnic shelters, and campgrounds.</p>
+      <p>The seasonal Splash Island waterpark (open Memorial Day through Labor Day) is the biggest draw for families — with water slides, a lazy river, and a splash pad for toddlers. The park also hosts the annual Holiday Festival of Lights every November and December, when the driving route is decorated with millions of lights.</p>
+      <p><strong>Admission:</strong> $2 per person. Free parking. <strong>Best for:</strong> Families, cyclists, disc golfers, and anyone wanting a full day outdoors. <strong>Time needed:</strong> 2–5 hours depending on activities.</p>
+
+      <h2>McLeod Plantation Historic Site</h2>
+      <p>McLeod Plantation on Country Club Drive is one of the most important Gullah Geechee heritage sites in the Lowcountry. The 37-acre property preserves six original slave cabins, the main house, and a live oak allée that frames the entrance. Unlike many plantation sites, McLeod centers the stories of the enslaved people who lived and worked here. The site is now part of the Charleston County Park system.</p>
+      <p><strong>Admission:</strong> $15 adults, $10 ages 3–12. Guided tours available. <strong>Best for:</strong> History and cultural heritage. <strong>Time needed:</strong> 1–2 hours.</p>
+
+      <h2>Folly Beach County Park — The Beach Day</h2>
+      <p><a href="/parks/folly-beach-county-park">Folly Beach County Park</a> occupies the quieter western end of Folly Island. The beach here is wider and less crowded than the public beach near the pier. Lifeguards are on duty in season, and you can rent chairs, umbrellas, and boogie boards at the park. The dunes are protected sea turtle nesting habitat from May through August.</p>
+      <p><strong>Admission:</strong> $10 per vehicle. <strong>Best for:</strong> Families, swimming, and beach picnics. <strong>Time needed:</strong> Half day to full day. <strong>Tip:</strong> Arrive before 10 a.m. on summer weekends — the lot fills up and the gate closes.</p>
+
+      <h2>Stiles Point Neighborhood Parks</h2>
+      <p>The Stiles Point area on the eastern side of James Island has several small neighborhood parks with playgrounds, open fields, and marsh views. These parks aren't destinations on their own, but they're great for morning walks, dog outings, or letting kids burn energy if you're staying nearby. The marsh-edge parks along the Stono River offer quiet spots to watch the tide come in.</p>
+      <p><strong>Best for:</strong> Locals and visitors staying in nearby rentals who want a quick outdoor break.</p>
+
+      <h2>Camp Road Bike and Walk Path</h2>
+      <p>Camp Road connects James Island to Folly Beach, and the paved multi-use path along one side makes it a popular walking and cycling route. The path is flat and shaded in sections, passing through residential areas with occasional marsh views. It's not scenic enough to be a destination, but it's a practical route for getting exercise or biking from the island toward Folly.</p>
+      <p><strong>Best for:</strong> Jogging, cycling, and connecting between parks without driving.</p>
+
+      <h2>Planning a Full Day on James Island</h2>
+      <p>Here's how to make the most of a day outdoors on James Island:</p>
+      <ul>
+        <li><strong>Morning:</strong> Start at James Island County Park for trails, disc golf, or the dog park. Grab coffee and breakfast at a café on Maybank Highway.</li>
+        <li><strong>Midday:</strong> Drive to Folly Beach County Park for a beach session. Pack a cooler — there's no food service inside the park.</li>
+        <li><strong>Afternoon:</strong> Visit McLeod Plantation for a guided tour (last tours usually start at 3 or 4 p.m. — check ahead).</li>
+        <li><strong>Evening:</strong> Head back to Folly Beach Center Street for dinner and sunset from the <a href="/landmarks/folly-beach-pier">Folly Beach Pier</a>.</li>
+        <li>Use the <a href="/maps">interactive park map</a> to see all James Island parks and plan your route.</li>
+      </ul>
+    `,
+  },
 ];
 
 /** Blog posts sorted newest-first by publishedAt date */
