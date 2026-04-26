@@ -622,6 +622,169 @@ const _blogPostsUnsorted: BlogPost[] = [
       </ul>
     `,
   },
+  {
+    slug: "charleston-parks-sunrise-walks-coffee",
+    title: "Charleston's Best Parks for a Sunrise Walk and Coffee",
+    description:
+      "Five Charleston parks that come alive at first light — where the marsh fog lifts, the harbor wakes up, and the coffee tastes better for it.",
+    category: "Scenic Views",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-26",
+    readTime: "5 min read",
+    image: "/images/blog/sunrise-walks.jpg",
+    imageAlt: "Soft pastel sunrise rising over a Lowcountry marsh with mist on the water",
+    content: `
+      <p>Charleston gets a lot of attention for its sunsets, but locals will tell you the morning is really when the city is at its best. The marsh steams, the heat hasn't built up yet, and the parks are nearly empty. If you can get out the door with a thermos, here are five places where the first hour of daylight is worth setting an alarm for.</p>
+
+      <h2>1. Waterfront Park — Catch the Sun Off the Cooper</h2>
+      <p><a href="/parks/waterfront-park">Waterfront Park</a> faces directly east, which makes it the most reliable sunrise viewpoint downtown. The sun comes up over the Cooper River and lights the Pineapple Fountain in warm amber tones. Grab a coffee from one of the East Bay Street cafes on your way in — Harken Cafe and Black Tap are both within a five-minute walk and open early. Sit on the pier swings, watch the container ships come in, and you'll have the place mostly to yourself before 7:30 a.m.</p>
+
+      <h2>2. The Battery — Quiet Before the Tour Buses</h2>
+      <p>Walking the seawall along <a href="/landmarks/the-battery">The Battery</a> at sunrise is one of those Charleston experiences that doesn't show up in guidebooks because it's so simple. The harbor is glassy, joggers nod hello, and the antebellum mansions catch the first warm light on their facades. Park near <a href="/parks/white-point-garden">White Point Garden</a>, walk the seawall to the corner of East Bay, and double back through the live oaks. The whole loop takes about 25 minutes.</p>
+
+      <h2>3. Hampton Park — Coffee, Roses, and Birdsong</h2>
+      <p><a href="/parks/hampton-park">Hampton Park</a> is the runner's pick. The paved one-mile loop is mostly shaded, the rose garden is at its best in the cool morning hours, and the bird activity around the pond is genuinely impressive at first light. Hampton Park Cafe sits right at the edge of the park and opens at 7 a.m. — order a flat white, walk a lap, and you'll understand why so many West Side residents organize their entire morning around this routine.</p>
+
+      <h2>4. Mount Pleasant Waterfront Park — The Bridge in Pink Light</h2>
+      <p>If you've never seen the <a href="/landmarks/ravenel-bridge">Ravenel Bridge</a> in pink sunrise light, that's reason enough to drive over the river. <a href="/parks/mount-pleasant-waterfront-park">Mount Pleasant Waterfront Park</a> faces west toward the bridge, so the bridge cables glow while the sun rises behind you. Walk to the end of the pier, look back, and you'll see the Charleston skyline lit up like a postcard. Coffee options are thinner here — bring your own or stop at the Mount Pleasant Coffee Roasters on Coleman Boulevard before you arrive.</p>
+
+      <h2>5. Brittlebank Park — The Wide-Sky Option</h2>
+      <p><a href="/parks/brittlebank-park">Brittlebank Park</a> sits on the Ashley River with a huge open sky and very little tree cover, which means you get the whole color show — pre-dawn lavender, peach band on the horizon, then the full warm wash. It's also one of the easier parks to park at in the morning. The fishing pier is the place to stand. If you want food, Bumpa's on the corner of Lockwood and Spring opens early on weekdays.</p>
+
+      <h2>Tips for an Easy Sunrise Outing</h2>
+      <ul>
+        <li>Sunrise in Charleston ranges from about 6:15 a.m. in summer to 7:30 a.m. in winter — check the time the night before.</li>
+        <li>Bring a light layer even in summer; the marsh wind off the water is cooler than you'd expect at dawn.</li>
+        <li>Most parks don't have coffee on-site, so plan a stop on the way in or pack a thermos.</li>
+        <li>Use the <a href="/maps">interactive park map</a> to plan parking — many downtown lots are still free this early.</li>
+      </ul>
+
+      <p>If you've only got time for one sunrise this trip, make it Mount Pleasant Waterfront Park. The bridge in morning light is the kind of view people remember years later. Browse the rest of the parks on <a href="/parks">our park directory</a> to plan the next one.</p>
+    `,
+  },
+  {
+    slug: "quiet-charleston-parks-reading-sketching",
+    title: "Quiet Charleston Parks for Reading, Sketching, or a Slow Afternoon",
+    description:
+      "Five low-key Charleston parks where you can find a shaded bench, open a book, and actually hear the wind in the live oaks — slow afternoon picks for locals.",
+    category: "Hidden Gems",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-26",
+    readTime: "5 min read",
+    image: "/images/blog/quiet-parks.jpg",
+    imageAlt: "Empty wooden park bench under sprawling live oaks draped in Spanish moss",
+    content: `
+      <p>Some afternoons you don't want a hike or a playground or a crowd. You want a bench, some shade, and an hour where nothing is asking anything of you. Charleston has more of these spaces than people realize — you just have to know which ones stay quiet. Here are five parks built for slow afternoons.</p>
+
+      <h2>1. Cannon Park — A Pocket of Calm Off King Street</h2>
+      <p><a href="/parks/cannon-park">Cannon Park</a> is small enough that most people walk past it on their way somewhere else. That's exactly why it works. The Doric columns from the old Charleston Museum still stand in the middle of the lawn, the benches around the edges are usually empty, and the live oaks form a near-complete canopy. It's the kind of place where you can finish a chapter without anyone noticing you're there. Five minutes from upper King Street if you need to refill on coffee.</p>
+
+      <h2>2. Colonial Lake — A Bench, a Book, and the Water</h2>
+      <p><a href="/parks/colonial-lake">Colonial Lake</a> is one of Charleston's most quietly underrated parks. The walking path circles a tidal pond with benches every fifty feet or so, and the entire place tilts toward calm. Mornings are good for sketching the reflections on the water; afternoons are better for reading once the live oak shade settles in. There's a steady, soft soundtrack of wind, birds, and the occasional kayak paddle, but rarely anything you'd call noise.</p>
+
+      <h2>3. White Point Garden — Slow Bench Under Live Oaks</h2>
+      <p>Most visitors hit <a href="/parks/white-point-garden">White Point Garden</a> at the end of a long walking tour, but if you come midweek and pick a bench on the interior paths rather than the seawall side, you'll find it surprisingly quiet. The live oaks are dramatic enough to anchor a sketch, the breeze off the harbor keeps the heat down, and the cannons and monuments give you something to look at when the page gets stale.</p>
+
+      <h2>4. Hampton Park's Rose Garden — Color Without Crowds</h2>
+      <p>Inside <a href="/parks/hampton-park">Hampton Park</a>, the rose garden and gazebo area near the pond is the quietest pocket in the whole park. Bring a notebook in spring when the roses are at peak — there's enough variety in shape and color to keep a watercolor session interesting for a couple hours. Park benches face the water, and the sound of the fountain covers everything else.</p>
+
+      <h2>5. Hazel Parker Playground (the Garden Side) — Surprise Find</h2>
+      <p>The name throws people off, but <a href="/parks/hazel-parker-playground">Hazel Parker Playground</a> on the south end of the peninsula has a beautiful waterfront edge that's almost completely separate from the play structures. Walk to the back of the park, past the basketball courts, and you'll find a grassy stretch facing the harbor with old benches and a slow flow of foot traffic. Locals walk dogs through here and barely break stride. It's a perfect afternoon read spot.</p>
+
+      <h2>What to Bring</h2>
+      <ul>
+        <li>A small thermos or a water bottle — none of these parks have reliable concessions.</li>
+        <li>Bug spray in the warmer months. The shade attracts mosquitoes after about 4 p.m.</li>
+        <li>A light cushion if you're planning to sit for more than an hour. Charleston's wooden benches are pretty, but they get unforgiving.</li>
+        <li>Headphones are optional — the ambient sound at all five of these is genuinely pleasant.</li>
+      </ul>
+
+      <p>Charleston's louder parks have their place, but the quiet ones are where the city actually slows down. Browse <a href="/parks">all of our parks</a> if you'd like to find your own bench, or check the <a href="/maps">park map</a> to plan a slow afternoon route.</p>
+    `,
+  },
+  {
+    slug: "short-charleston-nature-walks-under-an-hour",
+    title: "Short Charleston Nature Walks You Can Do in Under an Hour",
+    description:
+      "Five short, scenic Lowcountry nature walks under a mile and under an hour — perfect for visitors with limited time or anyone squeezing in a quick green break.",
+    category: "Trails",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-26",
+    readTime: "5 min read",
+    image: "/images/blog/short-nature-walks.jpg",
+    imageAlt: "Wooden boardwalk winding through tall marsh grass under open sky",
+    content: `
+      <p>Not every park visit needs to be a half-day commitment. If you've got an hour between meetings, a flight to catch, or kids who can only handle so much trail, there are real Lowcountry nature walks that fit into a tight window. These five are all under a mile, low-effort, and pay off in views.</p>
+
+      <h2>1. James Island County Park — Marsh Boardwalk Loop</h2>
+      <p><a href="/parks/james-island-county-park">James Island County Park</a> has a short boardwalk loop near the entrance that takes about 25 minutes round-trip and threads through tidal marsh and live oak hammock. You'll often see herons fishing in the channels and fiddler crabs working the mud at low tide. There's a small entry fee, but the parking is right next to the trailhead, which makes the in-and-out easy.</p>
+
+      <h2>2. Palmetto Islands County Park — Big Toe Trail</h2>
+      <p>The Big Toe Trail at <a href="/parks/palmetto-islands-county-park">Palmetto Islands County Park</a> is a flat 0.7-mile boardwalk and packed-dirt loop through maritime forest. It feels deeper into nature than its short length would suggest — palmettos overhead, marsh on one side, and very little ambient noise. A good first nature walk for kids who haven't done a real trail before, and short enough that you can fit it into a morning errand run from Mount Pleasant.</p>
+
+      <h2>3. Magnolia Plantation — Audubon Swamp Garden Boardwalk</h2>
+      <p>The Audubon Swamp Garden boardwalk at <a href="/parks/magnolia-plantation">Magnolia Plantation</a> is the most scenic 45 minutes of walking in the Charleston area. The boardwalk crosses a working blackwater swamp, with cypress knees in the water and turtles on every log. Bring a camera. Note that there's a separate ticket for plantation grounds, but the swamp garden alone is worth the stop if you've never seen one.</p>
+
+      <h2>4. Hampton Park Pond Loop</h2>
+      <p>The pond loop at <a href="/parks/hampton-park">Hampton Park</a> is the easiest urban nature walk on the peninsula. About a half-mile, fully paved, and circled by mature live oaks. Spring is the standout season — the rose garden is right next to the pond, and the bird life is genuinely good (great blue herons fish there year-round). Twenty minutes start to finish, and you can grab coffee at Hampton Park Cafe on the way out.</p>
+
+      <h2>5. Folly Beach County Park — Tideline Walk</h2>
+      <p>If you'd rather walk on sand than wood, drive south to <a href="/parks/folly-beach-county-park">Folly Beach County Park</a> and walk the tideline at low tide. Half a mile out, half a mile back, and you'll see shorebirds, sand dollars when you get lucky, and an unobstructed Atlantic horizon. The west end of Folly is a designated bird sanctuary, so the wildlife volume is higher than you'd expect for a public beach.</p>
+
+      <h2>Quick Tips for Short Walks</h2>
+      <ul>
+        <li>Stick to morning or late afternoon in summer. The Lowcountry sun is harder than visitors expect, even on a short walk.</li>
+        <li>Most boardwalks have minimal signage — pick up a trail map at the park entrance if you want context on what you're seeing.</li>
+        <li>Wear closed-toed shoes for boardwalks. Splinters and unexpected mud happen.</li>
+        <li>The <a href="/maps">interactive park map</a> shows every park in this list with parking and access notes.</li>
+      </ul>
+
+      <p>An hour outside in Charleston is rarely wasted. If you've got more time after one of these, browse our full <a href="/parks">park directory</a> for longer hikes and weekend-length trips.</p>
+    `,
+  },
+  {
+    slug: "rainy-day-park-plans-charleston",
+    title: "Rainy Day Park Plans for Charleston: Backup Outdoor Ideas",
+    description:
+      "Charleston rain doesn't have to cancel your outdoor day. Here are five parks and covered outdoor spots that are still worth visiting in the wet.",
+    category: "Seasonal",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-04-26",
+    readTime: "6 min read",
+    image: "/images/blog/rainy-day-parks.jpg",
+    imageAlt: "Spanish moss draped over live oak branches with soft backlight on a misty day",
+    content: `
+      <p>If you've spent any spring or summer in Charleston, you know the rain is rarely a full-day event. Most of the time it's a short, dramatic afternoon storm followed by clear skies and steam coming up off the pavement. That means a rainy forecast doesn't have to wreck your outdoor plans — it just changes which park you go to. Here are five parks and outdoor spots that hold up well when the weather doesn't fully cooperate.</p>
+
+      <h2>1. Magnolia Plantation — Better in the Rain, Honestly</h2>
+      <p><a href="/parks/magnolia-plantation">Magnolia Plantation</a> is the rare Charleston outdoor spot that's arguably more atmospheric in light rain than in sunshine. The Audubon Swamp boardwalk is partially canopied, the cypress trees take on a deeper color when wet, and there's a real working garden you can wander even with a drizzle. The plantation house and a couple of tour options give you indoor backup if the rain picks up. It's also far enough out of downtown that you'll dodge the worst of the tourist crowds on weather days.</p>
+
+      <h2>2. Charleston City Market — Covered, Walkable, and Outdoor-Adjacent</h2>
+      <p>The <a href="/landmarks/charleston-city-market">Charleston City Market</a> isn't a park, but it scratches the same itch on a rainy day. The four-block-long market is fully covered, runs the length of Market Street, and you can spend an hour walking the stalls, talking to local makers, and watching the rain come down on the cobblestones. Pair it with a covered porch lunch on East Bay Street and you've turned a wet afternoon into an easy one.</p>
+
+      <h2>3. Hampton Park — A Walk in Light Rain</h2>
+      <p>The paved loop at <a href="/parks/hampton-park">Hampton Park</a> holds up beautifully in light rain. The live oak canopy covers most of the path, the rose garden looks dramatic with droplets on the petals, and you'll basically have the place to yourself. Bring a hooded layer, walk the loop, and stop at Hampton Park Cafe across the street to dry out with a coffee. It's a low-stakes 45 minutes that feels like a real outing.</p>
+
+      <h2>4. Middleton Place — Long Sheltered Walks</h2>
+      <p><a href="/parks/middleton-place">Middleton Place</a> has enough covered porches, garden paths under arbors, and partial shelter that you can structure a half-day visit even with rain on and off. The terraced gardens look entirely different in wet weather — moodier, more reflective, less crowded. The stable yards and on-site restaurant give you indoor pivots when you need them. If your trip is built around outdoor things and the day turns gray, this is the smart move.</p>
+
+      <h2>5. James Island County Park — Pavilions and Covered Picnic Areas</h2>
+      <p><a href="/parks/james-island-county-park">James Island County Park</a> has multiple covered pavilions and picnic shelters that can keep a family meal going through a passing storm. The walking trails get muddy quickly after rain, but the campground store, climbing wall (covered), and pavilion lawn give you enough variety to fill a few hours without getting soaked. It's also one of the few parks where you can pull a car right up to a sheltered area, which matters when you've got little kids and rain gear is a hassle.</p>
+
+      <h2>How to Read the Charleston Forecast</h2>
+      <ul>
+        <li>A 60% chance of rain in Charleston usually means a quick afternoon storm, not a washout. Plan around the storm window.</li>
+        <li>Tropical systems are a different story — if there's a named storm in the forecast, indoor backup is the right call.</li>
+        <li>Live oak canopy parks like Hampton and Hampton-adjacent streets stay surprisingly dry under light rain. Open marsh parks do not.</li>
+        <li>Rain gear in Charleston is more about a hat and water-resistant jacket than a full poncho — humidity makes anything heavier miserable.</li>
+      </ul>
+
+      <h2>One Charleston Truth</h2>
+      <p>Locals know that the best photos of the city often happen right after a storm, when the light comes back in low and golden over wet streets. If you're flexible on timing, stay close to a park during the storm and head back out as soon as it clears. You'll have the place to yourself for an hour, and the air will feel ten degrees cooler.</p>
+
+      <p>Don't let a forecast cancel your plans. Use the <a href="/maps">interactive park map</a> to find a park near where you're staying, or browse the full <a href="/parks">park directory</a> to plan a backup route.</p>
+    `,
+  },
 ];
 
 /** Blog posts sorted newest-first by publishedAt date */
