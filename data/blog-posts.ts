@@ -785,6 +785,120 @@ const _blogPostsUnsorted: BlogPost[] = [
       <p>Don't let a forecast cancel your plans. Use the <a href="/maps">interactive park map</a> to find a park near where you're staying, or browse the full <a href="/parks">park directory</a> to plan a backup route.</p>
     `,
   },
+  {
+    slug: "beat-the-heat-charleston-summer-parks",
+    title: "Beat the Heat: Top Charleston Parks with Splash Pads and Water Play",
+    description:
+      "Where to cool off this summer in Charleston's best splash pads, fountains, and water parks.",
+    category: "Seasonal",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-06-05",
+    readTime: "5 min read",
+    image: "/images/blog/summer-water-play.jpg",
+    imageAlt: "Children playing at a splash pad fountain under the summer sun in Charleston",
+    content: `
+      <p>Summer in the Lowcountry is beautiful, but there is no denying the heat. With temperatures regularly climbing into the 90s and humidity to match, outdoor activities require a strategy. Fortunately, Charleston's park system features excellent water play areas, splash pads, and harbor-front breezes to help you and your family cool off. Here is a guide to the best Charleston parks for beating the heat this summer.</p>
+
+      <h2>1. Waterfront Park — The Iconic Pineapple Fountain & Splash Fountains</h2>
+      <p>Located in the heart of downtown, <a href="/parks/waterfront-park">Waterfront Park</a> is the ultimate destination for cooling off on a hot summer day. The park's famous <strong>Pineapple Fountain</strong> allows visitors to wade in its shallow, cascading waters, which is a favorite activity for toddlers and adults alike. Just a short walk down the promenade, the park also features a large, flush-to-the-ground splash fountain where kids can run through jets of water. The constant harbor breeze and shaded swinging benches make it comfortable even in the afternoon.</p>
+
+      <h2>2. Mount Pleasant Memorial Waterfront Park — Pier Breezes & Splash Pad</h2>
+      <p>Sitting at the base of the Arthur Ravenel Jr. Bridge, <a href="/parks/mount-pleasant-waterfront-park">Mount Pleasant Memorial Waterfront Park</a> is one of the breeziest spots in the area. The park's nautical-themed playground features a dedicated splash pad area where kids can cool down. After playing, you can walk out along the 1,250-foot fishing pier, which extends far over the Cooper River to catch the strongest breezes off the water. The River Watch Café at the end of the pier offers air-conditioned seating and cold drinks.</p>
+
+      <h2>3. Wannamaker County Park — Splash Pad & Whirlin' Waters</h2>
+      <p>For families in North Charleston, <a href="/parks/wannamaker-county-park">Wannamaker County Park</a> offers a fantastic, fully fenced splash pad. It's designed specifically for toddlers and younger children, featuring gentle spray jets and water nozzles on a rubberized surface. If you are looking for a full day of water slides and wave pools, Wannamaker is also home to <strong>Whirlin' Waters Adventure Waterpark</strong> (seasonal admission required), the largest water park in the Charleston area, featuring a lazy river, water slides, and a giant wave pool.</p>
+
+      <h2>4. James Island County Park — Splash Zone Waterpark</h2>
+      <p>Another premier option is <a href="/parks/james-island-county-park">James Island County Park</a>, which hosts the <strong>Splash Zone Waterpark</strong>. This seasonal attraction features a 200-foot tube slide, a lazy river, and a large leisure pool. Outside of the paid waterpark area, the county park offers beautiful shaded trails beneath massive live oaks, a large playground, and kayak rentals on the calm park lake, making it a great destination for a full summer day out.</p>
+
+      <h2>5. Palmetto Islands County Park — Splash Island</h2>
+      <p>In Mount Pleasant, <a href="/parks/palmetto-islands-county-park">Palmetto Islands County Park</a> is home to <strong>Splash Island Waterpark</strong>. Nestled within the maritime forest, this tropical-themed water park features a 16-foot water slide, spray geysers, a lazy river, and a zero-depth entry pool that is perfect for toddlers. The heavy tree canopy throughout the rest of Palmetto Islands County Park provides excellent shade for hiking and picnicking between water sessions.</p>
+
+      <h3>Tips for Summer Water Play</h3>
+      <ul>
+        <li><strong>Check seasonal hours:</strong> Splash pads and waterparks have varying seasonal schedules, usually opening daily from Memorial Day through Labor Day.</li>
+        <li><strong>Sun protection is key:</strong> Apply reef-safe sunscreen frequently, and wear UV-protective rash guards, especially for young children.</li>
+        <li><strong>Stay hydrated:</strong> Bring plenty of fresh water, as the combination of heat, humidity, and active play can quickly lead to dehydration.</li>
+        <li><strong>Footwear:</strong> Water shoes are highly recommended for splash pads to prevent slipping and protect feet from hot surfaces.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "summer-evening-breezes-charleston-parks",
+    title: "Summer Evening Magic: Best Charleston Parks for Sunset and Sea Breezes",
+    description:
+      "Escape the midday humidity with these perfect evening park spots for catching cool sea breezes and beautiful sunsets.",
+    category: "Seasonal",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-06-12",
+    readTime: "5 min read",
+    image: "/images/blog/summer-evening-breezes.jpg",
+    imageAlt: "Golden sunset over the marshland at a Charleston waterfront park",
+    content: `
+      <p>During a Charleston summer, midday can be intense, but as the sun begins to dip, the Lowcountry undergoes a magical transformation. The humidity drops slightly, the intense sun gives way to golden hour light, and cool sea breezes sweep in from the harbor. If you want to experience the best of Charleston's summers, the trick is to visit the parks in the late afternoon and evening. Here are the best parks for catching the sunset and enjoying a cool evening breeze.</p>
+
+      <h2>1. Brittlebank Park — The Ultimate Sunset View</h2>
+      <p>Located on the western edge of the Peninsula along the Ashley River, <a href="/parks/brittlebank-park">Brittlebank Park</a> is the top local choice for watching the sun go down. Because it faces directly west across the river and marsh, the park offers unobstructed views of spectacular summer sunsets. The long fishing pier is the perfect spot to stand and catch the breeze coming off the water, and the wide grassy lawns are ideal for setting up a folding chair or picnic blanket as the sky turns orange and pink.</p>
+
+      <h2>2. Pitt Street Bridge (Mount Pleasant) — Marsh Sunset Walk</h2>
+      <p>While not a traditional park with playgrounds, the Pitt Street Bridge park in the Old Village of Mount Pleasant is a historic causeway turned pedestrian greenway. Running through the salt marsh toward Sullivan's Island, it offers 360-degree views of the harbor, Cove Inlet, and the Charleston skyline. In the summer, it catches the strongest harbor breezes, making it a favorite spot for locals to walk dogs, fish, or simply stand at the end of the boardwalk and watch the sun set behind the Ravenel Bridge.</p>
+
+      <h2>3. White Point Garden — Battery Breezes & Oak Canopy</h2>
+      <p>Sitting at the very tip of the Peninsula where the Cooper and Ashley rivers meet, <a href="/parks/white-point-garden">White Point Garden</a> acts as a natural wind tunnel for cool harbor breezes. Even on the hottest summer days, the shade from the park's massive, ancient live oaks combined with the wind off the water makes the interior paths surprisingly cool. Stroll along the historic Battery seawall, watch the sailboats returning to harbor, and find a shady bench to watch the sky light up at dusk.</p>
+
+      <h2>4. Mount Pleasant Memorial Waterfront Park — River breezes under the Bridge</h2>
+      <p>The 1,250-foot pier at <a href="/parks/mount-pleasant-waterfront-park">Mount Pleasant Memorial Waterfront Park</a> extends far into the Cooper River, positioning you perfectly to catch the wind. As the sun sets, the Ravenel Bridge lights up, reflecting off the water below. It's a gorgeous, cooler spot for an evening walk or to watch the sunset over the downtown skyline. Kids can play on the shaded playground, and you can grab ice cream at the River Watch Café to end the night.</p>
+
+      <h2>5. Waterfront Park — Harbor Swings and Golden Hour</h2>
+      <p><a href="/parks/waterfront-park">Waterfront Park</a> is beautiful at sunrise, but it is equally charming at sunset. The park's pier features comfortable swinging benches that face the harbor, catching the easterly sea breezes. Sitting on a swing as the sun sets behind the historic French Quarter is one of the most relaxing summer experiences in the city. The fountains are lit up at night, making it a scenic spot for an evening stroll after dinner.</p>
+
+      <h3>Evening Park Tips</h3>
+      <ul>
+        <li><strong>Bring bug spray:</strong> Summer evenings near the marsh mean sandflies (no-see-ums) and mosquitoes are active. A quick spray of repellent will keep you comfortable.</li>
+        <li><strong>Check park hours:</strong> Many downtown parks close at sunset or midnight (Waterfront Park is open until midnight), while county parks close strictly at sunset.</li>
+        <li><strong>Pack a light picnic:</strong> Turn a sunset walk into dinner by packing local takeout or cheese and crackers to enjoy on the grass.</li>
+        <li><strong>Bring a camera:</strong> Summer storms often leave behind dramatic, colorful cloud formations that make for incredible sunset photos.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: "essential-things-to-do-charleston-parks-summer",
+    title: "5 Essential Things to Do in Charleston Parks This Summer",
+    description:
+      "From crabbing and kayaking to outdoor concerts and sunset picnics, make the most of the Lowcountry summer.",
+    category: "Summer Guide",
+    author: "Lowcountry Parks Team",
+    publishedAt: "2026-06-20",
+    readTime: "5 min read",
+    image: "/images/blog/summer-activities.jpg",
+    imageAlt: "A group of friends kayaking through the marsh during a warm Charleston summer day",
+    content: `
+      <p>Summer in Charleston is all about embracing the coastal lifestyle, and the city's parks offer the perfect backdrop for classic Lowcountry activities. From paddling through tidal creeks to crabbing from a tidal pier or listening to live music under the oaks, there is no shortage of ways to spend a summer day. Here are five essential activities to add to your Charleston summer park bucket list.</p>
+
+      <h2>1. Paddle Through the Marshes at Palmetto Islands County Park</h2>
+      <p>One of the best ways to escape the summer heat is to get out on the water. <a href="/parks/palmetto-islands-county-park">Palmetto Islands County Park</a> features direct access to Boone Hall Creek, making it a premier spot for kayaking and stand-up paddleboarding. You can launch your own boat or rent gear from local outfitters nearby. Paddling through the tall spartina grass is a peaceful way to spot local wildlife, including egrets, herons, and sometimes dolphins feeding in the creeks.</p>
+
+      <h2>2. Go Crabbing from the Pier at Mount Pleasant Waterfront Park</h2>
+      <p>Blue crabbing is a time-honored Lowcountry tradition, and summer is peak season. The 1,250-foot pier at <a href="/parks/mount-pleasant-waterfront-park">Mount Pleasant Memorial Waterfront Park</a> is one of the best public crabbing spots in the area. All you need is a crab line, a weighted net, and some chicken necks from a local grocery store. It's a fun, low-cost activity for all ages, and the pier's tackle shop sells basic supplies and licenses if needed. Even if you don't catch dinner, the views of the harbor make for a great afternoon.</p>
+
+      <h2>3. Enjoy a Shaded Picnic at Hampton Park</h2>
+      <p>While beach days are popular, escaping the crowds for a quiet afternoon under the trees at <a href="/parks/hampton-park">Hampton Park</a> is a local favorite. The park's historic live oaks and magnolias create a deep, cool canopy that blocks the intense midday sun. Set up a blanket near the pond to watch the ducks and turtles, or stroll through the rose gardens. Bring a cooler with cold drinks, fresh fruit, and sandwiches from a downtown deli for the perfect summer picnic.</p>
+
+      <h2>4. Fish the Tidal Creeks at James Island County Park</h2>
+      <p>For anglers, the saltwater fishing pier and freshwater lakes at <a href="/parks/james-island-county-park">James Island County Park</a> offer excellent summer fishing. The tidal creek docks are perfect for targeting reddrum, trout, and flounder, while the inland lakes are stocked with bass and bluegill. The park's modern docks make it easy to cast a line, and the shaded picnic shelters nearby provide a comfortable place to rest when the sun gets high.</p>
+
+      <h2>5. Bike the Paved Trails at Wannamaker County Park</h2>
+      <p>If you want to stay active, the miles of paved trails at <a href="/parks/wannamaker-county-park">Wannamaker County Park</a> offer a shaded route for cycling. The trails wind through cool wetlands and pine forests, providing a break from direct sunlight. You can bring your own bike or rent one from the park's campground store. Keep an eye out for turtles sunning themselves on logs in the lagoons along the way.</p>
+
+      <h3>Summer Park Etiquette & Safety</h3>
+      <ul>
+        <li><strong>Leave No Trace:</strong> Summer is the busiest season for our parks. Help keep them clean by packing out all trash and recycling.</li>
+        <li><strong>Respect Wildlife:</strong> Keep a safe distance from alligators, snakes, and shorebirds. Never feed park wildlife.</li>
+        <li><strong>Beat the Bugs:</strong> Use insect repellent, especially on trails through maritime forest or near standing water.</li>
+        <li><strong>Watch the Weather:</strong> Summer afternoon thunderstorms roll in quickly in the Lowcountry. Check the radar before heading out, and seek shelter immediately if you hear thunder.</li>
+      </ul>
+    `,
+  },
 ];
 
 /** Blog posts sorted newest-first by publishedAt date */
